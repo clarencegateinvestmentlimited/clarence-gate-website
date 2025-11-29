@@ -58,7 +58,7 @@ const DealoEnergy = () => {
 
       {/* HEADER SECTION */}
       <header className="container mx-auto lg:mx-[100px] pt-[150px] px-4 lg:pt-40">
-        <div className="flex flex-col lg:flex-row justify-betweeen lg:items-center gap-8 lg:gap-[500px]">
+        <div className="flex flex-col lg:flex-row justify-between lg:items-center lg:mr-24  gap-8 ">
           {/* Logo & Title */}
           <div
             className={`flex items-center gap-4 transition-all duration-700 ${
