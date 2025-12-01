@@ -321,7 +321,7 @@ export default function AboutPage() {
           <style>{`
             .flip-card {
               perspective: 1200px;
-              height: 260px;
+              height: 310px;
             }
             .flip-card-inner {
               position: relative;
@@ -365,8 +365,8 @@ export default function AboutPage() {
               >
                 <div className="flip-card-inner">
                   {/* FRONT SIDE */}
-                  <div className="flip-card-front p-10 bg-[#1a1a1a] border h-full border-white/10 rounded-xl flex flex-col items-start justify-start transition hover:-translate-y-1">
-                    <div className="w-14 bg-teal-300 rounded-full flex items-center h-20 justify-center mb-6 text-2xl">
+                  <div className="flip-card-front p-10 bg-[#1a1a1a] border h-full border-white/10 rounded-full flex flex-col items-start justify-start transition hover:-translate-y-1">
+                    <div className="w-14 bg-teal-300 rounded-full flex items-center h-14 justify-center mb-6 text-2xl">
                       {value.icon}
                     </div>
                     <h3 className="text-2xl font-semibold mb-3">

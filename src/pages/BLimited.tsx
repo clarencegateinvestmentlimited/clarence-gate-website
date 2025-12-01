@@ -58,7 +58,7 @@ const BLimited = () => {
 
       {/* HEADER SECTION */}
       <header className="container lg:mx-[100px] mx-auto pt-[150px] px-4 lg:pt-40">
-        <div className="flex flex-col lg:flex-row items-start lg:items-center gap-8 lg:gap-[600px]">
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center lg:mr-24  gap-8">
           {/* Logo & Title */}
           <div
             className={`flex items-center gap-4 transition-all duration-700 ${

@@ -78,7 +78,7 @@ const About = () => {
           ABOUT US
         </h3>
       </div>
-      <div className="about grid md:grid-cols-2 gap-16 justify-between items-start border-b border-border pb-8">
+      <div className="about grid lg:grid-cols-2 gap-16 justify-between items-start border-b border-border pb-8">
         <div className="about-content">
           <h2 className="font-raleway font-semibold text-[28px] md:text-[40px] leading-[1.45] tracking-normal max-w-[338px] mb-8">
             About Our Investment Firm
