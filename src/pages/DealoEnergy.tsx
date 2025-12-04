@@ -61,9 +61,8 @@ const DealoEnergy = () => {
         <div className="flex flex-col lg:flex-row justify-between lg:items-center lg:mr-24  gap-8 ">
           {/* Logo & Title */}
           <div
-            className={`flex items-center gap-4 transition-all duration-700 ${
-              isVisible ? "animate-fade-in" : "opacity-0"
-            }`}
+            className={`flex items-center gap-4 transition-all duration-700 ${isVisible ? "animate-fade-in" : "opacity-0"
+              }`}
           >
             <div className="w-14 h-14 lg:w-16 lg:h-12  flex items-center justify-center backdrop-blur-sm">
               <img
@@ -84,22 +83,23 @@ const DealoEnergy = () => {
 
           {/* Info Card */}
           <Card
-            className={`bg-transparent border-border p-6 w-full lg:max-w-md transition-all duration-700 delay-300 ${
-              isVisible ? "animate-slide-in-right" : "opacity-0"
-            }`}
+            className={`bg-transparent border-border p-6 w-full lg:max-w-md transition-all duration-700 delay-300 ${isVisible ? "animate-slide-in-right" : "opacity-0"
+              }`}
           >
             <h3 className="text-lg font-semibold mb-3">About</h3>
             <p className="text-sm xl:text-md text-muted-foreground mb-4 leading-relaxed">
-              Dealo Energy Limited was incorporated on the 6th January 2025: It is an Oil servicing company. It provides oilfield, engineering, procurement, and construction services, including equipment supply and project management. It participates in energy logistics, infrastructure development, and alternative energy solutions.
+              Dealo Energy Limited is a forward-thinking oil servicing company focused on delivering integrated solutions across the energy value chain. The company offers a wide range of services including oilfield support, engineering design, procurement, and construction, alongside the supply of specialized equipment and expert project management. Its operations are built on technical competence, service quality, and a commitment to supporting efficient and safe energy operations.
+
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-4">
               <div>
                 <p className="text-xs text-muted-foreground mb-1">Category</p>
-                <p className="text-sm font-medium">Real Estate</p>
+                <p className="text-sm font-medium">Energy
+                </p>
               </div>
               <div>
                 <p className="text-xs text-muted-foreground mb-1">Date</p>
-                <p className="text-sm font-medium">2009</p>
+                <p className="text-sm font-medium">2025</p>
               </div>
               <div>
                 <p className="text-xs text-muted-foreground mb-1">Website</p>
@@ -118,9 +118,8 @@ const DealoEnergy = () => {
       {/* ABOUT SECTION */}
       <section className="container mx-auto px-4 py-16 lg:py-32">
         <div
-          className={`max-w-7xl mx-auto flex flex-col lg:flex-row justify-between gap-10 lg:gap-20 transition-all duration-700 delay-500 ${
-            isVisible ? "animate-fade-in" : "opacity-0"
-          }`}
+          className={`max-w-7xl mx-auto flex flex-col lg:flex-row justify-between gap-10 lg:gap-20 transition-all duration-700 delay-500 ${isVisible ? "animate-fade-in" : "opacity-0"
+            }`}
         >
           <h2 className="text-3xl lg:text-5xl font-bold mb-8 lg:mb-0 lg:w-1/3">
             About the
@@ -129,12 +128,7 @@ const DealoEnergy = () => {
           </h2>
 
           <div className="lg:w-2/3 space-y-4 text-base lg:text-lg text-muted-foreground leading-relaxed">
-            <p>
-             Dealo Energy Limited is an oil servicing company delivering comprehensive solutions across the energy value chain. The company provides oilfield, engineering, procurement, and construction services, including equipment supply and project management. 
-            </p>
-            <p>
-             Dealo Energy is also involved in energy logistics, infrastructure development, and alternative energy initiatives, driving innovation, efficiency, and sustainability in Nigeria’s ever-evolving energy sector.
-            </p>
+            <p>Beyond core oilfield and EPC services, Dealo Energy Limited is strategically positioned in energy logistics, infrastructure development, and emerging alternative energy solutions. With an emphasis on innovation and sustainable practices, the company aims to meet the evolving needs of Nigeria’s energy sector by providing reliable, cost-effective, and future-ready services to operators, partners, and stakeholders.</p>
           </div>
         </div>
       </section>
@@ -148,9 +142,8 @@ const DealoEnergy = () => {
               return (
                 <div
                   key="merged-image"
-                  className={`group relative overflow-hidden rounded-2xl sm:col-span-2 aspect-[4/3] sm:aspect-[16/5] transition-all duration-700 ${
-                    isVisible ? "animate-scale-in" : "opacity-0"
-                  }`}
+                  className={`group relative overflow-hidden rounded-2xl sm:col-span-2 aspect-[4/3] sm:aspect-[16/5] transition-all duration-700 ${isVisible ? "animate-scale-in" : "opacity-0"
+                    }`}
                   style={{ animationDelay: `${700 + index * 100}ms` }}
                 >
                   <img
@@ -175,9 +168,8 @@ const DealoEnergy = () => {
             return (
               <div
                 key={property.id}
-                className={`group relative overflow-hidden rounded-2xl aspect-[4/3] sm:aspect-[16/7] transition-all duration-700 ${
-                  isVisible ? "animate-scale-in" : "opacity-0"
-                }`}
+                className={`group relative overflow-hidden rounded-2xl aspect-[4/3] sm:aspect-[16/7] transition-all duration-700 ${isVisible ? "animate-scale-in" : "opacity-0"
+                  }`}
                 style={{ animationDelay: `${700 + index * 100}ms` }}
               >
                 <img
