@@ -74,7 +74,7 @@ const DealoEnergy = () => {
             </div>
             <div>
               <h1 className="text-xl lg:text-2xl font-bold leading-tight">
-                Design Energy Limited
+                Dealo Energy Limited
               </h1>
               {/* <p className="text-base lg:text-lg text-muted-foreground">
                 Nigeria Limited
