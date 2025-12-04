@@ -228,7 +228,7 @@ const DealoGlobalServices = () => {
               <div className="space-y-2">
                 <p className="text-2xl font-semibold">Design Energy Limited</p>
                 {/* <p className="text-2xl text-start font-semibold">Limited</p> */}
-                <p className="text-[17px] text-start text-muted-foreground">2009</p>
+                <p className="text-[17px] text-start text-muted-foreground">2025</p>
               </div>
 
               {/* Company Image Card */}

@@ -67,8 +67,8 @@ const ClarenceGate = () => {
           >
             <div className="w-16 h-16 lg:w-20 lg:h-20  flex items-center justify-center backdrop-blur-sm">
               <img
-                className="rounded-full w-[70px] h-[65px] w-24"
-                src="/Images/Card1.jpg"
+                className="rounded-full md:w-[90px] md:h-[80px] w-[60px] h-[60px] "
+                src="/Images/Clarence Gate Logo white.png"
                 alt=""
               />
             </div>
@@ -231,7 +231,7 @@ const ClarenceGate = () => {
               <div className="w-[200px] h-[200px] sm:w-56 sm:h-36 md:w-[350px] md:h-[180px] rounded-xl flex items-center justify-center bg-orange-500 overflow-hidden shadow-md">
                 <img
                   className="w-full h-full object-conyain rounded-xl"
-                  src="/Images/dpupdated-logo2.jpg"
+                  src="public/Images/Design Protocol -101.png"
                   alt="Clarence Gate"
                 />
               </div>

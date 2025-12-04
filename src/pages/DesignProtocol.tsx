@@ -68,7 +68,7 @@ const DesignProtocolPage = () => {
             <div className="w-16 h-16 lg:w-20 lg:h-20  flex items-center justify-center backdrop-blur-sm">
               <img
                 className="rounded-full lg:h-[80px] h-[70px] w-[80px] lg:w-24"
-                src="/Images/dpupdated-logo2.jpg"
+                src="public/Images/Design Protocol -101.png"
                 alt=""
               />
             </div>
@@ -228,10 +228,10 @@ const DesignProtocolPage = () => {
               </div>
 
               {/* Company Image Card */}
-              <div className="w-54 h-28 sm:w-56 sm:h-36 md:w-[350px] md:h-[180px] rounded-xl flex items-center justify-center bg-orange-500 overflow-hidden shadow-md">
+              <div className="w-54 h-28 sm:w-56 sm:h-36 md:w-[350px] md:h-[180px] rounded-xl flex items-center justify-center overflow-hidden shadow-md">
                 <img
                   className="w-full h-full object-cover rounded-xl"
-                  src="/Images/Card1.jpg"
+                  src="public/Images/Clarence Gate Logo white.png"
                   alt="Clarence Gate"
                 />
               </div>

@@ -13,9 +13,9 @@ const Portfolio: React.FC = () => {
       name: "Clarence Gate Investment Limited",
       category: "real-estate",
       year: "2020",
-      image: "/Images/Card1.jpg",
+      image: "public/Images/Clarence Gate Logo white.png",
       link: "/clarence-gate",
-      objectFit: "cover", 
+      objectFit: "contain", 
     },
     {
       id: 2,
@@ -56,7 +56,7 @@ const Portfolio: React.FC = () => {
     {
       id: 6,
       name: "20B Limited",
-      category: "technology",
+      category: "trading",
       year: "2022",
       image: "/Images/2oB.png",
       link: "/20b-limited",

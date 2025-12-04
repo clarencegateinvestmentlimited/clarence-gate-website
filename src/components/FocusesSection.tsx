@@ -9,6 +9,7 @@ interface IDetailItem {
   imageAlt: string;
   imageClass?: string;
   link?: string;
+  imageFit?: "cover" | "contain"; // ✅ Add this
 }
 
 interface ICardData {
@@ -39,17 +40,19 @@ const cardData: ICardData[] = [
       {
         title: "Dealo Global Services Limited",
         year: "2022",
-        imageUrl: "/Images/Clarence Gate.png",
+        imageUrl: "public/Images/Clarence Gate Logo white.png",
         imageAlt: "Clarence Gate Logo",
+        imageClass: "black-bg",
         link: "/dealo-global",
       },
       {
         title: "Dealo Energy Limited",
         year: "2009",
-        imageUrl: "/Images/dpupdated-logo2.jpg",
+        imageUrl: "public/Images/Design Protocol -101.png",
         imageAlt: "Dealo Energy",
         imageClass: "ligt",
         link: "/dealo-energy",
+         imageFit: "contain",
       },
     ],
   },
@@ -84,22 +87,24 @@ const cardData: ICardData[] = [
     arrowUrl: "/Images/arrow-right.png",
     containerId: "detailCardContainer3",
     containerStyle: { right: "47rem" },
-    link: "/dealo-global", // 👈 link for Learn more
+    link: "/dealo-global",
     detailItems: [
       {
-        title: "Dealo Global Services Limited",
-        year: "2022",
-        imageUrl: "/Images/Card4.jpg",
+        title: "355 Restaurant &  Lounge",
+        year: "2013",
+        imageUrl: "public/Images/355-restaurant-logo.png",
         imageAlt: "Hospitality 1",
         link: "/dealo-global",
       },
       {
-        title: "Dealo Energy Limited",
+        title: " Villa Monument ",
         year: "2009",
-        imageUrl: "/Images/Card5.jpg",
+        imageUrl: "public/Images/Villa-monument-logo.png",
         imageAlt: "Hospitality 2",
         imageClass: "ligt",
         link: "/dealo-energy",
+        imageFit: "contain",
+
       },
     ],
   },
@@ -117,7 +122,7 @@ const cardData: ICardData[] = [
       {
         title: "20B Limited",
         year: "2022",
-        imageUrl: "/Images/Card8.jpg",
+        imageUrl: "public/Images/2oB.png",
         imageAlt: "Technology 1",
         link: "/dealo-global",
       },
@@ -136,18 +141,20 @@ const cardData: ICardData[] = [
     detailItems: [
       {
         title: "Dealo Global Services Limited",
-        year: "2022",
+        year: "2020",
         imageUrl: "/Images/Card7.jpg",
         imageAlt: "Consulting 1",
         link: "/dealo-global",
+        imageFit: "contain",
       },
       {
         title: "Dealo Energy Limited",
-        year: "2009",
+        year: "2025",
         imageUrl: "/Images/Card9.jpg",
         imageAlt: "Consulting 2",
         imageClass: "ligt",
         link: "/dealo-global",
+         imageFit: "contain",
       },
     ],
   },
@@ -170,9 +177,8 @@ const Focuses: React.FC = () => {
       onMouseLeave={() => setActiveIndex(null)}
     >
       <div
-        className={`card ${
-          activeIndex !== null && activeIndex !== card.index ? "inactive" : ""
-        }`}
+        className={`card ${activeIndex !== null && activeIndex !== card.index ? "inactive" : ""
+          }`}
       >
         <div className="card-content">
           <img src={card.iconUrl} alt="" />
@@ -207,7 +213,12 @@ const Focuses: React.FC = () => {
                 <div
                   className={`image-placeholder ${item.imageClass || ""}`}
                 >
-                  <img src={item.imageUrl} alt={item.imageAlt} />
+                  <img
+                    src={item.imageUrl}
+                    alt={item.imageAlt}
+                    style={{ objectFit: item.imageFit || "cover" }}
+                  />
+
                 </div>
               </div>
               <div className="detail-info">
@@ -228,7 +239,7 @@ const Focuses: React.FC = () => {
     <section className="focuses" id="portfolio">
       <div className="section-label">
         <img src="/Images/Vector 2.png" alt="" />
-        <h4>Focuses</h4>
+        <h4>Focus</h4>
       </div>
       <h2 className="section-title">Industries We Invest In</h2>
       <div className="cards-container">
