@@ -51,7 +51,7 @@ const Header = () => {
       {/* Logo */}
       <Link to="/" className="logo">
         <img
-          src="public/Images/Clarence Gate Logo white.png"
+          src="/Images/Clarence Gate Logo white.png"
           alt="Clarence Gate Group Logo"
           className="lg:h-[90px] h-[80px] w-auto"
         />

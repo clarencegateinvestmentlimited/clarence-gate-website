@@ -122,7 +122,7 @@ const cardData: ICardData[] = [
       {
         title: "20B Limited",
         year: "2022",
-        imageUrl: "public/Images/2oB.png",
+        imageUrl: "Images/2oB.png",
         imageAlt: "Technology 1",
         link: "/dealo-global",
       },
