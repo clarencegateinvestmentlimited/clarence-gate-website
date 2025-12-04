@@ -61,20 +61,19 @@ const DealoGlobalServices = () => {
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 lg:mx-20 lg:my-0 lg:mr-24">
           {/* Logo & Title */}
           <div
-            className={`flex items-center gap-4 transition-all duration-700 ${
-              isVisible ? "animate-fade-in" : "opacity-0"
-            }`}
+            className={`flex items-center gap-4 transition-all duration-700 ${isVisible ? "animate-fade-in" : "opacity-0"
+              }`}
           >
-            <div className="w-16 h-16 lg:w-20 lg:h-20 flex items-center justify-center backdrop-blur-sm">
+            <div className="w-[0px] h-16 lg:w-20 lg:h-20 flex items-center justify-center backdrop-blur-sm">
               <img
-                className="rounded-full h-[80px] w-24"
+                className="rounded-full h-[80px] lg:w-24 "
                 src="/Images/Card7.jpg"
                 alt=""
               />
             </div>
             <div>
               <h1 className="text-xl lg:text-2xl font-bold leading-tight">
-                Dealo Global 
+                Dealo Global
               </h1>
               <p className="text-base lg:text-2xl text-muted-foreground">
                 Services Limited
@@ -84,13 +83,13 @@ const DealoGlobalServices = () => {
 
           {/* Info Card */}
           <Card
-            className={`bg-transparent border-border p-6 w-full lg:max-w-md transition-all duration-700 delay-300 ${
-              isVisible ? "animate-slide-in-right" : "opacity-0"
-            }`}
+            className={`bg-transparent border-border p-6 w-full lg:max-w-md transition-all duration-700 delay-300 ${isVisible ? "animate-slide-in-right" : "opacity-0"
+              }`}
           >
             <h3 className="text-lg font-semibold mb-3">About</h3>
             <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-            Dealo Global Services Limited was incorporated on the 7th of October 2020 to carry on the business of an investment company and to acquire, purchase, develop, hold and own landed properties or real estate. 
+              Dealo Global Services Limited is a forward-looking investment and real estate development company. The firm is structured to identify high-value opportunities in the property market, with a focus on acquiring, purchasing, and developing landed assets that offer sustainable returns. Its operations reflect a commitment to strategic investment and responsible property management.
+
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-4">
               <div>
@@ -99,7 +98,7 @@ const DealoGlobalServices = () => {
               </div>
               <div>
                 <p className="text-xs text-muted-foreground mb-1">Date</p>
-                <p className="text-sm font-medium">2023</p>
+                <p className="text-sm font-medium">2020</p>
               </div>
               <div>
                 <p className="text-xs text-muted-foreground mb-1">Website</p>
@@ -118,9 +117,8 @@ const DealoGlobalServices = () => {
       {/* ABOUT SECTION */}
       <section className="container mx-auto px-4 py-16 lg:py-32">
         <div
-          className={`max-w-7xl mx-auto flex flex-col lg:flex-row justify-between gap-10 lg:gap-20 transition-all duration-700 delay-500 ${
-            isVisible ? "animate-fade-in" : "opacity-0"
-          }`}
+          className={`max-w-7xl mx-auto flex flex-col lg:flex-row justify-between gap-10 lg:gap-20 transition-all duration-700 delay-500 ${isVisible ? "animate-fade-in" : "opacity-0"
+            }`}
         >
           <h2 className="text-3xl lg:text-5xl font-bold mb-8 lg:mb-0 lg:w-1/3">
             About the
@@ -130,8 +128,9 @@ const DealoGlobalServices = () => {
 
           <div className="lg:w-2/3 space-y-4 text-base lg:text-lg text-muted-foreground leading-relaxed">
             <p>
-            
-Dealo Global Services Limited is an investment company focused on acquiring, developing, and managing real estate assets. The company is dedicated to creating long-term value through strategic investments in landed properties, combining sound financial insight with a commitment to sustainable growth and excellence in property development.
+
+              Beyond property acquisition, the company is positioned to provide long-term value through efficient ownership structures, development capabilities, and sound investment practices. Dealo Global Services Limited aims to contribute to the growth of the real estate sector while offering clients and partners reliable, well-managed assets that align with their financial and development goals.
+
 
             </p>
             {/* <p>
@@ -156,9 +155,8 @@ Dealo Global Services Limited is an investment company focused on acquiring, dev
               return (
                 <div
                   key="merged-image"
-                  className={`group relative overflow-hidden rounded-2xl sm:col-span-2 aspect-[4/3] sm:aspect-[16/5] transition-all duration-700 ${
-                    isVisible ? "animate-scale-in" : "opacity-0"
-                  }`}
+                  className={`group relative overflow-hidden rounded-2xl sm:col-span-2 aspect-[4/3] sm:aspect-[16/5] transition-all duration-700 ${isVisible ? "animate-scale-in" : "opacity-0"
+                    }`}
                   style={{ animationDelay: `${700 + index * 100}ms` }}
                 >
                   <img
@@ -183,9 +181,8 @@ Dealo Global Services Limited is an investment company focused on acquiring, dev
             return (
               <div
                 key={property.id}
-                className={`group relative overflow-hidden rounded-2xl aspect-[4/3] sm:aspect-[16/7] transition-all duration-700 ${
-                  isVisible ? "animate-scale-in" : "opacity-0"
-                }`}
+                className={`group relative overflow-hidden rounded-2xl aspect-[4/3] sm:aspect-[16/7] transition-all duration-700 ${isVisible ? "animate-scale-in" : "opacity-0"
+                  }`}
                 style={{ animationDelay: `${700 + index * 100}ms` }}
               >
                 <img
@@ -218,8 +215,8 @@ Dealo Global Services Limited is an investment company focused on acquiring, dev
                   className="text-primary flex hover:text-white flex items-center gap-2"
                 >
                   <span className="text-sm flex gap-4 items-center sm:text-base font-medium">
-                   Next
-                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                    Next
+                    <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                   </span>
                 </Button>
               </Link>

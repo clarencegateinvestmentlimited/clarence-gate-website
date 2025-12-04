@@ -61,9 +61,8 @@ const RestaurantLounge = () => {
         <div className="flex flex-col lg:flex-row justify-between lg:items-center gap-8 lg:mr-24">
           {/* Logo & Title */}
           <div
-            className={`flex items-center gap-4 transition-all duration-700 ${
-              isVisible ? "animate-fade-in" : "opacity-0"
-            }`}
+            className={`flex items-center gap-4 transition-all duration-700 ${isVisible ? "animate-fade-in" : "opacity-0"
+              }`}
           >
             <div className="w-16 h-16 lg:w-20 lg:h-20  flex items-center justify-center backdrop-blur-sm">
               <img
@@ -74,7 +73,7 @@ const RestaurantLounge = () => {
             </div>
             <div>
               <h1 className="text-xl lg:text-2xl font-bold leading-tight">
-               355 Restaurant &
+                355 Restaurant &
               </h1>
               <p className="text-base lg:text-2xl leading-tight text-muted-foreground">
                 Lounge
@@ -84,27 +83,27 @@ const RestaurantLounge = () => {
 
           {/* Info Card */}
           <Card
-            className={`bg-transparent border-border p-6 w-full lg:max-w-md transition-all duration-700 delay-300 ${
-              isVisible ? "animate-slide-in-right" : "opacity-0"
-            }`}
+            className={`bg-transparent border-border p-6 w-full lg:max-w-md transition-all duration-700 delay-300 ${isVisible ? "animate-slide-in-right" : "opacity-0"
+              }`}
           >
             <h3 className="text-lg font-semibold mb-3">About</h3>
             <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-              The 355 Group aims to cater to discerning individuals who are either looking for a nostalgic experience or yearning to try something different. A great meal experience is memorable and at 355 we use the best ingredients, provide outstanding customer service, and aim for customers to have a similar fine dining experience as one at a top restaurant in London, Paris, or New York
+              355 Restaurant & Lounge is a modern dining and lifestyle space offering a blend of continental and Nigerian cuisine, premium drinks, and an upscale lounge experience designed for socializing, relaxation, and entertainment.
+
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-4">
               <div>
                 <p className="text-xs text-muted-foreground mb-1">Category</p>
-                <p className="text-sm font-medium">Real Estate</p>
+                <p className="text-sm font-medium">Hospitality</p>
               </div>
               <div>
                 <p className="text-xs text-muted-foreground mb-1">Date</p>
-                <p className="text-sm font-medium">2009</p>
+                <p className="text-sm font-medium">2013</p>
               </div>
               <div>
                 <p className="text-xs text-muted-foreground mb-1">Website</p>
                 <a
-                  href="#"
+                  href="https://355group.com/ "
                   className="text-sm hover:underline inline-flex items-center gap-1 transition-colors"
                 >
                   Visit Website <ArrowRight className="w-3 h-3" />
@@ -118,9 +117,8 @@ const RestaurantLounge = () => {
       {/* ABOUT SECTION */}
       <section className="container mx-auto px-4 py-16 lg:py-32">
         <div
-          className={`max-w-7xl mx-auto flex flex-col lg:flex-row justify-between gap-10 lg:gap-20 transition-all duration-700 delay-500 ${
-            isVisible ? "animate-fade-in" : "opacity-0"
-          }`}
+          className={`max-w-7xl mx-auto flex flex-col lg:flex-row justify-between gap-10 lg:gap-20 transition-all duration-700 delay-500 ${isVisible ? "animate-fade-in" : "opacity-0"
+            }`}
         >
           <h2 className="text-3xl lg:text-5xl font-bold mb-8 lg:mb-0 lg:w-1/3">
             About the
@@ -130,14 +128,15 @@ const RestaurantLounge = () => {
 
           <div className="lg:w-2/3 space-y-4 text-base lg:text-lg text-muted-foreground leading-relaxed">
             <p>
-              
-The 355 Group was founded in December 2013 with the launch of 355 Restaurant & Lounge in the heart of Victoria Island, Lagos. Since its inception, we have received positive reviews for exceptional quality of food and customer excellence.
+
+
+              355 Restaurant & Lounge is an upscale dining and entertainment destination that combines exceptional cuisine with a vibrant social atmosphere. The restaurant offers a curated menu featuring a mix of continental dishes, Nigerian favorites, and signature cocktails crafted to suit diverse tastes. With a focus on quality, ambience, and customer satisfaction, 355 provides guests with a refined yet welcoming environment.
+
 
             </p>
             <p>
-              Two years later, the second location, the 355 Steakhouse & Lounge, was launched in the heart of Abuja. Since then, the restaurant has extended to other parts of Nigeria, keeping the original soul of the brand. 
+              Beyond dining, the lounge offers a stylish space for leisure, networking, and nightlife experiences. Whether hosting casual hangouts, corporate meetups, or celebratory events, 355 Restaurant & Lounge delivers a premium lifestyle experience marked by good music, excellent service, and a relaxed contemporary setting that appeals to both young professionals and sophisticated social circles.
 
-The team at 355 has plans to expand to various locations throughout Nigeria and West Africa. Expect 355 Restaurant & Lounge opening in Accra in the near future.
 
             </p>
           </div>
@@ -153,9 +152,8 @@ The team at 355 has plans to expand to various locations throughout Nigeria and 
               return (
                 <div
                   key="merged-image"
-                  className={`group relative overflow-hidden rounded-2xl sm:col-span-2 aspect-[4/3] sm:aspect-[16/5] transition-all duration-700 ${
-                    isVisible ? "animate-scale-in" : "opacity-0"
-                  }`}
+                  className={`group relative overflow-hidden rounded-2xl sm:col-span-2 aspect-[4/3] sm:aspect-[16/5] transition-all duration-700 ${isVisible ? "animate-scale-in" : "opacity-0"
+                    }`}
                   style={{ animationDelay: `${700 + index * 100}ms` }}
                 >
                   <img
@@ -180,9 +178,8 @@ The team at 355 has plans to expand to various locations throughout Nigeria and 
             return (
               <div
                 key={property.id}
-                className={`group relative overflow-hidden rounded-2xl aspect-[4/3] sm:aspect-[16/7] transition-all duration-700 ${
-                  isVisible ? "animate-scale-in" : "opacity-0"
-                }`}
+                className={`group relative overflow-hidden rounded-2xl aspect-[4/3] sm:aspect-[16/7] transition-all duration-700 ${isVisible ? "animate-scale-in" : "opacity-0"
+                  }`}
                 style={{ animationDelay: `${700 + index * 100}ms` }}
               >
                 <img
@@ -216,7 +213,7 @@ The team at 355 has plans to expand to various locations throughout Nigeria and 
                 >
                   <span className="text-sm flex items-center gap-4 sm:text-base font-medium">
                     Next
-                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                    <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                   </span>
                 </Button>
               </Link>
@@ -232,10 +229,10 @@ The team at 355 has plans to expand to various locations throughout Nigeria and 
               </div>
 
               {/* Company Image Card */}
-              <div className="w-54 h-28 sm:w-56 sm:h-36 md:w-[350px] md:h-[180px] rounded-xl flex items-center justify-center bg-orange-500 overflow-hidden shadow-md">
+              <div className="w-54 h-28 sm:w-56 sm:h-36 md:w-[350px] md:h-[180px] rounded-xl flex items-center justify-center overflow-hidden shadow-md">
                 <img
                   className="w-full h-full object-cover rounded-xl"
-                  src="/Images/Card5.jpg"
+                  src="/Images/Villa-monument-logo.png"
                   alt="Clarence Gate"
                 />
               </div>

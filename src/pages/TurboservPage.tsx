@@ -90,7 +90,8 @@ const Turboserv = () => {
           >
             <h3 className="text-lg font-semibold mb-3">About</h3>
             <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-              Turboserv Insurance Brokers Limited was incorporated on the 25th of February 2022. An insurance brokerage company, leveraging on a wealth of insurance industry experience to bring our clients market-leading risk, advisory, and risk transfer solutions appropriate for a particular business.
+              Turboserv Insurance Brokers Limited is a professional insurance brokerage firm dedicated to delivering tailored and innovative insurance solutions. The company leverages deep industry expertise to provide clients with comprehensive risk advisory services that address the unique challenges and exposures associated with their businesses.
+
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-4">
               <div>
@@ -130,10 +131,10 @@ const Turboserv = () => {
 
           <div className="lg:w-2/3 space-y-4 text-base lg:text-lg text-muted-foreground leading-relaxed">
             <p>
-             We are an insurance brokerage firm built on a wealth of industry experience and deep market insight. Our focus is on helping clients navigate complex risk landscapes with confidence. By combining expert advisory services with innovative risk and insurance solutions, we deliver market-leading strategies tailored to the unique needs of each business.
+             Through strong relationships with leading insurers and access to a wide range of products, Turboserv designs and negotiates market-leading risk transfer solutions that ensure adequate protection and long-term resilience.
             </p>
             <p>
-             . Our commitment is simple: to protect what matters most to our clients while enabling them to focus on growth, stability, and long-term success.
+            With a commitment to professionalism, transparency, and client satisfaction, the company continues to support organisations in safeguarding their assets, employees, and operations.
 
             </p>
           </div>

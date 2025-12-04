@@ -89,7 +89,7 @@ const DealoEnergy = () => {
             }`}
           >
             <h3 className="text-lg font-semibold mb-3">About</h3>
-            <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+            <p className="text-sm xl:text-md text-muted-foreground mb-4 leading-relaxed">
               Dealo Energy Limited was incorporated on the 6th January 2025: It is an Oil servicing company. It provides oilfield, engineering, procurement, and construction services, including equipment supply and project management. It participates in energy logistics, infrastructure development, and alternative energy solutions.
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-4">

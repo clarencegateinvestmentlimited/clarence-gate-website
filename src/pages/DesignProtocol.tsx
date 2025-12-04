@@ -90,7 +90,8 @@ const DesignProtocolPage = () => {
           >
             <h3 className="text-lg font-semibold mb-3">About</h3>
             <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-             Design Protocol Nigeria Limited is a leading indigenous real estate and construction firm specializing in sustainable property development and delivering full-service solutions. With a dynamic and ambitious team at the helm, we are committed to transforming the urban landscape with innovation and excellence.
+             Design Protocol Nigeria Limited, is a full-service sustainable property development and construction company recognized for its commitment to excellence, innovation, and environmentally responsible building practices. The company provides end-to-end solutions across conceptual design, development, construction, and project management, consistently delivering functional and aesthetically refined real estate projects.
+
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-4">
               <div>
@@ -130,11 +131,11 @@ const DesignProtocolPage = () => {
 
           <div className="lg:w-2/3 space-y-4 text-base lg:text-lg text-muted-foreground leading-relaxed">
             <p>
-              At Design Protocol, we offer a comprehensive range of services tailored to meet the diverse needs of our clients. Our expertise spans across property development, construction management, architectural design, and sustainable solutions.
+             Through its robust real estate operating platform, Design Protocol identifies, structures, and executes high-quality residential, commercial, and mixed-use development opportunities. Backed by deep market insight, strategic partnerships, and a strong professional team, the company continues to create impactful spaces that enhance living and working experiences while contributing to Nigeria’s urban and economic growth.
             </p>
-            <p>
+            {/* <p>
               From concept to completion, we ensure every project is executed with precision and a commitment to environmental responsibility.
-            </p>
+            </p> */}
           </div>
         </div>
       </section>
