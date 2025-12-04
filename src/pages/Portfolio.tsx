@@ -37,10 +37,10 @@ const Portfolio: React.FC = () => {
     },
     {
       id: 4,
-      name: "55 Restaurant & Lounge",
+      name: "355 Restaurant & Lounge",
       category: "hospitality",
       year: "2019",
-      image: "/Images/Card4.jpg",
+      image: "Images/355-restaurant-logo.png",
       link: "/55-restaurant",
       objectFit: "cover",
     },
@@ -49,16 +49,16 @@ const Portfolio: React.FC = () => {
       name: "Villa Monument Hotel",
       category: "hospitality",
       year: "2021",
-      image: "/Images/Card5.jpg",
+      image: "/Images/Villa-monument-logo.png",
       link: "/villa-monument",
-      objectFit: "cover",
+      objectFit: "contain",
     },
     {
       id: 6,
       name: "20B Limited",
       category: "technology",
       year: "2022",
-      image: "/Images/Card8.jpg",
+      image: "/Images/2oB.png",
       link: "/20b-limited",
       objectFit: "cover",
     },
@@ -270,7 +270,7 @@ const Portfolio: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="bg-gradient-to-br from-[#4ecdc4]/10 to-[#4ecdc4]/5 rounded-2xl p-10 md:p-16 text-center"
+          className="bg-gradient-to-br from-[#4ecdc4]/5 to-[#4ecdc4]/7 rounded-2xl p-10 md:p-16 text-center"
         >
           <h2 className="text-[32px] md:text-[48px] leading-[1.2] mb-6 font-bold">
             Ready to Partner With Us?

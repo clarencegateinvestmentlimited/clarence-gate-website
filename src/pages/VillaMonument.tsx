@@ -67,8 +67,8 @@ const VillaMonument = () => {
           >
             <div className="w-16 h-16 lg:w-20 lg:h-20  flex items-center justify-center backdrop-blur-sm">
               <img
-                className="rounded-full lg:h-[80px] h-[70px] w-[80px] lg:w-24"
-                src="/Images/Card5.jpg"
+                className="rounded-full  lg:h-[80px] h-[70px] w-[80px] lg:w-24"
+                src="/Images/Villa-monument-logo.png"
                 alt=""
               />
             </div>

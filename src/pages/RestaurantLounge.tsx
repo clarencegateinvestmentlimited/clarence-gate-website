@@ -68,13 +68,13 @@ const RestaurantLounge = () => {
             <div className="w-16 h-16 lg:w-20 lg:h-20  flex items-center justify-center backdrop-blur-sm">
               <img
                 className="rounded-full lg:h-[80px] h-[70px] w-[80px] lg:w-24"
-                src="/Images/Card4.jpg"
+                src="/Images/355-restaurant-logo.png"
                 alt=""
               />
             </div>
             <div>
               <h1 className="text-xl lg:text-2xl font-bold leading-tight">
-               55 Restaurant &
+               355 Restaurant &
               </h1>
               <p className="text-base lg:text-2xl leading-tight text-muted-foreground">
                 Lounge
