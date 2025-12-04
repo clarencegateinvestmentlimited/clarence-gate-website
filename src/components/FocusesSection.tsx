@@ -92,14 +92,14 @@ const cardData: ICardData[] = [
       {
         title: "355 Restaurant &  Lounge",
         year: "2013",
-        imageUrl: "public/Images/355-restaurant-logo.png",
+        imageUrl: "/Images/355-restaurant-logo.png",
         imageAlt: "Hospitality 1",
         link: "/dealo-global",
       },
       {
         title: " Villa Monument ",
         year: "2009",
-        imageUrl: "public/Images/Villa-monument-logo.png",
+        imageUrl: "/Images/Villa-monument-logo.png",
         imageAlt: "Hospitality 2",
         imageClass: "ligt",
         link: "/dealo-energy",
