@@ -17,23 +17,37 @@ const faqData: FAQItem[] = [
   {
     id: "1",
     number: "01",
-    question: "Are you actively doing investments?",
+    question: "What does Clarence Gate Group do?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur. Sed molestie odio lectus venenatis proin nunc donec venenatis. We are actively evaluating investment opportunities across various sectors.",
+      "Clarence Gate Group is a diversified investment holding company building sustainable enterprises across Africa’s most dynamic sectors, including Real Estate, Finance & Insurance, Hospitality, Trading, and Energy & Infrastructure. We identify, invest in, and support high-potential businesses to create long-term value.",
   },
   {
     id: "2",
     number: "02",
-    question: "What is the typical investment amount?",
+    question: "How can I become an investment partner?",
     answer:
-      "Our investment amounts vary depending on the project scope and requirements. We typically invest between $100K to $10M depending on the opportunity and growth potential.",
+      "We welcome conversations with investors and partners who share our vision for sustainable growth. Please reach out via our Get in Touch form, or contact us directly at info@clarencegategroup.com to explore partnership opportunities.",
   },
   {
     id: "3",
     number: "03",
-    question: "Are you open for partnership?",
+    question: "What industries do you invest in?",
     answer:
-      "Yes, we are always open to discussing strategic partnerships that align with our investment philosophy and can create mutual value for both parties.",
+      "We focus on sectors that drive Africa’s economic growth: Real Estate, Finance & Insurance, Hospitality, Trading, Energy & Infrastructure. For each sector, we invest in innovative businesses that demonstrate scalability, sustainability, and long-term value creation.",
+  },
+  {
+    id: "4",
+    number: "04",
+    question: "Can I visit your offices?",
+    answer:
+      "Yes! We welcome scheduled visits from partners and investors. Please refer to our Visit Our Office section or contact us to arrange a meeting.",
+  },
+  {
+    id: "5",
+    number: "05",
+    question: "Who can I contact for media inquiries?",
+    answer:
+      "For media or press-related inquiries, please reach out to info@clarencegategroup.com, and our communications team will assist you.",
   },
 ];
 
@@ -47,8 +61,8 @@ const FAQ = () => {
             Frequently Asked Questions
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Lorem ipsum dolor sit amet consectetur. Sed molestie odio lectus
-            venenatis proin nunc donec venenatis.
+           Explore answers to frequently asked questions about Clarence Gate Group, our investments, and the opportunities we offer for collaboration and growth
+
           </p>
         </div>
 

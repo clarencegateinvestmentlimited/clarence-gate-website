@@ -590,7 +590,7 @@ export default function AboutPage() {
                 Lagos, Nigeria
               </h3>
               <p className="text-white/70 text-base md:text-lg leading-relaxed">
-                Lorem ipsum dolor sit amet consectetur. Sed molestie odio lectus venenatis porttis nunc donec velit. Egestas enim a quam magna quis vehicula.
+                We look forward to welcoming you to our offices and exploring opportunities to collaborate and create lasting impact.
               </p>
             </div>
 
@@ -625,7 +625,7 @@ export default function AboutPage() {
                   <span className="font-semibold">Location</span>
                 </div>
                 <p className="text-white/90 text-sm md:text-base">
-                  Lorem ipsum dolor street, Lagos Nigeria
+                 5b Karimu Kotun, Vi, Lagos
                 </p>
               </motion.div>
 

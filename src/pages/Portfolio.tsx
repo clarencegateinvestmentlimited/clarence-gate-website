@@ -112,9 +112,7 @@ const Portfolio: React.FC = () => {
           <div className="md:col-span-2">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Portfolio</h2>
             <p className="text-white/70 leading-relaxed max-w-md">
-              Lorem ipsum dolor sit amet consectetur. Sed molestie odio lectus
-              venenatis proin nunc donec venenatis. Egestas enim a quam sed
-              magna quis vehicula.
+              At Clarence Gate Group, we take pride in our diversified investments that drive growth, innovation, and sustainable impact. Our portfolio spans multiple industries, each carefully selected to create long-term value for our partners, investors, and communities
             </p>
           </div>
 
