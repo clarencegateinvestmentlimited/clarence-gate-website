@@ -42,13 +42,21 @@ const faqData: FAQItem[] = [
     answer:
       "Yes! We welcome scheduled visits from partners and investors. Please refer to our Visit Our Office section or contact us to arrange a meeting.",
   },
-  {
-    id: "5",
-    number: "05",
-    question: "Who can I contact for media inquiries?",
-    answer:
-      "For media or press-related inquiries, please reach out to info@clarencegategroup.com, and our communications team will assist you.",
-  },
+{
+  id: "5",
+  number: "05",
+  question: "Who can I contact for media inquiries?",
+  answer: (
+    <>
+      For media or press-related inquiries, please reach out to{" "}
+      <a href="mailto:info@clarencegategroup.com" className="text-teal-300 hover:underline">
+        info@clarencegategroup.com
+      </a>
+      , and our communications team will assist you.
+    </>
+  ),
+}
+
 ];
 
 const FAQ = () => {
