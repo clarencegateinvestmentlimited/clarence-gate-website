@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Typewriter } from 'react-simple-typewriter';
 
 const Portfolio: React.FC = () => {
   const [activeFilter, setActiveFilter] = useState<string>("all");
@@ -110,7 +111,17 @@ const Portfolio: React.FC = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 items-center max-w-7xl mx-auto">
           {/* Left Text */}
           <div className="md:col-span-2">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Portfolio</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              <Typewriter
+                words={['Portfolio']}
+                loop={0} // run only once
+                cursor
+                cursorStyle="|"
+                typeSpeed={150}
+                deleteSpeed={150}
+                delaySpeed={1700}
+              />
+            </h2>
             <p className="text-white/70 leading-relaxed max-w-md">
               At Clarence Gate Group, we take pride in our diversified investments that drive growth, innovation, and sustainable impact. Our portfolio spans multiple industries, each carefully selected to create long-term value for our partners, investors, and communities
             </p>
