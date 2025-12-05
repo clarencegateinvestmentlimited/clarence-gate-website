@@ -16,40 +16,40 @@ const DealoEnergy = () => {
   const properties = [
     {
       id: 1,
-      title: "Luxury Living Room",
+      title: "",
       image:
-        "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80",
+        "/Images/Card801.jpg",
     },
     {
       id: 2,
-      title: "Modern Interior",
+      title: "",
       image:
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
+        "/Images/Card802.jpg",
     },
     {
       id: 3,
-      title: "Elegant Dining Space",
+      title: "",
       image:
-        "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80",
+        "/Images/Card803.jpg",
     },
-    {
-      id: 4,
-      title: "Contemporary Living",
-      image:
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
-    },
-    {
-      id: 5,
-      title: "Architectural Model",
-      image:
-        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
-    },
-    {
-      id: 6,
-      title: "Modern Building",
-      image:
-        "https://images.unsplash.com/photo-1486718448742-163732cd1544?w=800&q=80",
-    },
+    // {
+    //   id: 4,
+    //   title: "Contemporary Living",
+    //   image:
+    //     "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+    // },
+    // {
+    //   id: 5,
+    //   title: "Architectural Model",
+    //   image:
+    //     "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
+    // },
+    // {
+    //   id: 6,
+    //   title: "Modern Building",
+    //   image:
+    //     "https://images.unsplash.com/photo-1486718448742-163732cd1544?w=800&q=80",
+    // },
   ];
 
   return (
@@ -61,20 +61,19 @@ const DealoEnergy = () => {
         <div className="flex flex-col lg:flex-row justify-between lg:items-center lg:mr-24  gap-8 ">
           {/* Logo & Title */}
           <div
-            className={`flex items-center gap-4 transition-all duration-700 ${
-              isVisible ? "animate-fade-in" : "opacity-0"
-            }`}
+            className={`flex items-center gap-4 transition-all duration-700 ${isVisible ? "animate-fade-in" : "opacity-0"
+              }`}
           >
             <div className="w-14 h-14 lg:w-16 lg:h-12  flex items-center justify-center backdrop-blur-sm">
               <img
                 className="rounded-full lg:h-[65px] h-[60px] w-[60px] lg:w-24"
-                src="/Images/Card9.jpg"
+                src="/Images/Dealo Energy_LogoUpdated.png"
                 alt=""
               />
             </div>
             <div>
               <h1 className="text-xl lg:text-2xl font-bold leading-tight">
-                Design Energy Limited
+                Dealo Energy Limited
               </h1>
               {/* <p className="text-base lg:text-lg text-muted-foreground">
                 Nigeria Limited
@@ -84,22 +83,24 @@ const DealoEnergy = () => {
 
           {/* Info Card */}
           <Card
-            className={`bg-transparent border-border p-6 w-full lg:max-w-md transition-all duration-700 delay-300 ${
-              isVisible ? "animate-slide-in-right" : "opacity-0"
-            }`}
+            className={`bg-transparent border-border p-6 w-full lg:max-w-md transition-all duration-700 delay-300 ${isVisible ? "animate-slide-in-right" : "opacity-0"
+              }`}
           >
             <h3 className="text-lg font-semibold mb-3">About</h3>
-            <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-              Dealo Energy Limited was incorporated on the 6th January 2025: It is an Oil servicing company. It provides oilfield, engineering, procurement, and construction services, including equipment supply and project management. It participates in energy logistics, infrastructure development, and alternative energy solutions.
+            <p className="text-sm xl:text-md text-muted-foreground mb-4 leading-relaxed">
+              Dealo Energy Limited is a forward-thinking oil servicing company focused on delivering integrated solutions across the energy value chain. The company offers a wide range of services including oilfield support, engineering design, procurement, and construction, alongside the supply of specialized equipment and expert project management. Its operations are built on technical competence, service quality, and a commitment to supporting efficient and safe energy operations.
+
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-4">
               <div>
                 <p className="text-xs text-muted-foreground mb-1">Category</p>
-                <p className="text-sm font-medium">Real Estate</p>
+                <p className="text-sm font-medium"> Energy & Infrastructure
+
+                </p>
               </div>
               <div>
                 <p className="text-xs text-muted-foreground mb-1">Date</p>
-                <p className="text-sm font-medium">2009</p>
+                <p className="text-sm font-medium">2025</p>
               </div>
               <div>
                 <p className="text-xs text-muted-foreground mb-1">Website</p>
@@ -118,9 +119,8 @@ const DealoEnergy = () => {
       {/* ABOUT SECTION */}
       <section className="container mx-auto px-4 py-16 lg:py-32">
         <div
-          className={`max-w-7xl mx-auto flex flex-col lg:flex-row justify-between gap-10 lg:gap-20 transition-all duration-700 delay-500 ${
-            isVisible ? "animate-fade-in" : "opacity-0"
-          }`}
+          className={`max-w-7xl mx-auto flex flex-col lg:flex-row justify-between gap-10 lg:gap-20 transition-all duration-700 delay-500 ${isVisible ? "animate-fade-in" : "opacity-0"
+            }`}
         >
           <h2 className="text-3xl lg:text-5xl font-bold mb-8 lg:mb-0 lg:w-1/3">
             About the
@@ -129,74 +129,41 @@ const DealoEnergy = () => {
           </h2>
 
           <div className="lg:w-2/3 space-y-4 text-base lg:text-lg text-muted-foreground leading-relaxed">
-            <p>
-             Dealo Energy Limited is an oil servicing company delivering comprehensive solutions across the energy value chain. The company provides oilfield, engineering, procurement, and construction services, including equipment supply and project management. 
-            </p>
-            <p>
-             Dealo Energy is also involved in energy logistics, infrastructure development, and alternative energy initiatives, driving innovation, efficiency, and sustainability in Nigeria’s ever-evolving energy sector.
-            </p>
+            <p>Beyond core oilfield and EPC services, Dealo Energy Limited is strategically positioned in energy logistics, infrastructure development, and emerging alternative energy solutions. With an emphasis on innovation and sustainable practices, the company aims to meet the evolving needs of Nigeria’s energy sector by providing reliable, cost-effective, and future-ready services to operators, partners, and stakeholders.</p>
           </div>
         </div>
       </section>
 
       {/* PROPERTY GALLERY */}
-      <section className="container mx-auto px-4 pb-16 lg:pb-24 flex justify-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 max-w-6xl w-full">
-          {properties.map((property, index) => {
-            // Combine image 3 and 4
-            if (index === 2) {
-              return (
-                <div
-                  key="merged-image"
-                  className={`group relative overflow-hidden rounded-2xl sm:col-span-2 aspect-[4/3] sm:aspect-[16/5] transition-all duration-700 ${
-                    isVisible ? "animate-scale-in" : "opacity-0"
-                  }`}
-                  style={{ animationDelay: `${700 + index * 100}ms` }}
-                >
-                  <img
-                    src={properties[2].image}
-                    alt={`${properties[2].title} & ${properties[3].title}`}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="absolute bottom-0 left-0 right-0 p-6">
-                      <h3 className="text-xl font-semibold text-white">
-                        {properties[2].title} & {properties[3].title}
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              );
-            }
+     {/* PROPERTY GALLERY */}
+<section className="container mx-auto px-4 pb-16 lg:pb-24 flex justify-center">
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 max-w-6xl w-full">
+    {properties.map((property, index) => (
+      <div
+        key={property.id}
+        className={`group relative overflow-hidden rounded-2xl 
+          ${index === 2 ? "sm:col-span-2 aspect-[16/5]" : "aspect-[4/3] sm:aspect-[16/7]"}
+          transition-all duration-700 ${isVisible ? "animate-scale-in" : "opacity-0"}`}
+        style={{ animationDelay: `${700 + index * 100}ms` }}
+      >
+        <img
+          src={property.image}
+          alt={property.title}
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+        />
 
-            // Skip the 4th image (merged)
-            if (index === 3) return null;
-
-            return (
-              <div
-                key={property.id}
-                className={`group relative overflow-hidden rounded-2xl aspect-[4/3] sm:aspect-[16/7] transition-all duration-700 ${
-                  isVisible ? "animate-scale-in" : "opacity-0"
-                }`}
-                style={{ animationDelay: `${700 + index * 100}ms` }}
-              >
-                <img
-                  src={property.image}
-                  alt={property.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <h3 className="text-xl font-semibold text-white">
-                      {property.title}
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <div className="absolute bottom-0 left-0 right-0 p-6">
+            <h3 className="text-xl font-semibold text-white">
+              {property.title}
+            </h3>
+          </div>
         </div>
-      </section>
+      </div>
+    ))}
+  </div>
+</section>
+
 
       {/* FOOTER */}
       <footer className="border-t border-border bg-background">
@@ -230,7 +197,7 @@ const DealoEnergy = () => {
               <div className="w-54 h-28 sm:w-56 sm:h-36 md:w-[350px] md:h-[180px] rounded-xl flex items-center justify-center bg-orange-500 overflow-hidden shadow-md">
                 <img
                   className="w-full h-full object-cover rounded-xl"
-                  src="/Images/Card7.jpg"
+                  src="/Images/Card9.jpg"
                   alt="Clarence Gate"
                 />
               </div>

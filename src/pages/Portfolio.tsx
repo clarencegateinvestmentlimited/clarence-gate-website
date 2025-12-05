@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Typewriter } from 'react-simple-typewriter';
 
 const Portfolio: React.FC = () => {
   const [activeFilter, setActiveFilter] = useState<string>("all");
@@ -13,16 +14,16 @@ const Portfolio: React.FC = () => {
       name: "Clarence Gate Investment Limited",
       category: "real-estate",
       year: "2020",
-      image: "/Images/Card1.jpg",
+      image: "/Images/Clarence Gate.png",
       link: "/clarence-gate",
-      objectFit: "cover", 
+      objectFit: "contain", 
     },
     {
       id: 2,
       name: "Design Protocol Nigeria Limited",
       category: "real-estate",
       year: "2018",
-      image: "/Images/dpupdated-logo2.jpg",
+      image: "/Images/Design Protocol-101.png",
       link: "/design-protocol",
       objectFit: "contain",
     },
@@ -37,10 +38,10 @@ const Portfolio: React.FC = () => {
     },
     {
       id: 4,
-      name: "55 Restaurant & Lounge",
+      name: "355 Restaurant & Lounge",
       category: "hospitality",
       year: "2019",
-      image: "/Images/Card4.jpg",
+      image: "Images/355-restaurant-logo.png",
       link: "/55-restaurant",
       objectFit: "cover",
     },
@@ -49,23 +50,23 @@ const Portfolio: React.FC = () => {
       name: "Villa Monument Hotel",
       category: "hospitality",
       year: "2021",
-      image: "/Images/Card5.jpg",
+      image: "/Images/Villa-monument-logo.png",
       link: "/villa-monument",
-      objectFit: "cover",
+      objectFit: "contain",
     },
     {
       id: 6,
       name: "20B Limited",
-      category: "technology",
+      category: "trading",
       year: "2022",
-      image: "/Images/Card8.jpg",
+      image: "/Images/2oB.png",
       link: "/20b-limited",
       objectFit: "cover",
     },
     {
       id: 7,
       name: "Dealo Global Services Limited",
-      category: "real-estate",
+      category: "energy",
       year: "2020",
       image: "/Images/Card9.jpg",
       link: "/dealo-global",
@@ -75,8 +76,8 @@ const Portfolio: React.FC = () => {
       id: 8,
       name: "Dealo Energy Limited",
       category: "energy",
-      year: "2018",
-      image: "/Images/Card7.jpg",
+      year: "2025",
+      image: "/Images/Dealo Energy_LogoUpdated.png",
       link: "/dealo-energy",
       objectFit: "cover",
     },
@@ -110,11 +111,19 @@ const Portfolio: React.FC = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 items-center max-w-7xl mx-auto">
           {/* Left Text */}
           <div className="md:col-span-2">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Portfolio</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              <Typewriter
+                words={['Portfolio']}
+                loop={0} // run only once
+                cursor
+                cursorStyle="|"
+                typeSpeed={150}
+                deleteSpeed={150}
+                delaySpeed={1700}
+              />
+            </h2>
             <p className="text-white/70 leading-relaxed max-w-md">
-              Lorem ipsum dolor sit amet consectetur. Sed molestie odio lectus
-              venenatis proin nunc donec venenatis. Egestas enim a quam sed
-              magna quis vehicula.
+              At Clarence Gate Group, we take pride in our diversified investments that drive growth, innovation, and sustainable impact. Our portfolio spans multiple industries, each carefully selected to create long-term value for our partners, investors, and communities
             </p>
           </div>
 
@@ -132,7 +141,7 @@ const Portfolio: React.FC = () => {
                 <span className="text-white">5</span>
                 <span className="text-[#4ecdc4]">+</span>
               </h3>
-              <p className="text-white/70 text-sm mt-1">Team Members</p>
+              <p className="text-white/70 text-sm mt-1">Business Sectors</p>
             </div>
           </div>
         </div>
@@ -241,12 +250,10 @@ const Portfolio: React.FC = () => {
 
       {/* Stats Section */}
       <section className="px-[6%] py-20 border-t border-[#333] text-center">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-6xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
           {[
             { number: "10+", label: "Portfolio Companies" },
-            { number: "5", label: "Core Sectors" },
-            { number: "$50M+", label: "Total Investment" },
-            { number: "100%", label: "Success Rate" },
+            { number: "5+", label: "Business Sectors" },
           ].map((stat, idx) => (
             <motion.div
               key={idx}
@@ -272,7 +279,7 @@ const Portfolio: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="bg-gradient-to-br from-[#4ecdc4]/10 to-[#4ecdc4]/5 rounded-2xl p-10 md:p-16 text-center"
+          className="bg-gradient-to-br from-[#4ecdc4]/5 to-[#4ecdc4]/7 rounded-2xl p-10 md:p-16 text-center"
         >
           <h2 className="text-[32px] md:text-[48px] leading-[1.2] mb-6 font-bold">
             Ready to Partner With Us?
