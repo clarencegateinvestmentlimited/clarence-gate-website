@@ -19,12 +19,12 @@ const RestaurantLounge = () => {
       image: "/Images/Card401.jpg",
     },
     {
-      id: 2,
-      image: "/Images/Card402.jpg",
+      id: 3,
+      image: "/Images/R101.png",
     },
     {
-      id: 3,
-      image: "/Images/Card404.jpg",
+      id: 2,
+      image: "/Images/R102.png",
     },
   ];
 
