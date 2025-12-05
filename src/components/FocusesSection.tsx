@@ -39,7 +39,7 @@ const cardData: ICardData[] = [
       {
         title: "Dealo Global Services Limited",
         year: "2022",
-        imageUrl: "/Images/Clarence Gate Logo.png",
+        imageUrl: "/Images/Clarence Gate.png",
         imageAlt: "Clarence Gate Logo",
         link: "/dealo-global",
       },
