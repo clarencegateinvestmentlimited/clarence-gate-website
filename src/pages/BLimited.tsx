@@ -16,40 +16,40 @@ const BLimited = () => {
   const properties = [
     {
       id: 1,
-      title: "Luxury Living Room",
+      title: "",
       image:
-        "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80",
+        "Images/Card501.jpg",
     },
     {
       id: 2,
       title: "Modern Interior",
       image:
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
+        "Images/Card502.jpg",
     },
     {
       id: 3,
       title: "Elegant Dining Space",
       image:
-        "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80",
+        "Images/Card503.jpg",
     },
-    {
-      id: 4,
-      title: "Contemporary Living",
-      image:
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
-    },
-    {
-      id: 5,
-      title: "Architectural Model",
-      image:
-        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
-    },
-    {
-      id: 6,
-      title: "Modern Building",
-      image:
-        "https://images.unsplash.com/photo-1486718448742-163732cd1544?w=800&q=80",
-    },
+    // {
+    //   id: 4,
+    //   title: "Contemporary Living",
+    //   image:
+    //     "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+    // },
+    // {
+    //   id: 5,
+    //   title: "Architectural Model",
+    //   image:
+    //     "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
+    // },
+    // {
+    //   id: 6,
+    //   title: "Modern Building",
+    //   image:
+    //     "https://images.unsplash.com/photo-1486718448742-163732cd1544?w=800&q=80",
+    // },
   ];
 
   return (
@@ -146,63 +146,50 @@ const BLimited = () => {
       </section>
 
       {/* PROPERTY GALLERY */}
-      <section className="container mx-auto px-4 pb-16 lg:pb-24 flex justify-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 max-w-6xl w-full">
-          {properties.map((property, index) => {
-            // Combine image 3 and 4
-            if (index === 2) {
-              return (
-                <div
-                  key="merged-image"
-                  className={`group relative overflow-hidden rounded-2xl sm:col-span-2 aspect-[4/3] sm:aspect-[16/5] transition-all duration-700 ${
-                    isVisible ? "animate-scale-in" : "opacity-0"
-                  }`}
-                  style={{ animationDelay: `${700 + index * 100}ms` }}
-                >
-                  <img
-                    src={properties[2].image}
-                    alt={`${properties[2].title} & ${properties[3].title}`}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="absolute bottom-0 left-0 right-0 p-6">
-                      <h3 className="text-xl font-semibold text-white">
-                        {properties[2].title} & {properties[3].title}
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              );
-            }
+    {/* PROPERTY GALLERY */}
+<section className="container mx-auto px-4 pb-16 lg:pb-24 flex justify-center">
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 max-w-6xl w-full">
+    {properties.map((property, index) => {
+      
+      // 👉 Make the 3rd image full width (like before)
+      if (index === 2) {
+        return (
+          <div
+            key={property.id}
+            className={`group relative overflow-hidden rounded-2xl sm:col-span-2 aspect-[4/3] sm:aspect-[16/5] transition-all duration-700 ${
+              isVisible ? "animate-scale-in" : "opacity-0"
+            }`}
+            style={{ animationDelay: `${700 + index * 100}ms` }}
+          >
+            <img
+              src={property.image}
+              alt=""
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+          </div>
+        );
+      }
 
-            // Skip the 4th image (merged)
-            if (index === 3) return null;
-
-            return (
-              <div
-                key={property.id}
-                className={`group relative overflow-hidden rounded-2xl aspect-[4/3] sm:aspect-[16/7] transition-all duration-700 ${
-                  isVisible ? "animate-scale-in" : "opacity-0"
-                }`}
-                style={{ animationDelay: `${700 + index * 100}ms` }}
-              >
-                <img
-                  src={property.image}
-                  alt={property.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <h3 className="text-xl font-semibold text-white">
-                      {property.title}
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
+      // 👉 Normal images (1 & 2)
+      return (
+        <div
+          key={property.id}
+          className={`group relative overflow-hidden rounded-2xl aspect-[4/3] sm:aspect-[16/7] transition-all duration-700 ${
+            isVisible ? "animate-scale-in" : "opacity-0"
+          }`}
+          style={{ animationDelay: `${700 + index * 100}ms` }}
+        >
+          <img
+            src={property.image}
+            alt=""
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          />
         </div>
-      </section>
+      );
+    })}
+  </div>
+</section>
+
 
     
 

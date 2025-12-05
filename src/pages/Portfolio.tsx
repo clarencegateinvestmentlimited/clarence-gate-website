@@ -75,7 +75,7 @@ const Portfolio: React.FC = () => {
       id: 8,
       name: "Dealo Energy Limited",
       category: "energy",
-      year: "2018",
+      year: "2025",
       image: "/Images/Card7.jpg",
       link: "/dealo-energy",
       objectFit: "cover",
@@ -239,12 +239,10 @@ const Portfolio: React.FC = () => {
 
       {/* Stats Section */}
       <section className="px-[6%] py-20 border-t border-[#333] text-center">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-6xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
           {[
             { number: "10+", label: "Portfolio Companies" },
-            { number: "5", label: "Core Sectors" },
-            { number: "$50M+", label: "Total Investment" },
-            { number: "100%", label: "Success Rate" },
+            { number: "5+", label: "Team Members" },
           ].map((stat, idx) => (
             <motion.div
               key={idx}

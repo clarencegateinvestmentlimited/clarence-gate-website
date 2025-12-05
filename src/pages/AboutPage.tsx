@@ -204,7 +204,7 @@ export default function AboutPage() {
               <div className="order-1 md:order-2">
                 <div className="relative overflow-hidden rounded-2xl aspect-[4/3] group">
                   <img
-                    src="/Images/projects2.jpg"
+                    src="/Images/mission.jpg"
                     alt="Our Mission"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
@@ -232,7 +232,7 @@ export default function AboutPage() {
               <div className="order-1">
                 <div className="relative overflow-hidden rounded-2xl aspect-[4/3] group">
                   <img
-                    src="/Images/projects5.jpg"
+                    src="/Images/vision.jpg"
                     alt="Our Vision"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />

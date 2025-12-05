@@ -16,40 +16,40 @@ const Turboserv = () => {
   const properties = [
     {
       id: 1,
-      title: "Luxury Living Room",
+      title: "",
       image:
-        "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80",
+        "/Images/Card301.jpg",
     },
     {
       id: 2,
-      title: "Modern Interior",
+      title: "",
       image:
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
+        "/Images/Card304.jpg",
     },
     {
       id: 3,
-      title: "Elegant Dining Space",
+      title: "",
       image:
-        "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80",
+        "/Images/Card302.jpg",
     },
     {
       id: 4,
-      title: "Contemporary Living",
+      title: "",
       image:
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+        "/Images/Card303.jpg",
     },
-    {
-      id: 5,
-      title: "Architectural Model",
-      image:
-        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
-    },
-    {
-      id: 6,
-      title: "Modern Building",
-      image:
-        "https://images.unsplash.com/photo-1486718448742-163732cd1544?w=800&q=80",
-    },
+    // {
+    //   id: 5,
+    //   title: "Architectural Model",
+    //   image:
+    //     "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
+    // },
+    // {
+    //   id: 6,
+    //   title: "Modern Building",
+    //   image:
+    //     "https://images.unsplash.com/photo-1486718448742-163732cd1544?w=800&q=80",
+    // },
   ];
 
   return (

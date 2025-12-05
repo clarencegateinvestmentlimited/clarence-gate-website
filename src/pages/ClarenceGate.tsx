@@ -16,40 +16,40 @@ const ClarenceGate = () => {
   const properties = [
     {
       id: 1,
-      title: "Luxury Living Room",
+      title: "",
       image:
-        "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80",
+        "/Images/Card101.jpg",
     },
     {
       id: 2,
-      title: "Modern Interior",
+      title: "",
       image:
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
+        "/Images/Card102.jpg",
     },
     {
       id: 3,
-      title: "Elegant Dining Space",
+      title: "",
       image:
-        "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80",
+        "/Images/Card103.jpg",
     },
     {
       id: 4,
-      title: "Contemporary Living",
+      title: "",
       image:
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+        "/Images/Card104.jpg",
     },
-    {
-      id: 5,
-      title: "Architectural Model",
-      image:
-        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
-    },
-    {
-      id: 6,
-      title: "Modern Building",
-      image:
-        "https://images.unsplash.com/photo-1486718448742-163732cd1544?w=800&q=80",
-    },
+    // {
+    //   id: 5,
+    //   title: "Architectural Model",
+    //   image:
+    //     "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
+    // },
+    // {
+    //   id: 6,
+    //   title: "Modern Building",
+    //   image:
+    //     "https://images.unsplash.com/photo-1486718448742-163732cd1544?w=800&q=80",
+    // },
   ];
 
   return (
@@ -231,7 +231,7 @@ const ClarenceGate = () => {
               <div className="w-[200px] h-[200px] sm:w-56 sm:h-36 md:w-[350px] md:h-[180px] rounded-xl flex items-center justify-center bg-orange-500 overflow-hidden shadow-md">
                 <img
                   className="w-full h-full object-conyain rounded-xl"
-                  src="public/Images/Design Protocol -101.png"
+                  src="/Images\Design Protocol -101.png"
                   alt="Clarence Gate"
                 />
               </div>
