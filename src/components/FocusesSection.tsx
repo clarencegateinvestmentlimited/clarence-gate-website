@@ -73,8 +73,9 @@ const cardData: ICardData[] = [
         imageUrl:
           "/Images/TURBOSERV_LOGO_4x-100-removebg-preview.png",
         imageAlt: "Turboserv Logo",
-        imageClass: "teal",
+        imageClass: "tea",
         link: "/turboserv",
+        imageFit: "contain",
       },
     ],
   },
