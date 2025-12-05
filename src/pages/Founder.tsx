@@ -42,7 +42,7 @@ const Founder: React.FC = () => {
       </section>
 
       {/* Biography */}
-      <section className="py-20 px-[8%] border-t border-[#333]">
+      {/* <section className="py-20 px-[8%] border-t border-[#333]">
         <h2 className="text-[50px] font-semibold text-center mb-12">Biography</h2>
         <div className="max-w-[1000px] mx-auto space-y-8 text-lg leading-8 text-white/85">
           <p>John Clarence's journey in investment and entrepreneurship began with a simple observation: Africa's greatest opportunities often go unrealized due to a lack of patient, strategic capital. This insight would become the foundation of Clarence Gate Group.</p>
@@ -50,7 +50,7 @@ const Founder: React.FC = () => {
           <p>Under his leadership, Clarence Gate has grown into a diversified investment holding company with interests spanning real estate, energy, finance, hospitality, technology, and consulting. The portfolio reflects John's belief in building enterprises that address real market needs while generating sustainable returns.</p>
           <p>John holds an MBA from Lagos Business School and a Bachelor's degree in Economics. He serves on several corporate boards and is a frequent speaker on entrepreneurship, investment strategy, and Africa's economic development.</p>
         </div>
-      </section>
+      </section> */}
 
       {/* Professional Journey */}
       <section className="py-20 px-[8%] border-t border-[#333]">
