@@ -66,7 +66,7 @@ const Portfolio: React.FC = () => {
     {
       id: 7,
       name: "Dealo Global Services Limited",
-      category: "real-estate",
+      category: "energy",
       year: "2020",
       image: "/Images/Card9.jpg",
       link: "/dealo-global",

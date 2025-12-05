@@ -37,9 +37,8 @@ const RestaurantLounge = () => {
         <div className="flex flex-col lg:flex-row justify-between lg:items-center gap-8 lg:mr-24">
           {/* Logo & Title */}
           <div
-            className={`flex items-center gap-4 transition-all duration-700 ${
-              isVisible ? "animate-fade-in" : "opacity-0"
-            }`}
+            className={`flex items-center gap-4 transition-all duration-700 ${isVisible ? "animate-fade-in" : "opacity-0"
+              }`}
           >
             <div className="w-16 h-16 lg:w-20 lg:h-20 flex items-center justify-center backdrop-blur-sm">
               <img
@@ -60,9 +59,8 @@ const RestaurantLounge = () => {
 
           {/* Info Card */}
           <Card
-            className={`bg-transparent border-border p-6 w-full lg:max-w-md transition-all duration-700 delay-300 ${
-              isVisible ? "animate-slide-in-right" : "opacity-0"
-            }`}
+            className={`bg-transparent border-border p-6 w-full lg:max-w-md transition-all duration-700 delay-300 ${isVisible ? "animate-slide-in-right" : "opacity-0"
+              }`}
           >
             <h3 className="text-lg font-semibold mb-3">About</h3>
             <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
@@ -72,7 +70,8 @@ const RestaurantLounge = () => {
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-4">
               <div>
                 <p className="text-xs text-muted-foreground mb-1">Category</p>
-                <p className="text-sm font-medium">Hospitality</p>
+                <p className="text-sm font-medium">Hospitality
+                </p>
               </div>
               <div>
                 <p className="text-xs text-muted-foreground mb-1">Date</p>
@@ -95,9 +94,8 @@ const RestaurantLounge = () => {
       {/* ABOUT SECTION */}
       <section className="container mx-auto px-4 py-16 lg:py-32">
         <div
-          className={`max-w-7xl mx-auto flex flex-col lg:flex-row justify-between gap-10 lg:gap-20 transition-all duration-700 delay-500 ${
-            isVisible ? "animate-fade-in" : "opacity-0"
-          }`}
+          className={`max-w-7xl mx-auto flex flex-col lg:flex-row justify-between gap-10 lg:gap-20 transition-all duration-700 delay-500 ${isVisible ? "animate-fade-in" : "opacity-0"
+            }`}
         >
           <h2 className="text-3xl lg:text-5xl font-bold mb-8 lg:mb-0 lg:w-1/3">
             About the
@@ -107,11 +105,11 @@ const RestaurantLounge = () => {
 
           <div className="lg:w-2/3 space-y-4 text-base lg:text-lg text-muted-foreground leading-relaxed">
             <p>
-             355 Restaurant & Lounge is an upscale dining and entertainment destination that combines exceptional cuisine with a vibrant social atmosphere. The restaurant offers a curated menu featuring a mix of continental dishes, Nigerian favorites, and signature cocktails crafted to suit diverse tastes. With a focus on quality, ambience, and customer satisfaction, 355 provides guests with a refined yet welcoming environment.
+              355 Restaurant & Lounge is an upscale dining and entertainment destination that combines exceptional cuisine with a vibrant social atmosphere. The restaurant offers a curated menu featuring a mix of continental dishes, Nigerian favorites, and signature cocktails crafted to suit diverse tastes. With a focus on quality, ambience, and customer satisfaction, 355 provides guests with a refined yet welcoming environment.
 
             </p>
             <p>
-             Beyond dining, the lounge offers a stylish space for leisure, networking, and nightlife experiences. Whether hosting casual hangouts, corporate meetups, or celebratory events, 355 Restaurant & Lounge delivers a premium lifestyle experience marked by good music, excellent service, and a relaxed contemporary setting that appeals to both young professionals and sophisticated social circles.
+              Beyond dining, the lounge offers a stylish space for leisure, networking, and nightlife experiences. Whether hosting casual hangouts, corporate meetups, or celebratory events, 355 Restaurant & Lounge delivers a premium lifestyle experience marked by good music, excellent service, and a relaxed contemporary setting that appeals to both young professionals and sophisticated social circles.
 
             </p>
           </div>
@@ -120,48 +118,46 @@ const RestaurantLounge = () => {
 
       {/* PROPERTY GALLERY */}
       {/* PROPERTY GALLERY */}
-<section className="container mx-auto px-4 pb-16 lg:pb-24 flex justify-center">
-  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 max-w-6xl w-full">
-    {properties.map((property, index) => {
-      
-      // 👉 Make the 3rd image full width
-      if (index === 2) {
-        return (
-          <div
-            key={property.id}
-            className={`group relative overflow-hidden rounded-2xl sm:col-span-2 aspect-[4/3] sm:aspect-[16/5] transition-all duration-700 ${
-              isVisible ? "animate-scale-in" : "opacity-0"
-            }`}
-            style={{ animationDelay: `${700 + index * 100}ms` }}
-          >
-            <img
-              src={property.image}
-              alt=""
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-            />
-          </div>
-        );
-      }
+      <section className="container mx-auto px-4 pb-16 lg:pb-24 flex justify-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 max-w-6xl w-full">
+          {properties.map((property, index) => {
 
-      // 👉 Normal images (1 and 2)
-      return (
-        <div
-          key={property.id}
-          className={`group relative overflow-hidden rounded-2xl aspect-[4/3] sm:aspect-[16/7] transition-all duration-700 ${
-            isVisible ? "animate-scale-in" : "opacity-0"
-          }`}
-          style={{ animationDelay: `${700 + index * 100}ms` }}
-        >
-          <img
-            src={property.image}
-            alt=""
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-          />
+            // 👉 Make the 3rd image full width
+            if (index === 2) {
+              return (
+                <div
+                  key={property.id}
+                  className={`group relative overflow-hidden rounded-2xl sm:col-span-2 aspect-[4/3] sm:aspect-[16/5] transition-all duration-700 ${isVisible ? "animate-scale-in" : "opacity-0"
+                    }`}
+                  style={{ animationDelay: `${700 + index * 100}ms` }}
+                >
+                  <img
+                    src={property.image}
+                    alt=""
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                </div>
+              );
+            }
+
+            // 👉 Normal images (1 and 2)
+            return (
+              <div
+                key={property.id}
+                className={`group relative overflow-hidden rounded-2xl aspect-[4/3] sm:aspect-[16/7] transition-all duration-700 ${isVisible ? "animate-scale-in" : "opacity-0"
+                  }`}
+                style={{ animationDelay: `${700 + index * 100}ms` }}
+              >
+                <img
+                  src={property.image}
+                  alt=""
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+            );
+          })}
         </div>
-      );
-    })}
-  </div>
-</section>
+      </section>
 
 
       {/* FOOTER */}

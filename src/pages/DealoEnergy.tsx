@@ -94,7 +94,8 @@ const DealoEnergy = () => {
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-4">
               <div>
                 <p className="text-xs text-muted-foreground mb-1">Category</p>
-                <p className="text-sm font-medium">Energy
+                <p className="text-sm font-medium"> Energy & Infrastructure
+
                 </p>
               </div>
               <div>
