@@ -4,6 +4,7 @@ import { Mail, MapPin, Phone } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
+import { Typewriter } from 'react-simple-typewriter';
 
 
 export default function AboutPage() {
@@ -83,8 +84,17 @@ export default function AboutPage() {
           viewport={{ once: true }}
         >
           <div className="max-w-6xl">
+            {/* --- Typing animation on the header --- */}
             <h1 className="text-4xl md:text-6xl font-bold mb-8">
-              About Us
+              <Typewriter
+                words={['About Us']}
+                loop={0} // run only once
+                cursor
+                cursorStyle="|"
+                typeSpeed={150}
+                deleteSpeed={150}
+                delaySpeed={1700}
+              />
             </h1>
             <div className="space-y-4 text-white/80 text-base md:text-lg leading-relaxed">
               <p>
@@ -105,12 +115,12 @@ export default function AboutPage() {
               whileHover={{ x: 5 }}
               transition={{ duration: 0.3 }}
             >
-              <Link to ="/contact">
-              <span className="text-base md:text-lg">Get in Touch</span></Link>
-              <svg 
-                className="w-5 h-5 group-hover:translate-x-1 transition-transform" 
-                fill="none" 
-                stroke="currentColor" 
+              <Link to="/contact">
+                <span className="text-base md:text-lg">Get in Touch</span></Link>
+              <svg
+                className="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                fill="none"
+                stroke="currentColor"
                 viewBox="0 0 24 24"
               >
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -184,7 +194,7 @@ export default function AboutPage() {
         >
           <div className="space-y-16">
             {/* Mission */}
-            <motion.div 
+            <motion.div
               className="grid md:grid-cols-2 gap-8 items-center"
               variants={fadeInUp}
             >
@@ -214,13 +224,13 @@ export default function AboutPage() {
             </motion.div>
 
             {/* Vision */}
-            <motion.div 
+            <motion.div
               className="grid md:grid-cols-2 gap-8 items-center"
               variants={fadeInUp}
             >
               <div className="order-2">
                 <div className="flex items-center gap-3 mb-6">
-                   <img src="/Images/Vector 2.png" alt="" />
+                  <img src="/Images/Vector 2.png" alt="" />
                   <h2 className="text-3xl md:text-4xl font-bold text-white">
                     Our Vision
                   </h2>
@@ -429,11 +439,11 @@ export default function AboutPage() {
                 {[
                   {
                     src: "/Images/projects2.jpg",
-                    
+
                   },
                   {
                     src: "/Images/projects3.jpg",
-                    
+
                   },
                 ].map((p, i) => (
                   <motion.div
@@ -469,7 +479,7 @@ export default function AboutPage() {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end p-6">
-                 
+
                 </div>
               </div>
 
@@ -477,11 +487,11 @@ export default function AboutPage() {
                 {[
                   {
                     src: "/Images/projects6.jpg",
-                   
+
                   },
                   {
                     src: "/Images/projects5.jpg",
-                    
+
                   },
                 ].map((p, i) => (
                   <motion.div
@@ -541,114 +551,114 @@ export default function AboutPage() {
               </motion.div>
             ))}
           </div>
-          
+
         </motion.section>
-        
+
       </motion.div>
-       <section className="bg-black text-white py-20 px-[8%]">
-      <motion.div
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true }}
-        variants={fadeIn}
-      >
-        {/* Section Title */}
-        <motion.h2 
-          className="text-3xl md:text-4xl lg:text-5xl font-bold mb-12"
-          variants={fadeInUp}
+      <section className="bg-black text-white py-20 px-[8%]">
+        <motion.div
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          variants={fadeIn}
         >
-          Visit Our Office
-        </motion.h2>
-
-        {/* Content Grid */}
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
-          {/* Left: Image */}
-          <motion.div
-            className="relative group"
+          {/* Section Title */}
+          <motion.h2
+            className="text-3xl md:text-4xl lg:text-5xl font-bold mb-12"
             variants={fadeInUp}
           >
-            <div className="relative overflow-hidden rounded-2xl border-4 border-teal-500/60">
-              <img
-                src="/Images/projects2.jpg"
-                alt="Office Interior"
-                className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
-            </div>
-          </motion.div>
+            Visit Our Office
+          </motion.h2>
 
-          {/* Right: Office Details */}
-          <motion.div
-            className="space-y-8"
-            variants={fadeInUp}
-          >
-            {/* Location Title */}
-            <div>
-              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
-                Lagos, Nigeria
-              </h3>
-              <p className="text-white/70 text-base md:text-lg leading-relaxed">
-                We look forward to welcoming you to our offices and exploring opportunities to collaborate and create lasting impact.
-              </p>
-            </div>
+          {/* Content Grid */}
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+            {/* Left: Image */}
+            <motion.div
+              className="relative group"
+              variants={fadeInUp}
+            >
+              <div className="relative overflow-hidden rounded-2xl border-4 border-teal-500/60">
+                <img
+                  src="/Images/projects2.jpg"
+                  alt="Office Interior"
+                  className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+              </div>
+            </motion.div>
 
-            {/* Contact Info Grid */}
-            <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6">
-              {/* Email */}
-              <motion.div
-                className="space-y-2"
-                whileHover={{ x: 5 }}
-                transition={{ duration: 0.3 }}
-              >
-                <div className="flex items-center gap-2 text-white/80">
-                  <Mail className="w-5 h-5" />
-                  <span className="font-semibold">Email</span>
-                </div>
-                <a 
-                  href="mailto:info@clarencegroup.com"
-                  className="block text-white/90 hover:text-teal-300 transition-colors text-sm md:text-base"
-                >
-                  info@clarencegroup.com
-                </a>
-              </motion.div>
-
-              {/* Location */}
-              <motion.div
-                className="space-y-2"
-                whileHover={{ x: 5 }}
-                transition={{ duration: 0.3 }}
-              >
-                <div className="flex items-center gap-2 text-white/80">
-                  <MapPin className="w-5 h-5" />
-                  <span className="font-semibold">Location</span>
-                </div>
-                <p className="text-white/90 text-sm md:text-base">
-                 5b Karimu Kotun, Vi, Lagos
+            {/* Right: Office Details */}
+            <motion.div
+              className="space-y-8"
+              variants={fadeInUp}
+            >
+              {/* Location Title */}
+              <div>
+                <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
+                  Lagos, Nigeria
+                </h3>
+                <p className="text-white/70 text-base md:text-lg leading-relaxed">
+                  We look forward to welcoming you to our offices and exploring opportunities to collaborate and create lasting impact.
                 </p>
-              </motion.div>
+              </div>
 
-              {/* Phone Number */}
-              <motion.div
-                className="space-y-2 md:col-span-2"
-                whileHover={{ x: 5 }}
-                transition={{ duration: 0.3 }}
-              >
-                <div className="flex items-center gap-2 text-white/80">
-                  <Phone className="w-5 h-5" />
-                  <span className="font-semibold">Phone number</span>
-                </div>
-                <a 
-                  href="tel:+2348130402039"
-                  className="block text-white/90 hover:text-teal-300 transition-colors text-sm md:text-base"
+              {/* Contact Info Grid */}
+              <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Email */}
+                <motion.div
+                  className="space-y-2"
+                  whileHover={{ x: 5 }}
+                  transition={{ duration: 0.3 }}
                 >
-                  (234) 81 3040 - 2039
-                </a>
-              </motion.div>
-            </div>
-          </motion.div>
-        </div>
-      </motion.div>
-    </section>
+                  <div className="flex items-center gap-2 text-white/80">
+                    <Mail className="w-5 h-5" />
+                    <span className="font-semibold">Email</span>
+                  </div>
+                  <a
+                    href="mailto:info@clarencegroup.com"
+                    className="block text-white/90 hover:text-teal-300 transition-colors text-sm md:text-base"
+                  >
+                    info@clarencegroup.com
+                  </a>
+                </motion.div>
+
+                {/* Location */}
+                <motion.div
+                  className="space-y-2"
+                  whileHover={{ x: 5 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <div className="flex items-center gap-2 text-white/80">
+                    <MapPin className="w-5 h-5" />
+                    <span className="font-semibold">Location</span>
+                  </div>
+                  <p className="text-white/90 text-sm md:text-base">
+                    5b Karimu Kotun, Vi, Lagos
+                  </p>
+                </motion.div>
+
+                {/* Phone Number */}
+                <motion.div
+                  className="space-y-2 md:col-span-2"
+                  whileHover={{ x: 5 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <div className="flex items-center gap-2 text-white/80">
+                    <Phone className="w-5 h-5" />
+                    <span className="font-semibold">Phone number</span>
+                  </div>
+                  <a
+                    href="tel:+2348130402039"
+                    className="block text-white/90 hover:text-teal-300 transition-colors text-sm md:text-base"
+                  >
+                    (234) 81 3040 - 2039
+                  </a>
+                </motion.div>
+              </div>
+            </motion.div>
+          </div>
+        </motion.div>
+      </section>
 
       <Footer />
     </div>

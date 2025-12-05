@@ -58,16 +58,21 @@ const Header = () => {
       </Link>
 
       {/* Hamburger */}
-      <div
-        id="hamburger"
-        className={`hamburger w-[30px] h-[23px] items-center lg:h-[24px] relative cursor-pointer flex flex-col justify-between z-[1000002] transition-opacity duration-400 ${
-          isMenuOpen ? "opacity-0 pointer-events-none" : ""
-        }`}
-        onClick={toggleMenu}
-      >
-        <span className="block h-[3px] w-full bg-white rounded-[10px] transition-all duration-400"></span>
-        <span className="block h-[3px] w-full bg-white rounded-[10px] transition-all duration-400"></span>
-      </div>
+     <div
+  id="hamburger"
+  className={`hamburger w-[30px] h-[23px] items-center lg:h-[21px] relative cursor-pointer flex flex-col justify-between z-[1000002] transition-opacity duration-400 
+    ${isMenuOpen ? "opacity-0 pointer-events-none" : ""}
+    group
+  `}
+  onClick={toggleMenu}
+>
+  {/* Top line */}
+  <span className="block h-[3px] w-full bg-white rounded-[10px] transition-all duration-500 group-hover:translate-x-2"></span>
+
+  {/* Bottom line */}
+  <span className="block h-[3px] w-full bg-white rounded-[10px] transition-all duration-500 group-hover:-translate-y-2"></span>
+</div>
+
 
       {/* NAV OVERLAY */}
       <div
