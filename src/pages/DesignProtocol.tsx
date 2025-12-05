@@ -231,7 +231,7 @@ const DesignProtocolPage = () => {
               <div className="w-54 h-28 sm:w-56 sm:h-36 md:w-[350px] md:h-[180px] rounded-xl flex items-center justify-center overflow-hidden shadow-md">
                 <img
                   className="w-full h-full object-cover rounded-xl"
-                  src="/Images/Clarence Gate Logo white.png"
+                  src="/Images/Clarence Gate.png"
                   alt="Clarence Gate"
                 />
               </div>

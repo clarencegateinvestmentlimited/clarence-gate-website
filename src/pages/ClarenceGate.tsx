@@ -68,7 +68,7 @@ const ClarenceGate = () => {
             <div className="w-16 h-16 lg:w-20 lg:h-20  flex items-center justify-center backdrop-blur-sm">
               <img
                 className="rounded-full md:w-[90px] md:h-[80px] w-[60px] h-[60px] w-[90px] "
-                src="/Images/Clarence Gate Logo white.png"
+                src="/Images/Clarence Gate.png"
                 alt=""
               />
             </div>
