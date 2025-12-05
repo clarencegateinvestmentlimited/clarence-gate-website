@@ -81,6 +81,15 @@ const Portfolio: React.FC = () => {
       link: "/dealo-energy",
       objectFit: "cover",
     },
+    {
+      id: 8,
+      name: "MMIA Highway Limited",
+      category: "ppp",
+      year: "2014",
+      image: "public/Images/MMIALogo.png",
+      // link: "/dealo-energy",
+      objectFit: "contain",
+    },
   ];
 
   const filters = [
@@ -90,6 +99,7 @@ const Portfolio: React.FC = () => {
     { id: "hospitality", label: "Hospitality", category: "hospitality" },
     { id: "trading", label: "Trading", category: "trading" },
     { id: "energy", label: "Energy & Infrastructure", category: "energy" },
+    { id: "ppp", label: "Public Private Partnership (PPP)", category: "ppp" },
   ];
 
   const filteredItems =

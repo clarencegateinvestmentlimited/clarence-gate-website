@@ -91,7 +91,7 @@ const DealoEnergy = () => {
               Dealo Energy Limited is a forward-thinking oil servicing company focused on delivering integrated solutions across the energy value chain. The company offers a wide range of services including oilfield support, engineering design, procurement, and construction, alongside the supply of specialized equipment and expert project management. Its operations are built on technical competence, service quality, and a commitment to supporting efficient and safe energy operations.
 
             </p>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-4">
+            <div className="grid grid-cols-2 sm:grid-cols-2 gap-4 mb-4">
               <div>
                 <p className="text-xs text-muted-foreground mb-1">Category</p>
                 <p className="text-sm font-medium"> Energy & Infrastructure
@@ -102,7 +102,7 @@ const DealoEnergy = () => {
                 <p className="text-xs text-muted-foreground mb-1">Date</p>
                 <p className="text-sm font-medium">2025</p>
               </div>
-              <div>
+              {/* <div>
                 <p className="text-xs text-muted-foreground mb-1">Website</p>
                 <a
                   href="#"
@@ -110,7 +110,7 @@ const DealoEnergy = () => {
                 >
                   Visit Website <ArrowRight className="w-3 h-3" />
                 </a>
-              </div>
+              </div> */}
             </div>
           </Card>
         </div>
