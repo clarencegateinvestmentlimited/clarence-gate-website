@@ -67,7 +67,7 @@ const DealoEnergy = () => {
             <div className="w-14 h-14 lg:w-16 lg:h-12  flex items-center justify-center backdrop-blur-sm">
               <img
                 className="rounded-full lg:h-[65px] h-[60px] w-[60px] lg:w-24"
-                src="/Images/Card9.jpg"
+                src="/Images/Card7.jpg"
                 alt=""
               />
             </div>
@@ -196,7 +196,7 @@ const DealoEnergy = () => {
               <div className="w-54 h-28 sm:w-56 sm:h-36 md:w-[350px] md:h-[180px] rounded-xl flex items-center justify-center bg-orange-500 overflow-hidden shadow-md">
                 <img
                   className="w-full h-full object-cover rounded-xl"
-                  src="/Images/Card7.jpg"
+                  src="/Images/Card9.jpg"
                   alt="Clarence Gate"
                 />
               </div>

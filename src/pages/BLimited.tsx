@@ -67,7 +67,7 @@ const BLimited = () => {
           >
             <div className="w-16 h-16 lg:w-20 lg:h-20  flex items-center justify-center backdrop-blur-sm">
               <img
-                className="rounded-full bg-white h-[80px] w-24"
+                className="rounded-full bg-white lg:h-[80px] h-[64px] w-24"
                 src="/Images/2oB.png"
                 alt=""
               />

@@ -67,7 +67,7 @@ const Turboserv = () => {
           >
             <div className="w-16 h-16 lg:w-20 lg:h-20  flex items-center justify-center backdrop-blur-sm">
               <img
-                className="rounded-full bg-white h-[80px] w-24"
+                className="rounded-full bg-white lg:h-[80px] h-[65px] w-24"
                 src="/Images/TURBOSERV_LOGO_4x-100-removebg-preview.png"
                 alt=""
               />
