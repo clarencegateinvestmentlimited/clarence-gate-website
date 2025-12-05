@@ -38,20 +38,20 @@ const cardData: ICardData[] = [
     link: "/clarence-gate", // 👈 link for Learn more
     detailItems: [
       {
-        title: "Dealo Global Services Limited",
+        title: "Clarence Gate Group",
         year: "2022",
         imageUrl: "/Images/Clarence Gate Logo white.png",
         imageAlt: "Clarence Gate Logo",
         imageClass: "black-bg",
-        link: "/dealo-global",
+        link: "/clarence-gate",
       },
       {
-        title: "Dealo Energy Limited",
+        title: "Dealo Protocol Limited",
         year: "2009",
         imageUrl: "/Images/Design Protocol -101.png",
-        imageAlt: "Dealo Energy",
+        imageAlt: "Dealo Protocol",
         imageClass: "ligt",
-        link: "/dealo-energy",
+        link: "/dealo-protocol",
          imageFit: "contain",
       },
     ],
@@ -87,14 +87,14 @@ const cardData: ICardData[] = [
     arrowUrl: "/Images/arrow-right.png",
     containerId: "detailCardContainer3",
     containerStyle: { right: "47rem" },
-    link: "/dealo-global",
+    link: "/55-restaurant", // 👈 link for Learn more
     detailItems: [
       {
         title: "355 Restaurant &  Lounge",
         year: "2013",
         imageUrl: "/Images/355-restaurant-logo.png",
         imageAlt: "Hospitality 1",
-        link: "/dealo-global",
+        link: "/55-restaurant",
       },
       {
         title: " Villa Monument ",
@@ -102,7 +102,7 @@ const cardData: ICardData[] = [
         imageUrl: "/Images/Villa-monument-logo.png",
         imageAlt: "Hospitality 2",
         imageClass: "ligt",
-        link: "/dealo-energy",
+        link: "/villa-monument",
         imageFit: "contain",
 
       },
@@ -124,7 +124,7 @@ const cardData: ICardData[] = [
         year: "2022",
         imageUrl: "Images/2oB.png",
         imageAlt: "Technology 1",
-        link: "/dealo-global",
+        link: "/20b-limited",
       },
     ],
   },
@@ -153,7 +153,7 @@ const cardData: ICardData[] = [
         imageUrl: "/Images/Card9.jpg",
         imageAlt: "Consulting 2",
         imageClass: "ligt",
-        link: "/dealo-global",
+        link: "/dealo-energy",
          imageFit: "contain",
       },
     ],

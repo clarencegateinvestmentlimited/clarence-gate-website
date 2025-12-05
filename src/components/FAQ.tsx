@@ -34,7 +34,7 @@ const faqData: FAQItem[] = [
       to explore partnership opportunities.
     </>
   ),
-}
+},
 
   {
     id: "3",

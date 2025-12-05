@@ -107,10 +107,12 @@ const RestaurantLounge = () => {
 
           <div className="lg:w-2/3 space-y-4 text-base lg:text-lg text-muted-foreground leading-relaxed">
             <p>
-              355 Restaurant & Lounge is an upscale dining and entertainment destination that combines exceptional cuisine with a vibrant social atmosphere.
+             355 Restaurant & Lounge is an upscale dining and entertainment destination that combines exceptional cuisine with a vibrant social atmosphere. The restaurant offers a curated menu featuring a mix of continental dishes, Nigerian favorites, and signature cocktails crafted to suit diverse tastes. With a focus on quality, ambience, and customer satisfaction, 355 provides guests with a refined yet welcoming environment.
+
             </p>
             <p>
-              Beyond dining, the lounge offers a stylish space for leisure, networking, and nightlife experiences.
+             Beyond dining, the lounge offers a stylish space for leisure, networking, and nightlife experiences. Whether hosting casual hangouts, corporate meetups, or celebratory events, 355 Restaurant & Lounge delivers a premium lifestyle experience marked by good music, excellent service, and a relaxed contemporary setting that appeals to both young professionals and sophisticated social circles.
+
             </p>
           </div>
         </div>
