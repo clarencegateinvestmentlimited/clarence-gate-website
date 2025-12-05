@@ -99,7 +99,7 @@ const BLimited = () => {
               </div>
               <div>
                 <p className="text-xs text-muted-foreground mb-1">Date</p>
-                <p className="text-sm font-medium">2023</p>
+                <p className="text-sm font-medium">2020</p>
               </div>
               <div>
                 <p className="text-xs text-muted-foreground mb-1">Website</p>
