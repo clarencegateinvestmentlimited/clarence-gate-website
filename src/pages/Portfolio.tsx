@@ -22,7 +22,7 @@ const Portfolio: React.FC = () => {
       name: "Design Protocol Nigeria Limited",
       category: "real-estate",
       year: "2018",
-      image: "/Images/dpupdated-logo2.jpg",
+      image: "/Images/Design Protocol-101.png",
       link: "/design-protocol",
       objectFit: "contain",
     },
