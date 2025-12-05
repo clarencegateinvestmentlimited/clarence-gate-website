@@ -151,7 +151,7 @@ const cardData: ICardData[] = [
       {
         title: "Dealo Energy Limited",
         year: "2025",
-        imageUrl: "/Images/Card9.jpg",
+        imageUrl: "/Images/Dealo Energy_LogoUpdated.png",
         imageAlt: "Consulting 2",
         imageClass: "ligt",
         link: "/dealo-energy",

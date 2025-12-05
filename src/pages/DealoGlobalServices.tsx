@@ -220,10 +220,10 @@ const DealoGlobalServices = () => {
               </div>
 
               {/* Company Image Card */}
-              <div className="w-54 h-28 sm:w-56 sm:h-36 md:w-[350px] md:h-[180px] rounded-xl flex items-center justify-center bg-orange-500 overflow-hidden shadow-md">
+              <div className="w-54 h-28 sm:w-56 sm:h-36 md:w-[350px] md:h-[180px] rounded-xl flex items-center justify-center overflow-hidden shadow-md">
                 <img
-                  className="w-full h-full object-cover rounded-xl"
-                  src="/Images/Card7.jpg"
+                  className="w-full h-full object-contain rounded-xl"
+                  src="/Images/Dealo Energy_LogoUpdated.png"
                   alt="Clarence Gate"
                 />
               </div>

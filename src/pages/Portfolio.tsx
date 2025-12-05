@@ -77,7 +77,7 @@ const Portfolio: React.FC = () => {
       name: "Dealo Energy Limited",
       category: "energy",
       year: "2025",
-      image: "/Images/Card7.jpg",
+      image: "/Images/Dealo Energy_LogoUpdated.png",
       link: "/dealo-energy",
       objectFit: "cover",
     },

@@ -106,7 +106,7 @@ const Header = () => {
         { path: "/", label: "Home" },
         { path: "/portfolio", label: "Our Investment Portfolio" },
         { path: "/about", label: "About Us" },
-        { path: "/founder", label: "Our Founder" },
+        // { path: "/founder", label: "Our Founder" },
         { path: "/contact", label: "Contact Us" },
       ].map((item) => (
         <Link

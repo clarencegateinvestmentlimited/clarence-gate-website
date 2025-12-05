@@ -38,12 +38,12 @@ const Footer = () => {
               >
                 Home
               </Link>
-              <Link
+              {/* <Link
                 to="/founder"
                 className="text-muted-foreground hover:text-accent transition-colors"
               >
                 Our Founder
-              </Link>
+              </Link> */}
               <Link
                 to="/about"
                 className="text-muted-foreground hover:text-accent transition-colors"
