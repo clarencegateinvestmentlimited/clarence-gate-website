@@ -419,9 +419,9 @@ export default function AboutPage() {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end p-6">
-                  <h3 className="text-xl font-semibold text-white">
+                  {/* <h3 className="text-xl font-semibold text-white">
                     Lagos Smart Estate
-                  </h3>
+                  </h3> */}
                 </div>
               </div>
 
@@ -429,11 +429,11 @@ export default function AboutPage() {
                 {[
                   {
                     src: "/Images/projects2.jpg",
-                    title: "Abuja Business Hub",
+                    
                   },
                   {
                     src: "/Images/projects3.jpg",
-                    title: "Accra Luxury Homes",
+                    
                   },
                 ].map((p, i) => (
                   <motion.div
@@ -469,9 +469,7 @@ export default function AboutPage() {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-end p-6">
-                  <h3 className="text-xl font-semibold text-white">
-                    Nairobi Tech Towers
-                  </h3>
+                 
                 </div>
               </div>
 
@@ -479,11 +477,11 @@ export default function AboutPage() {
                 {[
                   {
                     src: "/Images/projects6.jpg",
-                    title: "Cape Town Seaside Villas",
+                   
                   },
                   {
                     src: "/Images/projects5.jpg",
-                    title: "Accra Green Residences",
+                    
                   },
                 ].map((p, i) => (
                   <motion.div
