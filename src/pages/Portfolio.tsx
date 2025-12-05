@@ -141,7 +141,7 @@ const Portfolio: React.FC = () => {
                 <span className="text-white">5</span>
                 <span className="text-[#4ecdc4]">+</span>
               </h3>
-              <p className="text-white/70 text-sm mt-1">Team Members</p>
+              <p className="text-white/70 text-sm mt-1">Business Sectors</p>
             </div>
           </div>
         </div>
@@ -253,7 +253,7 @@ const Portfolio: React.FC = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
           {[
             { number: "10+", label: "Portfolio Companies" },
-            { number: "5+", label: "Team Members" },
+            { number: "5+", label: "Business Sectors" },
           ].map((stat, idx) => (
             <motion.div
               key={idx}
