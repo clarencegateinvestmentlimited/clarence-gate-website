@@ -16,40 +16,40 @@ const DesignProtocolPage = () => {
   const properties = [
     {
       id: 1,
-      title: "Luxury Living Room",
+      title: "",
       image:
-        "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80",
+        "/Images/Card201.jpg",
     },
     {
       id: 2,
-      title: "Modern Interior",
+      title: "",
       image:
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
+        "/Images/Card202.jpg",
     },
     {
       id: 3,
-      title: "Elegant Dining Space",
+      title: "",
       image:
-        "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80",
+        "/Images/Card203.jpg",
     },
     {
       id: 4,
-      title: "Contemporary Living",
+      title: "",
       image:
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+        "/Images/Card204.jpg",
     },
-    {
-      id: 5,
-      title: "Architectural Model",
-      image:
-        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
-    },
-    {
-      id: 6,
-      title: "Modern Building",
-      image:
-        "https://images.unsplash.com/photo-1486718448742-163732cd1544?w=800&q=80",
-    },
+    // {
+    //   id: 5,
+    //   title: "Architectural Model",
+    //   image:
+    //     "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
+    // },
+    // {
+    //   id: 6,
+    //   title: "Modern Building",
+    //   image:
+    //     "https://images.unsplash.com/photo-1486718448742-163732cd1544?w=800&q=80",
+    // },
   ];
 
   return (
@@ -68,7 +68,7 @@ const DesignProtocolPage = () => {
             <div className="w-16 h-16 lg:w-20 lg:h-20  flex items-center justify-center backdrop-blur-sm">
               <img
                 className="rounded-full lg:h-[80px] h-[70px] w-[80px] lg:w-24"
-                src="/Images/dpupdated-logo2.jpg"
+                src="/Images/Design Protocol -101.png"
                 alt=""
               />
             </div>
@@ -90,7 +90,8 @@ const DesignProtocolPage = () => {
           >
             <h3 className="text-lg font-semibold mb-3">About</h3>
             <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-             Design Protocol Nigeria Limited is a leading indigenous real estate and construction firm specializing in sustainable property development and delivering full-service solutions. With a dynamic and ambitious team at the helm, we are committed to transforming the urban landscape with innovation and excellence.
+             Design Protocol Nigeria Limited, is a full-service sustainable property development and construction company recognized for its commitment to excellence, innovation, and environmentally responsible building practices. The company provides end-to-end solutions across conceptual design, development, construction, and project management, consistently delivering functional and aesthetically refined real estate projects.
+
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-4">
               <div>
@@ -130,11 +131,11 @@ const DesignProtocolPage = () => {
 
           <div className="lg:w-2/3 space-y-4 text-base lg:text-lg text-muted-foreground leading-relaxed">
             <p>
-              At Design Protocol, we offer a comprehensive range of services tailored to meet the diverse needs of our clients. Our expertise spans across property development, construction management, architectural design, and sustainable solutions.
+             Through its robust real estate operating platform, Design Protocol identifies, structures, and executes high-quality residential, commercial, and mixed-use development opportunities. Backed by deep market insight, strategic partnerships, and a strong professional team, the company continues to create impactful spaces that enhance living and working experiences while contributing to Nigeria’s urban and economic growth.
             </p>
-            <p>
+            {/* <p>
               From concept to completion, we ensure every project is executed with precision and a commitment to environmental responsibility.
-            </p>
+            </p> */}
           </div>
         </div>
       </section>
@@ -227,10 +228,10 @@ const DesignProtocolPage = () => {
               </div>
 
               {/* Company Image Card */}
-              <div className="w-54 h-28 sm:w-56 sm:h-36 md:w-[350px] md:h-[180px] rounded-xl flex items-center justify-center bg-orange-500 overflow-hidden shadow-md">
+              <div className="w-54 h-28 sm:w-56 sm:h-36 md:w-[350px] md:h-[180px] rounded-xl flex items-center justify-center overflow-hidden shadow-md">
                 <img
                   className="w-full h-full object-cover rounded-xl"
-                  src="/Images/Card1.jpg"
+                  src="/Images/Clarence Gate.png"
                   alt="Clarence Gate"
                 />
               </div>

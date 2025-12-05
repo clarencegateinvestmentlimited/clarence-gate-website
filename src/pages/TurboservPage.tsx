@@ -16,40 +16,40 @@ const Turboserv = () => {
   const properties = [
     {
       id: 1,
-      title: "Luxury Living Room",
+      title: "",
       image:
-        "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80",
+        "/Images/Card301.jpg",
     },
     {
       id: 2,
-      title: "Modern Interior",
+      title: "",
       image:
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
+        "/Images/Card304.jpg",
     },
     {
       id: 3,
-      title: "Elegant Dining Space",
+      title: "",
       image:
-        "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80",
+        "/Images/Card302.jpg",
     },
     {
       id: 4,
-      title: "Contemporary Living",
+      title: "",
       image:
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+        "/Images/Card303.jpg",
     },
-    {
-      id: 5,
-      title: "Architectural Model",
-      image:
-        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
-    },
-    {
-      id: 6,
-      title: "Modern Building",
-      image:
-        "https://images.unsplash.com/photo-1486718448742-163732cd1544?w=800&q=80",
-    },
+    // {
+    //   id: 5,
+    //   title: "Architectural Model",
+    //   image:
+    //     "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
+    // },
+    // {
+    //   id: 6,
+    //   title: "Modern Building",
+    //   image:
+    //     "https://images.unsplash.com/photo-1486718448742-163732cd1544?w=800&q=80",
+    // },
   ];
 
   return (
@@ -67,7 +67,7 @@ const Turboserv = () => {
           >
             <div className="w-16 h-16 lg:w-20 lg:h-20  flex items-center justify-center backdrop-blur-sm">
               <img
-                className="rounded-full bg-white h-[80px] w-24"
+                className="rounded-full bg-white lg:h-[80px] h-[65px] w-24"
                 src="/Images/TURBOSERV_LOGO_4x-100-removebg-preview.png"
                 alt=""
               />
@@ -90,7 +90,8 @@ const Turboserv = () => {
           >
             <h3 className="text-lg font-semibold mb-3">About</h3>
             <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-              Turboserv Insurance Brokers Limited was incorporated on the 25th of February 2022. An insurance brokerage company, leveraging on a wealth of insurance industry experience to bring our clients market-leading risk, advisory, and risk transfer solutions appropriate for a particular business.
+              Turboserv Insurance Brokers Limited is a professional insurance brokerage firm dedicated to delivering tailored and innovative insurance solutions. The company leverages deep industry expertise to provide clients with comprehensive risk advisory services that address the unique challenges and exposures associated with their businesses.
+
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-4">
               <div>
@@ -130,10 +131,10 @@ const Turboserv = () => {
 
           <div className="lg:w-2/3 space-y-4 text-base lg:text-lg text-muted-foreground leading-relaxed">
             <p>
-             We are an insurance brokerage firm built on a wealth of industry experience and deep market insight. Our focus is on helping clients navigate complex risk landscapes with confidence. By combining expert advisory services with innovative risk and insurance solutions, we deliver market-leading strategies tailored to the unique needs of each business.
+             Through strong relationships with leading insurers and access to a wide range of products, Turboserv designs and negotiates market-leading risk transfer solutions that ensure adequate protection and long-term resilience.
             </p>
             <p>
-             . Our commitment is simple: to protect what matters most to our clients while enabling them to focus on growth, stability, and long-term success.
+            With a commitment to professionalism, transparency, and client satisfaction, the company continues to support organisations in safeguarding their assets, employees, and operations.
 
             </p>
           </div>

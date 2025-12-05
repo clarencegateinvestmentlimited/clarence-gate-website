@@ -16,40 +16,40 @@ const VillaMonument = () => {
   const properties = [
     {
       id: 1,
-      title: "Luxury Living Room",
+      title: "",
       image:
-        "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80",
+        "/Images/Card601.jpg",
     },
     {
       id: 2,
-      title: "Modern Interior",
+      title: "",
       image:
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
+        "/Images/Card602.jpg",
     },
     {
       id: 3,
       title: "Elegant Dining Space",
       image:
-        "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80",
+        "/Images/Card603.jpg",
     },
-    {
-      id: 4,
-      title: "Contemporary Living",
-      image:
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
-    },
-    {
-      id: 5,
-      title: "Architectural Model",
-      image:
-        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
-    },
-    {
-      id: 6,
-      title: "Modern Building",
-      image:
-        "https://images.unsplash.com/photo-1486718448742-163732cd1544?w=800&q=80",
-    },
+    // {
+    //   id: 4,
+    //   title: "Contemporary Living",
+    //   image:
+    //     "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+    // },
+    // {
+    //   id: 5,
+    //   title: "Architectural Model",
+    //   image:
+    //     "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
+    // },
+    // {
+    //   id: 6,
+    //   title: "Modern Building",
+    //   image:
+    //     "https://images.unsplash.com/photo-1486718448742-163732cd1544?w=800&q=80",
+    // },
   ];
 
   return (
@@ -67,8 +67,8 @@ const VillaMonument = () => {
           >
             <div className="w-16 h-16 lg:w-20 lg:h-20  flex items-center justify-center backdrop-blur-sm">
               <img
-                className="rounded-full lg:h-[80px] h-[70px] w-[80px] lg:w-24"
-                src="/Images/Card5.jpg"
+                className="rounded-full  lg:h-[80px] h-[70px] w-[80px] lg:w-24"
+                src="/Images/Villa-monument-logo.png"
                 alt=""
               />
             </div>
@@ -146,63 +146,50 @@ const VillaMonument = () => {
       </section>
 
       {/* PROPERTY GALLERY */}
-      <section className="container mx-auto px-4 pb-16 lg:pb-24 flex justify-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 max-w-6xl w-full">
-          {properties.map((property, index) => {
-            // Combine image 3 and 4
-            if (index === 2) {
-              return (
-                <div
-                  key="merged-image"
-                  className={`group relative overflow-hidden rounded-2xl sm:col-span-2 aspect-[4/3] sm:aspect-[16/5] transition-all duration-700 ${
-                    isVisible ? "animate-scale-in" : "opacity-0"
-                  }`}
-                  style={{ animationDelay: `${700 + index * 100}ms` }}
-                >
-                  <img
-                    src={properties[2].image}
-                    alt={`${properties[2].title} & ${properties[3].title}`}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="absolute bottom-0 left-0 right-0 p-6">
-                      <h3 className="text-xl font-semibold text-white">
-                        {properties[2].title} & {properties[3].title}
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              );
-            }
+      {/* PROPERTY GALLERY */}
+<section className="container mx-auto px-4 pb-16 lg:pb-24 flex justify-center">
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 max-w-6xl w-full">
+    {properties.map((property, index) => {
 
-            // Skip the 4th image (merged)
-            if (index === 3) return null;
+      // 👉 Make the 3rd image full width
+      if (index === 2) {
+        return (
+          <div
+            key={property.id}
+            className={`group relative overflow-hidden rounded-2xl sm:col-span-2 aspect-[4/3] sm:aspect-[16/5] transition-all duration-700 ${
+              isVisible ? "animate-scale-in" : "opacity-0"
+            }`}
+            style={{ animationDelay: `${700 + index * 100}ms` }}
+          >
+            <img
+              src={property.image}
+              alt=""
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+          </div>
+        );
+      }
 
-            return (
-              <div
-                key={property.id}
-                className={`group relative overflow-hidden rounded-2xl aspect-[4/3] sm:aspect-[16/7] transition-all duration-700 ${
-                  isVisible ? "animate-scale-in" : "opacity-0"
-                }`}
-                style={{ animationDelay: `${700 + index * 100}ms` }}
-              >
-                <img
-                  src={property.image}
-                  alt={property.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <h3 className="text-xl font-semibold text-white">
-                      {property.title}
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
+      // 👉 Normal images (1 and 2)
+      return (
+        <div
+          key={property.id}
+          className={`group relative overflow-hidden rounded-2xl aspect-[4/3] sm:aspect-[16/7] transition-all duration-700 ${
+            isVisible ? "animate-scale-in" : "opacity-0"
+          }`}
+          style={{ animationDelay: `${700 + index * 100}ms` }}
+        >
+          <img
+            src={property.image}
+            alt=""
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          />
         </div>
-      </section>
+      );
+    })}
+  </div>
+</section>
+
 
       {/* FOOTER */}
       <footer className="border-t border-border bg-background">
@@ -227,7 +214,7 @@ const VillaMonument = () => {
             <div className="flex flex-col-reverse md:flex-row items-center md:items-center lg:items-center gap-6 md:gap-10 text-center md:text-right w-full md:w-auto">
               {/* Company Text */}
               <div className="space-y-2">
-                <p className="text-2xl text-start font-semibold">55 Restaurant &</p>
+                <p className="text-2xl text-start font-semibold">355 Restaurant &</p>
                 <p className="text-2xl text-start font-semibold">Lounge</p>
                 <p className="text-[17px] text-start text-muted-foreground">2022</p>
               </div>
@@ -236,7 +223,7 @@ const VillaMonument = () => {
               <div className="w-54 h-28 sm:w-56 sm:h-36 md:w-[350px] md:h-[180px] rounded-xl flex items-center justify-center bg-orange-500 overflow-hidden shadow-md">
                 <img
                   className="w-full h-full object-cover rounded-xl"
-                  src="/Images/Card4.jpg"
+                  src="/Images/355-restaurant-logo.png"
                   alt="Clarence Gate"
                 />
               </div>

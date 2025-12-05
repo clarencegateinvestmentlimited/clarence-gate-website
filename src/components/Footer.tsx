@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="footer-brand lg:flex items-center gap-8 mb-12">
           <div className="logo-text w-full mb-6">
             <img
-              src="/Images/Logo.png"
+              src="/Images/Clarence Gate Logo white.png"
               alt="Clarence Gate Group Logo"
               className="h-[100px] w-auto"
             />

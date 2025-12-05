@@ -21,13 +21,21 @@ const faqData: FAQItem[] = [
     answer:
       "Clarence Gate Group is a diversified investment holding company building sustainable enterprises across Africa’s most dynamic sectors, including Real Estate, Finance & Insurance, Hospitality, Trading, and Energy & Infrastructure. We identify, invest in, and support high-potential businesses to create long-term value.",
   },
-  {
-    id: "2",
-    number: "02",
-    question: "How can I become an investment partner?",
-    answer:
-      "We welcome conversations with investors and partners who share our vision for sustainable growth. Please reach out via our Get in Touch form, or contact us directly at info@clarencegategroup.com to explore partnership opportunities.",
-  },
+ {
+  id: "2",
+  number: "02",
+  question: "How can I become an investment partner?",
+  answer: (
+    <>
+      We welcome conversations with investors and partners who share our vision for sustainable growth. Please reach out via our Get in Touch form, or contact us directly at{" "}
+      <a href="mailto:info@clarencegategroup.com" className="text-teal-300 hover:underline">
+        info@clarencegategroup.com
+      </a>{" "}
+      to explore partnership opportunities.
+    </>
+  ),
+},
+
   {
     id: "3",
     number: "03",
@@ -42,13 +50,21 @@ const faqData: FAQItem[] = [
     answer:
       "Yes! We welcome scheduled visits from partners and investors. Please refer to our Visit Our Office section or contact us to arrange a meeting.",
   },
-  {
-    id: "5",
-    number: "05",
-    question: "Who can I contact for media inquiries?",
-    answer:
-      "For media or press-related inquiries, please reach out to info@clarencegategroup.com, and our communications team will assist you.",
-  },
+{
+  id: "5",
+  number: "05",
+  question: "Who can I contact for media inquiries?",
+  answer: (
+    <>
+      For media or press-related inquiries, please reach out to{" "}
+      <a href="mailto:info@clarencegategroup.com" className="text-teal-300 hover:underline">
+        info@clarencegategroup.com
+      </a>
+      , and our communications team will assist you.
+    </>
+  ),
+}
+
 ];
 
 const FAQ = () => {

@@ -9,6 +9,7 @@ interface IDetailItem {
   imageAlt: string;
   imageClass?: string;
   link?: string;
+  imageFit?: "cover" | "contain"; // ✅ Add this
 }
 
 interface ICardData {
@@ -37,19 +38,21 @@ const cardData: ICardData[] = [
     link: "/clarence-gate", // 👈 link for Learn more
     detailItems: [
       {
-        title: "Dealo Global Services Limited",
+        title: "Clarence Gate Group",
         year: "2022",
-        imageUrl: "/Images/Clarence Gate.png",
+        imageUrl: "/Images/Clarence Gate Logo white.png",
         imageAlt: "Clarence Gate Logo",
-        link: "/dealo-global",
+        imageClass: "black-bg",
+        link: "/clarence-gate",
       },
       {
-        title: "Dealo Energy Limited",
+        title: "Dealo Protocol Limited",
         year: "2009",
-        imageUrl: "/Images/dpupdated-logo2.jpg",
-        imageAlt: "Dealo Energy",
+        imageUrl: "/Images/Design Protocol -101.png",
+        imageAlt: "Dealo Protocol",
         imageClass: "ligt",
-        link: "/dealo-energy",
+        link: "/design-protocol",
+         imageFit: "contain",
       },
     ],
   },
@@ -70,8 +73,9 @@ const cardData: ICardData[] = [
         imageUrl:
           "/Images/TURBOSERV_LOGO_4x-100-removebg-preview.png",
         imageAlt: "Turboserv Logo",
-        imageClass: "teal",
+        imageClass: "tea",
         link: "/turboserv",
+        imageFit: "contain",
       },
     ],
   },
@@ -84,22 +88,24 @@ const cardData: ICardData[] = [
     arrowUrl: "/Images/arrow-right.png",
     containerId: "detailCardContainer3",
     containerStyle: { right: "47rem" },
-    link: "/dealo-global", // 👈 link for Learn more
+    link: "/55-restaurant", // 👈 link for Learn more
     detailItems: [
       {
-        title: "Dealo Global Services Limited",
-        year: "2022",
-        imageUrl: "/Images/Card4.jpg",
+        title: "355 Restaurant &  Lounge",
+        year: "2013",
+        imageUrl: "/Images/355-restaurant-logo.png",
         imageAlt: "Hospitality 1",
-        link: "/dealo-global",
+        link: "/55-restaurant",
       },
       {
-        title: "Dealo Energy Limited",
+        title: " Villa Monument ",
         year: "2009",
-        imageUrl: "/Images/Card5.jpg",
+        imageUrl: "/Images/Villa-monument-logo.png",
         imageAlt: "Hospitality 2",
         imageClass: "ligt",
-        link: "/dealo-energy",
+        link: "/villa-monument",
+        imageFit: "contain",
+
       },
     ],
   },
@@ -117,9 +123,9 @@ const cardData: ICardData[] = [
       {
         title: "20B Limited",
         year: "2022",
-        imageUrl: "/Images/Card8.jpg",
+        imageUrl: "Images/2oB.png",
         imageAlt: "Technology 1",
-        link: "/dealo-global",
+        link: "/20b-limited",
       },
     ],
   },
@@ -136,18 +142,20 @@ const cardData: ICardData[] = [
     detailItems: [
       {
         title: "Dealo Global Services Limited",
-        year: "2022",
+        year: "2020",
         imageUrl: "/Images/Card7.jpg",
         imageAlt: "Consulting 1",
         link: "/dealo-global",
+        imageFit: "contain",
       },
       {
         title: "Dealo Energy Limited",
-        year: "2009",
+        year: "2025",
         imageUrl: "/Images/Card9.jpg",
         imageAlt: "Consulting 2",
         imageClass: "ligt",
-        link: "/dealo-global",
+        link: "/dealo-energy",
+         imageFit: "contain",
       },
     ],
   },
@@ -170,9 +178,8 @@ const Focuses: React.FC = () => {
       onMouseLeave={() => setActiveIndex(null)}
     >
       <div
-        className={`card ${
-          activeIndex !== null && activeIndex !== card.index ? "inactive" : ""
-        }`}
+        className={`card ${activeIndex !== null && activeIndex !== card.index ? "inactive" : ""
+          }`}
       >
         <div className="card-content">
           <img src={card.iconUrl} alt="" />
@@ -207,7 +214,12 @@ const Focuses: React.FC = () => {
                 <div
                   className={`image-placeholder ${item.imageClass || ""}`}
                 >
-                  <img src={item.imageUrl} alt={item.imageAlt} />
+                  <img
+                    src={item.imageUrl}
+                    alt={item.imageAlt}
+                    style={{ objectFit: item.imageFit || "cover" }}
+                  />
+
                 </div>
               </div>
               <div className="detail-info">
@@ -228,7 +240,7 @@ const Focuses: React.FC = () => {
     <section className="focuses" id="portfolio">
       <div className="section-label">
         <img src="/Images/Vector 2.png" alt="" />
-        <h4>Focuses</h4>
+        <h4>Focus</h4>
       </div>
       <h2 className="section-title">Industries We Invest In</h2>
       <div className="cards-container">

@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import FAQ from "@/components/FAQ";
 import { motion } from "framer-motion";
 import { Mail, MapPin, Phone } from "lucide-react";
+import { Typewriter } from 'react-simple-typewriter';
 
 // ✨ Animation Variants
 const fadeIn = {
@@ -57,7 +58,17 @@ const Contact: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-16 max-w-7xl mx-auto">
           {/* Left Side — Info */}
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Get in touch</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              <Typewriter
+                words={['Get in touch']}
+                loop={0} // run only once
+                cursor
+                cursorStyle="|"
+                typeSpeed={150}
+                deleteSpeed={150}
+                delaySpeed={1700}
+              />
+            </h2>
             <p className="text-white/70 leading-relaxed mb-8 max-w-md">
               We welcome conversations with investors, partners, and businesses that share our vision for sustainable growth and transformative impact. Whether you are exploring investment opportunities, seeking strategic partnerships, or simply want to learn more about our portfolio, we’re here to engage.
             </p>
