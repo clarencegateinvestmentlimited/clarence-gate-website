@@ -67,7 +67,7 @@ const DealoEnergy = () => {
             <div className="w-14 h-14 lg:w-16 lg:h-12  flex items-center justify-center backdrop-blur-sm">
               <img
                 className="rounded-full lg:h-[65px] h-[60px] w-[60px] lg:w-24"
-                src="/Images/Card7.jpg"
+                src="/Images/Dealo Energy_LogoUpdated.png"
                 alt=""
               />
             </div>
@@ -94,7 +94,8 @@ const DealoEnergy = () => {
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-4">
               <div>
                 <p className="text-xs text-muted-foreground mb-1">Category</p>
-                <p className="text-sm font-medium">Energy
+                <p className="text-sm font-medium"> Energy & Infrastructure
+
                 </p>
               </div>
               <div>

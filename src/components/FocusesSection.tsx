@@ -143,7 +143,7 @@ const cardData: ICardData[] = [
       {
         title: "Dealo Global Services Limited",
         year: "2020",
-        imageUrl: "/Images/Card7.jpg",
+        imageUrl: "/Images/Card9.jpg",
         imageAlt: "Consulting 1",
         link: "/dealo-global",
         imageFit: "contain",
@@ -151,7 +151,7 @@ const cardData: ICardData[] = [
       {
         title: "Dealo Energy Limited",
         year: "2025",
-        imageUrl: "/Images/Card9.jpg",
+        imageUrl: "/Images/Dealo Energy_LogoUpdated.png",
         imageAlt: "Consulting 2",
         imageClass: "ligt",
         link: "/dealo-energy",

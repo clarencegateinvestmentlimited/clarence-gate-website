@@ -90,12 +90,12 @@ const BLimited = () => {
           >
             <h3 className="text-lg font-semibold mb-3">About</h3>
             <p className="text-sm xl:text-md text-muted-foreground mb-4 leading-relaxed">
-              20B Limited was incorporated on the 18th Of February 2019. It is a trading company specialising in Cement & Fertilizer products. 20B was appointed as a major Distributor of Dangote Cement as of the year 2020. The Company is located at No. 20b, Adeyemi Lawson Road, Ikoyi, Lagos. 
+              20B Limited was incorporated on the 18th Of February 2019. It is a trading company specialising in Cement & Fertilizer products. 20B was appointed as a major Distributor of Dangote Cement as of the year 2020.
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-4">
               <div>
                 <p className="text-xs text-muted-foreground mb-1">Category</p>
-                <p className="text-sm font-medium">Real Estate</p>
+                <p className="text-sm font-medium">Trading</p>
               </div>
               <div>
                 <p className="text-xs text-muted-foreground mb-1">Date</p>

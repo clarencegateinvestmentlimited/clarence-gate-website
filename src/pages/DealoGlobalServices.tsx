@@ -93,7 +93,8 @@ const DealoGlobalServices = () => {
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-4">
               <div>
                 <p className="text-xs text-muted-foreground mb-1">Category</p>
-                <p className="text-sm font-medium">Real Estate</p>
+                <p className="text-sm font-medium"> Energy & Infrastructure
+</p>
               </div>
               <div>
                 <p className="text-xs text-muted-foreground mb-1">Date</p>
@@ -220,10 +221,10 @@ const DealoGlobalServices = () => {
               </div>
 
               {/* Company Image Card */}
-              <div className="w-54 h-28 sm:w-56 sm:h-36 md:w-[350px] md:h-[180px] rounded-xl flex items-center justify-center bg-orange-500 overflow-hidden shadow-md">
+              <div className="w-54 h-28 sm:w-56 sm:h-36 md:w-[350px] md:h-[180px] rounded-xl flex items-center justify-center overflow-hidden shadow-md">
                 <img
-                  className="w-full h-full object-cover rounded-xl"
-                  src="/Images/Card7.jpg"
+                  className="w-full h-full object-contain rounded-xl"
+                  src="/Images/Dealo Energy_LogoUpdated.png"
                   alt="Clarence Gate"
                 />
               </div>
