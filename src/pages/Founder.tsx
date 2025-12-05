@@ -112,14 +112,14 @@ const Founder: React.FC = () => {
 
       {/* Quote Section */}
       {/* Quote Section */}
-<section className="py-20 px-[8%] border-t border-[#333] text-center">
+{/* <section className="py-20 px-[8%] border-t border-[#333] text-center">
   <div className="max-w-[900px] mx-auto relative">
     <p className="text-[32px] italic text-[#4ecdc4] font-light leading-snug mb-6 relative before:text-[80px] before:absolute before:top-[-20px] before:left-[-40px] before:opacity-30">
       The greatest investments are those that transform not just balance sheets, but lives, communities, and futures.
     </p>
     <p className="text-xl font-semibold">— John Clarence</p>
   </div>
-</section>
+</section> */}
 
 {/* Footer */}
 {/* <footer className="border-t border-[#333] py-12 px-[8%] text-center text-white/60">
