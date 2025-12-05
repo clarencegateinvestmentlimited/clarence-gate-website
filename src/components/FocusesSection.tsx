@@ -51,7 +51,7 @@ const cardData: ICardData[] = [
         imageUrl: "/Images/Design Protocol -101.png",
         imageAlt: "Dealo Protocol",
         imageClass: "ligt",
-        link: "/dealo-protocol",
+        link: "/design-protocol",
          imageFit: "contain",
       },
     ],
