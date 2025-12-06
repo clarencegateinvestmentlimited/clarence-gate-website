@@ -16,7 +16,7 @@ const Portfolio: React.FC = () => {
       year: "2020",
       image: "Images/Clarence Gate.png",
       link: "/clarence-gate",
-      objectFit: "contain", 
+      objectFit: "contain",
     },
     {
       id: 2,
@@ -175,11 +175,10 @@ const Portfolio: React.FC = () => {
               variants={fadeInUp}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className={`px-5 py-2.5 rounded-full border text-sm md:text-base transition-all ${
-                activeFilter === filter.category
-                  ? "bg-[#4ecdc4] border-[#4ecdc4] text-black font-medium"
-                  : "bg-transparent border-white/30 text-white hover:bg-[#4ecdc4] hover:border-[#4ecdc4] hover:text-black"
-              }`}
+              className={`px-5 py-2.5 rounded-full border text-sm md:text-base transition-all ${activeFilter === filter.category
+                ? "bg-[#4ecdc4] border-[#4ecdc4] text-black font-medium"
+                : "bg-transparent border-white/30 text-white hover:bg-[#4ecdc4] hover:border-[#4ecdc4] hover:text-black"
+                }`}
             >
               {filter.label}
             </motion.button>
@@ -197,18 +196,21 @@ const Portfolio: React.FC = () => {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.8 }}
                   transition={{ duration: 0.4 }}
-                  className="relative bg-[#1a1a1a] rounded-xl border border-white/10 overflow-hidden transition-all hover:-translate-y-2 hover:border-[#4ecdc4] hover:shadow-[0_10px_30px_rgba(78,205,196,0.2)] group cursor-pointer"
+                  className={`relative rounded-xl border overflow-hidden transition-all 
+  hover:-translate-y-2 hover:border-[#4ecdc4] hover:shadow-[0_10px_30px_rgba(78,205,196,0.2)]
+  group cursor-pointer
+  ${item.id === 9 ? "bg-white text-black border-black/10" : "bg-[#1a1a1a] border-white/10"}
+`}
                 >
                   {/* Image */}
                   <div className="relative w-full aspect-[4/3] overflow-hidden flex items-center justify-center">
                     <img
                       src={item.image}
                       alt={item.name}
-                      className={`w-full h-full transition-transform duration-500 group-hover:scale-105 ${
-                        item.objectFit === "cover"
-                          ? "object-cover"
-                          : "object-contain"
-                      }`}
+                      className={`w-full h-full transition-transform duration-500 group-hover:scale-105 ${item.objectFit === "cover"
+                        ? "object-cover"
+                        : "object-contain"
+                        }`}
                     />
                   </div>
 
