@@ -68,7 +68,7 @@ const cardData: ICardData[] = [
     link: "/turboserv", // 👈 link for Learn more
     detailItems: [
       {
-        title: "Turboserv Insurance Limited",
+        title: "Turboserv Insurance Brokers Limited",
         year: "2022",
         imageUrl:
           "/Images/TURBOSERV_LOGO_4x-100-removebg-preview.png",

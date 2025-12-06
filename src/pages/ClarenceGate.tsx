@@ -92,7 +92,7 @@ const ClarenceGate = () => {
             <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
               Clarence Gate Investment Limited was incorporated on the 12th of January 2018 as a full-service sustainable property development and construction company. It also provides a real estate operating platform for high quality residential, commercial and mixed-use development opportunities.
             </p>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-4">
+            <div className="grid grid-cols-2 sm:grid-cols-2 gap-4 mb-4">
               <div>
                 <p className="text-xs text-muted-foreground mb-1">Category</p>
                 <p className="text-sm font-medium">Real Estate</p>
@@ -101,7 +101,7 @@ const ClarenceGate = () => {
                 <p className="text-xs text-muted-foreground mb-1">Date</p>
                 <p className="text-sm font-medium">2023</p>
               </div>
-              <div>
+              {/* <div>
                 <p className="text-xs text-muted-foreground mb-1">Website</p>
                 <a
                   href="#"
@@ -109,7 +109,7 @@ const ClarenceGate = () => {
                 >
                   Visit Website <ArrowRight className="w-3 h-3" />
                 </a>
-              </div>
+              </div> */}
             </div>
           </Card>
         </div>

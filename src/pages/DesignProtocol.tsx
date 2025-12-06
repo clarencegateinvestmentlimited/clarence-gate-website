@@ -93,7 +93,7 @@ const DesignProtocolPage = () => {
              Design Protocol Nigeria Limited, is a full-service sustainable property development and construction company recognized for its commitment to excellence, innovation, and environmentally responsible building practices. The company provides end-to-end solutions across conceptual design, development, construction, and project management, consistently delivering functional and aesthetically refined real estate projects.
 
             </p>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-4">
+            <div className="grid grid-cols-2 sm:grid-cols-2 gap-4 mb-4">
               <div>
                 <p className="text-xs text-muted-foreground mb-1">Category</p>
                 <p className="text-sm font-medium">Real Estate</p>
@@ -102,7 +102,7 @@ const DesignProtocolPage = () => {
                 <p className="text-xs text-muted-foreground mb-1">Date</p>
                 <p className="text-sm font-medium">2009</p>
               </div>
-              <div>
+              {/* <div>
                 <p className="text-xs text-muted-foreground mb-1">Website</p>
                 <a
                   href="#"
@@ -110,7 +110,7 @@ const DesignProtocolPage = () => {
                 >
                   Visit Website <ArrowRight className="w-3 h-3" />
                 </a>
-              </div>
+              </div> */}
             </div>
           </Card>
         </div>
