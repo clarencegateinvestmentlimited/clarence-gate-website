@@ -12,46 +12,46 @@ const BLimited = () => {
   useEffect(() => {
     setIsVisible(true);
   }, []);
-
+  
   const properties = [
     {
       id: 1,
       title: "",
       image:
-        "Images/Card501.jpg",
+      "Images/DangoteCement.png",
     },
     {
       id: 2,
       title: "Modern Interior",
       image:
-        "Images/Card502.jpg",
+      "Images/DangoteFertilizer.png",
     },
     {
       id: 3,
       title: "Elegant Dining Space",
       image:
-        "Images/Card503.jpg",
+      "Images/DangoteCement2.png",
+    },
+    {
+      id: 4,
+      title: "",
+      image:
+      "Images/Card503.jpg",
     },
     // {
-    //   id: 4,
-    //   title: "Contemporary Living",
-    //   image:
-    //     "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
-    // },
-    // {
-    //   id: 5,
+      //   id: 5,
     //   title: "Architectural Model",
     //   image:
     //     "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
     // },
-    // {
-    //   id: 6,
-    //   title: "Modern Building",
-    //   image:
-    //     "https://images.unsplash.com/photo-1486718448742-163732cd1544?w=800&q=80",
-    // },
-  ];
-
+    {
+      id: 6,
+      title: "Modern Building",
+      image:
+      "Images/Card501.jpg",
+    },
+    ];
+    
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Header />
@@ -92,7 +92,7 @@ const BLimited = () => {
             <p className="text-sm xl:text-md text-muted-foreground mb-4 leading-relaxed">
               20B Limited was incorporated on the 18th Of February 2019. It is a trading company specialising in Cement & Fertilizer products. 20B was appointed as a major Distributor of Dangote Cement as of the year 2020.
             </p>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-4">
+            <div className="grid grid-cols-2 sm:grid-cols-2 gap-4 mb-4">
               <div>
                 <p className="text-xs text-muted-foreground mb-1">Category</p>
                 <p className="text-sm font-medium">Trading</p>
@@ -101,7 +101,7 @@ const BLimited = () => {
                 <p className="text-xs text-muted-foreground mb-1">Date</p>
                 <p className="text-sm font-medium">2019</p>
               </div>
-              <div>
+              {/* <div>
                 <p className="text-xs text-muted-foreground mb-1">Website</p>
                 <a
                   href="#"
@@ -109,7 +109,7 @@ const BLimited = () => {
                 >
                   Visit Website <ArrowRight className="w-3 h-3" />
                 </a>
-              </div>
+              </div> */}
             </div>
           </Card>
         </div>

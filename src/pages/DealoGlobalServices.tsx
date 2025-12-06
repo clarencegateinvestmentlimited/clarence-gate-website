@@ -90,7 +90,7 @@ const DealoGlobalServices = () => {
               Dealo Global Services Limited is a forward-looking investment and real estate development company. The firm is structured to identify high-value opportunities in the property market, with a focus on acquiring, purchasing, and developing landed assets that offer sustainable returns. Its operations reflect a commitment to strategic investment and responsible property management.
 
             </p>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-4">
+            <div className="grid grid-cols-2 sm:grid-cols-2 gap-4 mb-4">
               <div>
                 <p className="text-xs text-muted-foreground mb-1">Category</p>
                 <p className="text-sm font-medium"> Energy & Infrastructure
@@ -100,7 +100,7 @@ const DealoGlobalServices = () => {
                 <p className="text-xs text-muted-foreground mb-1">Date</p>
                 <p className="text-sm font-medium">2020</p>
               </div>
-              <div>
+              {/* <div>
                 <p className="text-xs text-muted-foreground mb-1">Website</p>
                 <a
                   href="#"
@@ -108,7 +108,7 @@ const DealoGlobalServices = () => {
                 >
                   Visit Website <ArrowRight className="w-3 h-3" />
                 </a>
-              </div>
+              </div> */}
             </div>
           </Card>
         </div>

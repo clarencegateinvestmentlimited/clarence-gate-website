@@ -74,7 +74,7 @@ const Turboserv = () => {
             </div>
             <div>
               <h1 className="text-xl lg:text-2xl font-bold leading-tight">
-                Turboserv
+                Turboserv Insurance
               </h1>
               <p className="text-base lg:text-lg text-muted-foreground">
                 Brokers Limited
@@ -93,7 +93,7 @@ const Turboserv = () => {
               Turboserv Insurance Brokers Limited is a professional insurance brokerage firm dedicated to delivering tailored and innovative insurance solutions. The company leverages deep industry expertise to provide clients with comprehensive risk advisory services that address the unique challenges and exposures associated with their businesses.
 
             </p>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-4">
+            <div className="grid grid-cols-2 sm:grid-cols-2 gap-4 mb-4">
               <div>
                 <p className="text-xs text-muted-foreground mb-1">Category</p>
                 <p className="text-sm font-medium">Finance & Insurance</p>
@@ -102,7 +102,7 @@ const Turboserv = () => {
                 <p className="text-xs text-muted-foreground mb-1">Date</p>
                 <p className="text-sm font-medium">2023</p>
               </div>
-              <div>
+              {/* <div>
                 <p className="text-xs text-muted-foreground mb-1">Website</p>
                 <a
                   href="#"
@@ -110,7 +110,7 @@ const Turboserv = () => {
                 >
                   Visit Website <ArrowRight className="w-3 h-3" />
                 </a>
-              </div>
+              </div> */}
             </div>
           </Card>
         </div>
