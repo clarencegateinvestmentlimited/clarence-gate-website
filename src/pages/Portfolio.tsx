@@ -14,7 +14,7 @@ const Portfolio: React.FC = () => {
       name: "Clarence Gate Investment Limited",
       category: "real-estate",
       year: "2020",
-      image: "/Images/Clarence Gate.png",
+      image: "Images/Clarence Gate.png",
       link: "/clarence-gate",
       objectFit: "contain", 
     },
@@ -23,7 +23,7 @@ const Portfolio: React.FC = () => {
       name: "Design Protocol Nigeria Limited",
       category: "real-estate",
       year: "2018",
-      image: "/Images/Design Protocol-101.png",
+      image: "Images/Design Protocol-101.png",
       link: "/design-protocol",
       objectFit: "contain",
     },
@@ -32,7 +32,7 @@ const Portfolio: React.FC = () => {
       name: "TurboServ Insurance Brokers Limited",
       category: "finance",
       year: "2022",
-      image: "/Images/TURBOSERV_LOGO_4x-100-removebg-preview.png",
+      image: "Images/TURBOSERV_LOGO_4x-100-removebg-preview.png",
       link: "/turboserv",
       objectFit: "contain",
     },
@@ -50,7 +50,7 @@ const Portfolio: React.FC = () => {
       name: "Villa Monument Hotel",
       category: "hospitality",
       year: "2021",
-      image: "/Images/Villa-monument-logo.png",
+      image: "Images/Villa-monument-logo.png",
       link: "/villa-monument",
       objectFit: "contain",
     },
@@ -59,7 +59,7 @@ const Portfolio: React.FC = () => {
       name: "20B Limited",
       category: "trading",
       year: "2022",
-      image: "/Images/2oB.png",
+      image: "Images/2oB.png",
       link: "/20b-limited",
       objectFit: "cover",
     },
@@ -68,7 +68,7 @@ const Portfolio: React.FC = () => {
       name: "Dealo Global Services Limited",
       category: "energy",
       year: "2020",
-      image: "/Images/Card9.jpg",
+      image: "Images/Card9.jpg",
       link: "/dealo-global",
       objectFit: "cover",
     },
@@ -77,7 +77,7 @@ const Portfolio: React.FC = () => {
       name: "Dealo Energy Limited",
       category: "energy",
       year: "2025",
-      image: "/Images/Dealo Energy_LogoUpdated.png",
+      image: "Images/Dealo Energy_LogoUpdated.png",
       link: "/dealo-energy",
       objectFit: "cover",
     },
@@ -86,7 +86,7 @@ const Portfolio: React.FC = () => {
       name: "MMIA Highway Limited",
       category: "ppp",
       year: "2014",
-      image: "public/Images/MMIALogo.png",
+      image: "Images/MMIALogo.png",
       // link: "/dealo-energy",
       objectFit: "contain",
     },
@@ -124,7 +124,7 @@ const Portfolio: React.FC = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
               <Typewriter
                 words={['Portfolio']}
-                loop={0} // run only once
+                loop={0}
                 cursor
                 cursorStyle="|"
                 typeSpeed={150}
