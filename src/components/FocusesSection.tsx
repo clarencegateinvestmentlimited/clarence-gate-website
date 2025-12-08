@@ -34,7 +34,7 @@ const cardData: ICardData[] = [
     iconUrl: "/Images/building-4 copy.png",
     arrowUrl: "/Images/arrow-right.png",
     containerId: "detailCardContainer1",
-    containerStyle: { left: 0 },
+    containerStyle: { left: "23rem" },
     link: "/clarence-gate", // 👈 link for Learn more
     detailItems: [
       {
@@ -64,7 +64,7 @@ const cardData: ICardData[] = [
     iconUrl: "/Images/coin.png",
     arrowUrl: "/Images/arrow-right.png",
     containerId: "detailCardContainer2",
-    containerStyle: { left: "-10rem" },
+    containerStyle: { left: "0rem" },
     link: "/turboserv", // 👈 link for Learn more
     detailItems: [
       {
@@ -87,7 +87,7 @@ const cardData: ICardData[] = [
     iconUrl: "/Images/lamp-on.png",
     arrowUrl: "/Images/arrow-right.png",
     containerId: "detailCardContainer3",
-    containerStyle: { right: "47rem" },
+    containerStyle: { right: "22rem" },
     link: "/55-restaurant", // 👈 link for Learn more
     detailItems: [
       {
@@ -117,7 +117,7 @@ const cardData: ICardData[] = [
     iconUrl: "/Images/diagram.png",
     arrowUrl: "/Images/arrow-right.png",
     containerId: "detailCardContainer4",
-    containerStyle: { left: "2rem" },
+    containerStyle: { left: "25rem" },
     link: "/20b-limited", // 👈 link for Learn more
     detailItems: [
       {
@@ -137,7 +137,7 @@ const cardData: ICardData[] = [
     iconUrl: "/Images/building-4 copy.png",
     arrowUrl: "/Images/arrow-right.png",
     containerId: "detailCardContainer5",
-    containerStyle: { right: "35rem" },
+    containerStyle: { right: "0rem" },
     link: "/dealo-global", // 👈 link for Learn more
     detailItems: [
       {
@@ -159,11 +159,32 @@ const cardData: ICardData[] = [
       },
     ],
   },
+ {
+    index: 5,
+    title: "Public Private Partnership (PPP)",
+    description:
+      "Innovating digital solutions that transform businesses and empower communities.",
+    iconUrl: "/Images/diagram.png",
+    arrowUrl: "/Images/arrow-right.png",
+    containerId: "detailCardContainer6",
+    containerStyle: { left: "-20rem" },
+    link: "", // 👈 link for Learn more
+    detailItems: [
+      {
+        title: "MMIA Highway Limited",
+        year: "",
+        imageUrl: "Images/MMIALogo.png",
+        imageAlt: "Public Private Partnership 1",
+        link: "",
+          imageFit: "contain",
+      },
+    ],
+  },
 ];
 
 // Split data for the two rows
 const topCards = cardData.slice(0, 3);
-const bottomCards = cardData.slice(3, 5);
+const bottomCards = cardData.slice(3);
 
 // --- Main Component ---
 const Focuses: React.FC = () => {
