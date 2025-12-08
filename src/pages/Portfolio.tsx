@@ -85,7 +85,7 @@ const Portfolio: React.FC = () => {
       id: 9,
       name: "MMIA Highway Limited",
       category: "ppp",
-      year: "2014",
+      // year: "2014",
       image: "Images/MMIALogo.png",
       // link: "/dealo-energy",
       objectFit: "contain",
