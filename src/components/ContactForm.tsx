@@ -25,16 +25,16 @@ const ContactForm = () => {
 
   return (
     <section
-      className="bg-black text-white px-[8%] py-24 border-t border-[#222]"
+      className="bg-[#020202] text-white px-[8%] py-24 border-t border-white/5"
       id="contact"
     >
       <div className="max-w-[1100px] mx-auto">
         {/* Header */}
         <h2 className="text-[22px] md:text-[26px] font-medium mb-4">
           Send us a message at{" "}
-          <span className="text-[#FFD300]">info@clarencegroup.com</span>
+          <span className="text-white">enquiries@caladiumconsulting.com</span>
         </h2>
-        <div className="h-[2px] w-[80px] bg-[#FFD300] mb-14"></div>
+        <div className="h-[2px] w-[80px] bg-[#94257a] mb-14"></div>
 
         {/* Form */}
         <form onSubmit={handleSubmit} className="space-y-8">
@@ -46,7 +46,8 @@ const ContactForm = () => {
               required
               value={formData.email}
               onChange={handleChange}
-              className="w-full bg-transparent border border-[#333] rounded-none px-4 py-3 text-white placeholder:text-gray-400 focus:outline-none focus:border-[#FFD300] transition-all"
+              /* Fixed: Removed comments from inside the attribute list */
+              className="w-full bg-transparent border border-white/10 rounded-none px-4 py-3 text-white placeholder:text-zinc-500 focus:outline-none focus:border-[#94257a] transition-all"
             />
             <input
               type="text"
@@ -55,7 +56,7 @@ const ContactForm = () => {
               required
               value={formData.name}
               onChange={handleChange}
-              className="w-full bg-transparent border border-[#333] rounded-none px-4 py-3 text-white placeholder:text-gray-400 focus:outline-none focus:border-[#FFD300] transition-all"
+              className="w-full bg-transparent border border-white/10 rounded-none px-4 py-3 text-white placeholder:text-zinc-500 focus:outline-none focus:border-[#94257a] transition-all"
             />
           </div>
 
@@ -66,16 +67,22 @@ const ContactForm = () => {
             value={formData.message}
             onChange={handleChange}
             rows={7}
-            className="w-full bg-transparent border border-[#333] rounded-none px-4 py-3 text-white placeholder:text-gray-400 focus:outline-none focus:border-[#FFD300] transition-all resize-none"
+            className="w-full bg-transparent border border-white/10 rounded-none px-4 py-3 text-white placeholder:text-zinc-500 focus:outline-none focus:border-[#94257a] transition-all resize-none"
           ></textarea>
 
           <button
             type="submit"
-            className="group text-white text-[18px] font-medium flex items-center   pb-[2px] hover:gap-3 transition-all"
+            className="group text-white text-[18px] font-medium flex items-center pb-[2px] hover:gap-3 transition-all"
           >
-           <p className="border-b border-white"> Send{" "}</p>
+            <p className="border-b border-white group-hover:border-[#94257a] transition-colors">
+              Send{" "}
+            </p>
             <span className="transform group-hover:translate-x-1 transition-transform">
-              <img src="/Images/arrow-right.png" alt="" />
+              <img 
+                src="/Images/arrow-right.png" 
+                alt="" 
+                className="brightness-0 invert w-6 h-6" 
+              />
             </span>
           </button>
         </form>

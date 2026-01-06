@@ -7,6 +7,7 @@ import Map from "@/components/Map";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import FocusesSection from "@/components/FocusesSection";
+import TeamSection from "@/components/TeamSection";
 
 const Index = () => {
   return (
@@ -18,7 +19,8 @@ const Index = () => {
         </div>
         <About />
         {/* <Industries /> */}
-        <FocusesSection />
+        {/* <FocusesSection /> */}
+        <TeamSection/>
         <Process />
         <Map />
         <ContactForm />

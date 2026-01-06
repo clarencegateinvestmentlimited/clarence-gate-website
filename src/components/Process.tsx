@@ -1,95 +1,61 @@
 import { useEffect, useRef, useState } from "react";
+import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 
 interface ProcessStepProps {
   number: string;
   title: string;
   description: string[];
+  index: number;
 }
 
-const ProcessStep = ({ number, title, description }: ProcessStepProps) => {
-  const [isActive, setIsActive] = useState(false);
-  const [isPast, setIsPast] = useState(false);
-  const [isVisible, setIsVisible] = useState(false);
-  const ref = useRef<HTMLElement>(null);
+const ProcessStep = ({ number, title, description, index }: ProcessStepProps) => {
+  const ref = useRef(null);
+  
+  // Use scroll progress for individual element animations
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "center center", "end start"],
+  });
 
-  useEffect(() => {
-    const updateStepState = () => {
-      if (!ref.current) return;
-
-      const rect = ref.current.getBoundingClientRect();
-      const viewportMid = window.innerHeight / 2;
-
-      if (rect.top <= viewportMid && rect.bottom > viewportMid) {
-        setIsActive(true);
-        setIsPast(false);
-      } else if (rect.bottom <= viewportMid) {
-        setIsActive(false);
-        setIsPast(true);
-      } else {
-        setIsActive(false);
-        setIsPast(false);
-      }
-    };
-
-    let ticking = false;
-    const handleScroll = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          updateStepState();
-          ticking = false;
-        });
-        ticking = true;
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    updateStepState();
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          setIsVisible(entry.isIntersecting);
-        });
-      },
-      { threshold: 0.4 }
-    );
-
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
-    };
-  }, []);
+  // Sophisticated animations for scale, opacity, and blur
+  const scale = useTransform(scrollYProgress, [0, 0.5, 1], [0.9, 1, 0.9]);
+  const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0.2, 1, 0.2]);
+  const blur = useTransform(scrollYProgress, [0, 0.5, 1], ["blur(10px)", "blur(0px)", "blur(10px)"]);
+  const y = useTransform(scrollYProgress, [0, 0.5, 1], [50, 0, -50]);
 
   return (
-    <section
+    <motion.section
       ref={ref}
-      className={`process-step py-16 transition-all duration-500 ${
-        isVisible ? "opacity-100" : "opacity-30"
-      } ${isActive ? "scale-100" : "scale-95"} ${isPast ? "opacity-50" : ""}`}
+      style={{ scale, opacity, filter: blur, y }}
+      className="relative min-h-[60vh] flex flex-col justify-center py-20 border-b border-white/5"
     >
-      <div className={`step-number font-raleway font-bold text-[80px] md:text-[120px] leading-none mb-6 transition-colors duration-300 ${
-        isActive ? "text-accent" : "text-muted"
-      }`}>
-        {number}
+      <div className="grid lg:grid-cols-12 gap-8 items-start">
+        {/* Number - The "Ghost" Accent */}
+        <div className="lg:col-span-4">
+          <span className="font-raleway font-black text-[100px] md:text-[150px] leading-none text-transparent bg-clip-text bg-gradient-to-b from-white/20 to-transparent">
+            {number}
+          </span>
+        </div>
+
+        {/* Content */}
+        <div className="lg:col-span-8 pt-4 md:pt-12">
+          <div className="flex items-center gap-4 mb-6">
+             <div className="w-8 h-[1px] bg-[#94257a]" />
+             <h3 className="font-raleway font-bold text-2xl md:text-4xl text-white tracking-tight">
+               {title}
+             </h3>
+          </div>
+          
+          <div className="space-y-6">
+            {description.map((para, idx) => (
+              <p key={idx} className="text-zinc-500 text-lg md:text-xl font-light leading-relaxed max-w-2xl">
+                {para}
+              </p>
+            ))}
+          </div>
+        </div>
       </div>
-      <h3 className="font-raleway font-semibold text-[28px] md:text-[36px] mb-6">{title}</h3>
-      {description.map((para, index) => (
-        <p key={index} className="text-[16px] md:text-[18px] leading-[1.8] text-muted-foreground mb-4 max-w-[700px]">
-          {para}
-        </p>
-      ))}
-    </section>
+    </motion.section>
   );
 };
 
@@ -97,48 +63,60 @@ const Process = () => {
   const steps = [
     {
       number: "01",
-      title: "Discover",
+      title: "Insight & Diagnosis",
       description: [
-        "We identify promising opportunities, visionary founders, and emerging markets with transformative potential.",
-        "Through deep industry insight and a forward-looking lens, we uncover ideas that align with Africa's evolving economic and social landscape.",
+        "We begin by leveraging deep market research such as our annual Nigeria SME Report to understand the real hurdles facing African businesses.",
+        "For our corporate clients, we conduct thorough diagnostic assessments to uncover operational gaps, market opportunities, and areas ripe for strategic transformation.",
       ],
     },
     {
       number: "02",
-      title: "Research",
+      title: "Strategy & Design",
       description: [
-        "We conduct rigorous due diligence and market analysis to validate each opportunity's strength, scalability, and sustainability. This process allows us to de-risk investments and ensure that every decision is grounded in data, market intelligence, and strategic fit.",
+        "We craft tailored strategic frameworks and capacity-building curriculums. This involves designing expert led sessions for the Caladium Lagos SME Bootcamp.",
+        "We develop bespoke growth strategies that align global expertise with local realities, ensuring our solutions are actionable and relevant.",
       ],
     },
     {
       number: "03",
-      title: "Investments",
+      title: "Execution & Growth",
       description: [
-        "Once opportunities are validated, we deploy capital and strategic support to help our portfolio companies scale and thrive. Beyond funding, we offer operational expertise, strategic partnerships, and governance guidance, ensuring our investments deliver measurable impact and enduring value.",
+        "We move from planning to impact. We deliver hands-on training to over 10,000 SMEs and provide ongoing advisory support to large enterprises.",
+        "By implementing transformative strategies, we drive tangible stability, scalability, and long-term success for every organization.",
       ],
     },
   ];
 
   return (
-    <section id="processSection" className="px-4 md:px-[8rem] py-20">
-      <div className="process">
-        <div className="mb-12">
-          <div className="process-content flex items-center gap-4 mb-6">
-            <img src="/Images/Vector 2.png" alt="" />
-            <h3 className="font-raleway font-semibold text-[20px]">Process</h3>
-          </div>
-          <h2 className="section-title font-raleway font-semibold text-[36px] md:text-[50px] leading-[1.16]">
-            Our Approach
+    <section id="processSection" className="relative bg-[#020202] px-6 md:px-[10%] py-32 overflow-hidden">
+      {/* Background Decorative Element */}
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#94257a]/5 blur-[150px] rounded-full pointer-events-none" />
+
+      <div className="max-w-7xl mx-auto">
+        {/* Section Header */}
+        <div className="mb-24 flex flex-col items-start">
+          <motion.div 
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            className="flex items-center gap-4 mb-4"
+          >
+            <span className="text-[#94257a] text-[10px] font-bold tracking-[0.5em] uppercase">Workflow</span>
+            <div className="w-12 h-[1px] bg-zinc-800" />
+          </motion.div>
+          <h2 className="font-raleway font-bold text-4xl md:text-7xl text-white mb-0 tracking-tighter">
+            Our <span className="text-zinc-700 italic font-light">Approach</span>
           </h2>
         </div>
 
-        <div className="process-container">
+        {/* Steps Container */}
+        <div className="relative mt-0">
           {steps.map((step, index) => (
-            <ProcessStep key={index} {...step} />
+            <ProcessStep key={index} {...step} index={index} />
           ))}
         </div>
-
-        <div className="spacer-bottom h-[200px]"></div>
+        
+        {/* Bottom Spacer for final scroll feel */}
+        <div className="h-[10vh]" />
       </div>
     </section>
   );
