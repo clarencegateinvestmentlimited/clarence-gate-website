@@ -47,7 +47,7 @@ const Header = () => {
   }, [isMenuOpen]);
 
   return (
-    <header className="fixed top-0 left-0 w-full flex justify-between items-center px-6 md:px-[6%] py-5 bg-[#010101]/90 backdrop-blur-[12px] z-[1000000] border-b border-white/5">
+    <header className="fixed top-0 left-0 w-full flex justify-between items-center px-6 md:px-[6%] py-7 bg-[#010101]/90 backdrop-blur-[12px] z-[1000000] border-b border-white/5">
       {/* Logo */}
       <Link to="/" className="logo z-[1000002]">
         <img
