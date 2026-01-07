@@ -98,12 +98,14 @@ const Header = () => {
               Menu
             </h2>
 
-            <nav className="flex flex-col gap-4">
+            <nav className="grid lg:grid-cols-2 grid-cols-1 gap-4">
               {[
                 { path: "/", label: "Home" },
                 { path: "/about", label: "About Us" },
-                { path: "/founder", label: "Our Founder" },
+                { path: "/service", label: "Service" },
                 { path: "/contact", label: "Contact Us" },
+                { path: "/blog", label: "Blog" },
+                { path: "/founder", label: "Our Founder" },
               ].map((item) => (
                 <Link
                   key={item.path}

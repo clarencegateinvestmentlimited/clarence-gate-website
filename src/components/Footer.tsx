@@ -60,7 +60,7 @@ const Footer = () => {
             <h3 className="text-[10px] font-bold tracking-[0.6em] uppercase text-[#94257a] mb-10">
               Intelligence Brief
             </h3>
-            <p className="text-zinc-200 text-xs mb-8 font-light leading-relaxed">
+            <p className="text-zinc-200 text-[16px] mb-8 font-light leading-relaxed">
               Join our network to receive the latest updates on the Nigerian SME Ecosystem.
             </p>
             <form onSubmit={handleNewsletterSubmit} className="relative group">
