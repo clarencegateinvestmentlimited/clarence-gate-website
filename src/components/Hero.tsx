@@ -10,11 +10,16 @@ const Hero = () => {
   const smoothX = useSpring(mouseX, springConfig);
   const smoothY = useSpring(mouseY, springConfig);
 
+  // Parallax for the background grid and glow
   const bgX = useTransform(smoothX, [-500, 500], [20, -20]);
   const bgY = useTransform(smoothY, [-500, 500], [20, -20]);
 
+  // Parallax for the Background Image (moves slower for depth)
+  const imageX = useTransform(smoothX, [-500, 500], [10, -10]);
+  const imageY = useTransform(smoothY, [-500, 500], [10, -10]);
+
   useEffect(() => {
-    const handleMouseMove = (e) => {
+    const handleMouseMove = (e: MouseEvent) => {
       mouseX.set(e.clientX - window.innerWidth / 2);
       mouseY.set(e.clientY - window.innerHeight / 2);
     };
@@ -57,18 +62,31 @@ const Hero = () => {
       animate="visible"
       className="relative min-h-screen flex flex-col items-center justify-center px-6 bg-[#020202] text-white overflow-hidden"
     >
-      {/* BACKGROUND */}
-      <motion.div style={{ x: bgX, y: bgY }} className="absolute inset-0 z-0">
-        <div className="absolute inset-0 opacity-[0.05] pointer-events-none bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:60px_60px]" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#94257a]/10 blur-[160px] rounded-full" />
+      {/* 1. BACKGROUND IMAGE LAYER */}
+      <motion.div 
+        style={{ x: imageX, y: imageY, scale: 1.1 }} 
+        className="absolute inset-0 z-0 pointer-events-none"
+      >
+        <img 
+          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop" 
+          alt="Modern Business Architecture"
+          className="w-full h-full object-cover opacity-40 grayscale brightness-[0.3]"
+        />
+        {/* Vignette and Bottom Fade */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#020202]/80 via-transparent to-[#020202]" />
+      </motion.div>
+
+      {/* 2. INTERACTIVE MESH/GRID LAYER */}
+      <motion.div style={{ x: bgX, y: bgY }} className="absolute inset-0 z-10 pointer-events-none">
+        <div className="absolute inset-0 opacity-[0.05] bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:60px_60px]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#94257a]/15 blur-[160px] rounded-full" />
       </motion.div>
 
       <div className="relative z-20 max-w-6xl mx-auto flex flex-col items-center">
-        
         {/* Cinematic Headline */}
         <motion.h1
           variants={textBlur}
-          className="text-center font-raleway font-bold text-[40px] md:text-[65px] leading-[1.05] tracking-[-0.04em] mb-8"
+          className="text-center font-raleway pt-5 md:pt-0 max-[321px]:pt-20 font-bold text-[40px] md:text-[65px] leading-[1.05] tracking-[-0.04em] mb-8"
         >
           Read the 2024 Caladium <br />
           <span className="relative inline-block text-[#94257a]">
@@ -82,13 +100,13 @@ const Hero = () => {
           </span>
         </motion.h1>
 
-        {/* Sophisticated Paragraph with Offset Text */}
+        {/* Sophisticated Paragraph */}
         <motion.p
           variants={fadeInUp}
           className="text-center text-white text-lg md:text-[22px] max-w-2xl font-light leading-relaxed mb-14"
         >
           Access insights, trends, challenges and outlook about the Nigerian SME 
-          <span className="block text-left text-white">
+          <span className="block text-center max-[321px]:inline-block max-[321px]:pl-1 md:text-left text-white">
             Ecosystem.
           </span>
         </motion.p>
@@ -100,16 +118,15 @@ const Hero = () => {
         >
           <Link
             to="/portfolio"
-            className="group relative px-12 py-5 bg-white text-black font-bold rounded-full overflow-hidden transition-all duration-500 hover:scale-105 active:scale-95"
+            className="group relative px-10 md:px-12 md:py-5 py-2 bg-white text-black font-bold rounded-full overflow-hidden transition-all duration-500 hover:scale-105 active:scale-95"
           >
-            <span className="relative z-10 transition-colors duration-300 group-hover:text-white">Apply for Current Caladium Job Openings</span>
+            <span className="relative z-10 transition-colors duration-300 group-hover:text-white text-sm md:text-base">Apply for Current Caladium Job Openings</span>
             <div className="absolute inset-0 bg-[#94257a] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-[cubic-bezier(0.19,1,0.22,1)]" />
           </Link>
           
           <Link
             to="/contact"
-            className="group flex items-center gap-4 text-xs font-bold tracking-[0.2em] uppercase
- text-zinc-300 hover:text-white transition-all"
+            className="group flex items-center gap-4 text-xs font-bold tracking-[0.2em] uppercase text-zinc-300 hover:text-white transition-all"
           >
             2024 Caladium Nigerian SME Report
             <motion.div
@@ -130,7 +147,7 @@ const Hero = () => {
         initial={{ opacity: 0 }} 
         animate={{ opacity: 1 }} 
         transition={{ delay: 1.5 }}
-        className="hidden lg:block absolute left-10 top-1/2 -translate-y-1/2"
+        className="hidden lg:block absolute left-10 top-1/2 -translate-y-1/2 z-20"
       >
         <div className="h-20 w-[1px] bg-gradient-to-b from-transparent via-white/20 to-transparent" />
         <p className="text-[9px] tracking-[0.6em] text-white/30 uppercase mt-4 mb-4" style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}>
@@ -138,8 +155,6 @@ const Hero = () => {
         </p>
         <div className="h-20 w-[1px] bg-gradient-to-t from-transparent via-white/20 to-transparent" />
       </motion.div>
-      
-      {/* <div className="absolute bottom-0 w-full h-32 bg-gradient-to-t from-[#020202] to-transparent z-10" /> */}
     </motion.section>
   );
 };

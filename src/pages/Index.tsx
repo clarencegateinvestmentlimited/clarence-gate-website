@@ -8,6 +8,11 @@ import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import FocusesSection from "@/components/FocusesSection";
 import TeamSection from "@/components/TeamSection";
+import ServicesSection from "@/components/ServicesSection";
+import ExpertiseAccordion from "@/components/ExpertiseAccordion";
+import ServiceGrid from "@/components/ServiceGrid";
+import CaaSPricing from "@/components/CaaSPricing";
+import TestimonialSlider from "@/components/TestimonialSlider";
 
 const Index = () => {
   return (
@@ -21,10 +26,16 @@ const Index = () => {
         {/* <Industries /> */}
         {/* <FocusesSection /> */}
         <TeamSection/>
+        {/* <ServicesSection/> */}
+        <ServiceGrid/>
         <Process />
-        <Map />
-        <ContactForm />
+
+        {/* <Map /> */}
+        <ExpertiseAccordion/>
+         <TestimonialSlider />
+        {/* <ContactForm /> */}
       </main>
+      <CaaSPricing/>
       <Footer />
     </div>
   );

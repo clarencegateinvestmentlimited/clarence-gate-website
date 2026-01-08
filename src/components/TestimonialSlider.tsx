@@ -51,7 +51,7 @@ const TestimonialSlider = () => {
   const activeTestimonial = testimonials[currentIndex];
 
   return (
-    <section className="bg-black text-white py-20 px-6 md:px-16 overflow-hidden">
+    <section className="bg-[#050505] text-white py-20 px-6 md:px-16 overflow-hidden">
       <div className="max-w-6xl mx-auto relative">
         
         {/* Quote Icon */}

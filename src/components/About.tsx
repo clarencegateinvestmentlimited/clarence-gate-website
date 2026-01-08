@@ -44,7 +44,7 @@ const StatItem = ({ target, label, suffix }: StatItemProps) => {
 
 const About = () => {
   return (
-    <section id="about" className="relative bg-[#050505] py-16 md:py-24 lg:py-40 px-4 sm:px-8 md:px-12">
+    <section id="about" className="relative bg-[#050505] py-16 md:py-24 lg:py-36 px-4 sm:px-8 md:px-12">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-8 lg:gap-0">
         
         {/* LEFT SIDE: Branding Header (Fix: Shrink container on mobile) */}

@@ -38,7 +38,7 @@ const TeamSection: React.FC = () => {
   const splitDistance = 40; 
 
   return (
-    <section className="bg-black text-white py-12 md:py-20 overflow-hidden">
+    <section className="bg-[#050505] text-white py-12 md:py-20 overflow-hidden">
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
