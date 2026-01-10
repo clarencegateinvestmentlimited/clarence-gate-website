@@ -18,6 +18,9 @@ import VillaMonument from "./pages/VillaMonument";
 import BLimited from "./pages/BLimited";
 import DealoGlobalServices from "./pages/DealoGlobalServices";
 import DealoEnergy from "./pages/DealoEnergy";
+import ServicesSection from "./components/ServicesSection";
+import ServiceHero from "./components/ServiceHero";
+import ServiceSection from "./pages/ServiceSection";
 
 const queryClient = new QueryClient();
 
@@ -42,6 +45,7 @@ const App = () => (
           <Route path="/20b-limited" element={<BLimited />} />
           <Route path="/dealo-global" element={<DealoGlobalServices/>} />
           <Route path="/dealo-energy" element={<DealoEnergy/>} />
+          <Route path="/services" element={<ServiceSection/>} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

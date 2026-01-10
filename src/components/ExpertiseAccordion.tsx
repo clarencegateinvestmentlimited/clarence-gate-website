@@ -57,10 +57,11 @@ export default function MinimalistExpertise() {
       <div className="w-full lg:w-1/2 flex flex-col justify-center p-6 md:p-16 lg:p-24 bg-[#050505]">
         <div className="max-w-xl">
           <header className="mb-12">
-            <h2 className="text-sm font-mono tracking-[0.4em] text-emerald-500 uppercase mb-4">
+            {/* <h2 className="text-sm font-mono tracking-[0.4em] 
+             uppercase mb-4">
               FAQ
-            </h2>
-            <p className="text-3xl md:text-4xl font-light tracking-tight text-white italic font-serif">
+            </h2> */}
+            <p className="text-3xl md:text-4xl font-light tracking-tight text-[#76B82D] italic font-serif">
               Why Choose Caladium?
             </p>
           </header>

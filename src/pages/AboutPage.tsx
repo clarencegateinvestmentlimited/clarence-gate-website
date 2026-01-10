@@ -62,64 +62,93 @@ export default function AboutPage() {
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.5 }}>
 
         {/* --- HERO SECTION --- */}
-        <CubicSection>
-          <section className="px-6 md:px-[10%] pt-[160px] md:pt-[120px] pb-24 relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#94257a]/5 blur-[120px] rounded-full pointer-events-none" />
-            
-            <div className="max-w-6xl relative z-10">
-              
-              {/* THE UNIQUE HEADER DESIGN */}
-              <div className="relative mb-16 mt-0">
-                <motion.h1 
-                  variants={fadeInUp} 
-                  initial="hidden" 
-                  animate="show"
-                  className="text-3xl md:text-5xl font-black tracking-tighter leading-[0.85]"
-                >
-                  <span className="block text-white">About</span>
-                  <span className="block text-[#94257a] italic font-light ml-[10%] md:ml-[12%] mt-4">
-                    <Typewriter 
-                      words={['Us.', 'The Firm.', 'Our Legacy.']} 
-                      loop={0} 
-                      cursor 
-                      cursorStyle="_" 
-                      typeSpeed={80} 
-                      deleteSpeed={50}
-                    />
-                  </span>
-                </motion.h1>
-              </div>
+<section className="relative overflow-hidden">
+  {/* Moving Background Layer */}
+  <div className="absolute inset-0 z-0">
+    <motion.div
+      initial={{ scale: 1.1, x: "-1%" }}
+      animate={{ 
+        x: ["-1%", "1%", "-1%"],
+        y: ["-0.5%", "0.5%", "-0.5%"] 
+      }}
+      transition={{ 
+        duration: 20, 
+        repeat: Infinity, 
+        ease: "linear" 
+      }}
+      className="absolute inset-0 w-[105%] h-[105%]"
+    >
+      <img 
+        src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071" 
+        alt="Background"
+        className="w-full h-full object-cover opacity-20 grayscale" 
+      />
+    </motion.div>
+    {/* Gradients to preserve your exact look and readability */}
+    <div className="absolute inset-0 bg-gradient-to-r from-[#020202] via-[#020202]/40 to-transparent z-10" />
+    <div className="absolute inset-0 bg-gradient-to-b from-[#020202] via-transparent to-[#020202] z-10" />
+  </div>
 
-              {/* Content Grid */}
-              <div className="grid md:grid-cols-12 gap-12">
-                <div className="md:col-span-9 space-y-10 text-zinc-400 text-lg md:text-xl font-light leading-relaxed text-justify">
-                  <p>
-                    Founded in 2010, <span className="text-white font-medium">Caladium Consulting Limited</span> has established itself as a leader in strategy consulting across Africa. Our mission is clear: to leverage global expertise and deliver unparalleled value to local enterprises. We have supported over 300 SMEs and large enterprises, driving their growth and stability through transformative strategies.
-                  </p>
-                  <p>
-                    At the heart of our efforts is the Caladium SME Community, an initiative that empowers over 10,000 SMEs through key programs such as the Caladium Lagos SME Bootcamp, the Caladium SME Fellowship Programme, and the 2024 Caladium Nigeria SME Report. The SME Bootcamp brings together thousands of SMEs for networking, expert-led sessions, and capacity building. Our SME Fellowship Programme offers free training to entrepreneurs, helping them scale their businesses and navigate growth challenges. The Caladium Nigeria SME Report interviewed over 1,500 businesses and industry experts to uncover the real challenges and opportunities of doing business in Nigeria, providing valuable insights for entrepreneurs and policymakers alike.
-                  </p>
-                  <p>
-                    While we have expanded our reach and impact over the years, our core mission remains unchanged: to deliver strategic advisory services that produce tangible, lasting results for African organizations.
-                  </p>
+  {/* Your Original CubicSection and Content */}
+  <CubicSection className="relative z-20">
+    <section className="px-6 md:px-[10%] pt-[160px] md:pt-[120px] pb-24 relative overflow-hidden">
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#94257a]/5 blur-[120px] rounded-full pointer-events-none" />
+      
+      <div className="max-w-6xl relative z-10">
+        
+        {/* THE UNIQUE HEADER DESIGN - Unchanged */}
+        <div className="relative mb-16 mt-0">
+          <motion.h1 
+            variants={fadeInUp} 
+            initial="hidden" 
+            animate="show"
+            className="text-3xl md:text-5xl font-black tracking-tighter leading-[0.85]"
+          >
+            <span className="block text-white">About</span>
+            <span className="block text-[#94257a] italic font-light ml-[10%] md:ml-[12%] mt-4">
+              <Typewriter 
+                words={['Us.', 'The Firm.', 'Our Legacy.']} 
+                loop={0} 
+                cursor 
+                cursorStyle="_" 
+                typeSpeed={80} 
+                deleteSpeed={50}
+              />
+            </span>
+          </motion.h1>
+        </div>
+
+        {/* Content Grid - Unchanged */}
+        <div className="grid md:grid-cols-12 gap-12">
+          <div className="md:col-span-9 space-y-10 text-zinc-400 text-lg md:text-xl font-light leading-relaxed text-justify">
+            <p>
+              Founded in 2010, <span className="text-white font-medium">Caladium Consulting Limited</span> has established itself as a leader in strategy consulting across Africa. Our mission is clear: to leverage global expertise and deliver unparalleled value to local enterprises. We have supported over 300 SMEs and large enterprises, driving their growth and stability through transformative strategies.
+            </p>
+            <p>
+              At the heart of our efforts is the Caladium SME Community, an initiative that empowers over 10,000 SMEs through key programs such as the Caladium Lagos SME Bootcamp, the Caladium SME Fellowship Programme, and the 2024 Caladium Nigeria SME Report.
+            </p>
+            <p>
+              While we have expanded our reach and impact over the years, our core mission remains unchanged: to deliver strategic advisory services that produce tangible, lasting results for African organizations.
+            </p>
+          </div>
+          
+          <div className="md:col-span-3 flex md:justify-end items-start pt-2">
+             <Link to="/contact" className="group flex flex-col items-start md:items-end gap-5">
+                <div className="w-14 h-14 rounded-full border border-white/10 flex items-center justify-center group-hover:border-[#94257a] group-hover:bg-[#94257a]/5 transition-all duration-700">
+                  <svg className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
                 </div>
-                
-                <div className="md:col-span-3 flex md:justify-end items-start pt-2">
-                   <Link to="/contact" className="group flex flex-col items-start md:items-end gap-5">
-                      <div className="w-14 h-14 rounded-full border border-white/10 flex items-center justify-center group-hover:border-[#94257a] group-hover:bg-[#94257a]/5 transition-all duration-700">
-                        <svg className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
-                      </div>
-                      <span className="text-[9px] font-bold tracking-[0.5em] uppercase text-white/30 group-hover:text-white transition-colors duration-500">
-                        Network
-                      </span>
-                   </Link>
-                </div>
-              </div>
-            </div>
-          </section>
-        </CubicSection>
+                <span className="text-[9px] font-bold tracking-[0.5em] uppercase text-white/30 group-hover:text-white transition-colors duration-500">
+                  Network
+                </span>
+             </Link>
+          </div>
+        </div>
+      </div>
+    </section>
+  </CubicSection>
+</section>
 
         {/* STATS SECTION */}
         <CubicSection className="px-6 md:px-[8%] py-24 bg-white/[0.01] border-y border-white/5">

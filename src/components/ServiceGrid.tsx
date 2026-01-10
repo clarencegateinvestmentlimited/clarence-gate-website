@@ -51,14 +51,14 @@ const ServiceGrid = () => {
         </div>
 
         {/* Grid Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 border-t border-l border-zinc-200">
+        <div className="grid grid-cols-1 md:grid-cols-2 border-t border-1 border-zinc-400">
           {services.map((service, index) => (
             <motion.div
               key={service.id}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ delay: index * 0.1 }}
-              className="group relative p-10 border-r border-b border-zinc-200 hover:bg-zinc-50 transition-colors duration-500"
+              className="group relative p-10 border-r border-b border-zinc-400 hover:bg-zinc-50 transition-colors duration-500"
             >
               <div className="flex justify-between items-start mb-12">
                 <span className="text-zinc-400 font-light text-sm tracking-widest">

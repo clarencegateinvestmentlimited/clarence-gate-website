@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { toast } from "sonner";
-import { motion } from "framer-motion";
+import { Linkedin, Twitter, Facebook, Instagram, ArrowUpRight } from "lucide-react";
 
 const Footer = () => {
   const handleNewsletterSubmit = (e: React.FormEvent) => {
@@ -8,112 +8,108 @@ const Footer = () => {
     toast.success("Successfully subscribed to our intelligence brief.");
   };
 
+  const socials = [
+    { icon: <Linkedin size={18} />, href: "https://ng.linkedin.com/company/caladium-consulting%C2%AE", label: "LinkedIn" },
+    { icon: <Twitter size={18} />, href: "https://x.com/ConsultCaladium/", label: "Twitter" },
+    { icon: <Facebook size={18} />, href: "https://web.facebook.com/CaladiumConsulting/?_rdc=1&_rdr#", label: "Facebook" },
+    { icon: <Instagram size={18} />, href: "https://www.instagram.com/caladiumconsulting/?igsh=MWMwM28ybzF6bjgzcg%3D%3D&utm_source=qr#", label: "Instagram" },
+  ];
+
   return (
-    <footer className="relative bg-[#010101] pt-32 pb-12 px-6 md:px-[6%] overflow-hidden border-t border-white/5">
-      {/* Dynamic Background Element */}
+    <footer className="relative bg-[#010101] pt-24 pb-12 px-6 md:px-[6%] overflow-hidden border-t border-white/5">
+      {/* Background Glow */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#94257a]/5 blur-[140px] rounded-full pointer-events-none" />
 
       <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-12 gap-16 lg:gap-24 mb-32">
-          
-          {/* Section 1: Brand & Purpose */}
-          <div className="lg:col-span-6">
-            <Link to="/" className="inline-block mb-10 group">
+        {/* Top Section: Brand & High-Level Statement */}
+        <div className="grid lg:grid-cols-12 gap-12 mb-20 items-start">
+          <div className="lg:col-span-4">
+            <Link to="/" className="inline-block mb-6">
               <img
                 src="Images/Caladium-Logo_5-2-1-1536x457.png"
-                alt="Logo"
-                className="h-[28px] md:h-[32px] w-auto brightness-0 invert transition-transform duration-500 group-hover:scale-105"
+                alt="Caladium Consulting"
+                className="h-8 md:h-10 w-auto"
               />
             </Link>
-            <h2 className="text-zinc-400 text-xl md:text-[20px] font-light leading-relaxed max-w-xl italic">
-              Empowering the next generation of <span className="text-white font-normal not-italic">African Enterprise</span> through rigorous strategy and data-driven insights.
-            </h2>
-          </div>
-
-          {/* Section 2: Navigation Map */}
-          <div className="lg:col-span-3">
-            <h3 className="text-[10px] font-bold tracking-[0.6em] uppercase text-[#94257a] mb-10">
-              Directory
-            </h3>
-            <nav className="flex flex-col gap-5">
-              {[
-                { to: "/", label: "Overview" },
-                { to: "/about", label: "Corporate Profile" },
-                { to: "/founder", label: "Our Leadership" },
-                { to: "/portfolio", label: "SME Portfolio" },
-                { to: "/contact", label: "Connect" },
-              ].map((link) => (
-                <Link
-                  key={link.label}
-                  to={link.to}
-                  className="text-zinc-200 hover:text-white transition-all duration-300 text-sm font-medium tracking-wide flex items-center group"
-                >
-                  <span className="w-0 group-hover:w-6 h-[1px] bg-[#94257a] transition-all duration-500 mr-0 group-hover:mr-3"></span>
-                  {link.label}
-                </Link>
-              ))}
-            </nav>
-          </div>
-
-          {/* Section 3: Intelligence Subscription */}
-          <div className="lg:col-span-3">
-            <h3 className="text-[10px] font-bold tracking-[0.6em] uppercase text-[#94257a] mb-10">
-              Intelligence Brief
-            </h3>
-            <p className="text-zinc-200 text-[16px] mb-8 font-light leading-relaxed">
-              Join our network to receive the latest updates on the Nigerian SME Ecosystem.
+            <p className="text-zinc-400 text-sm leading-relaxed max-w-xs">
+              We lead by developing tailored strategies for government bodies, 
+              development institutions, NGOs, and businesses across Africa.
             </p>
-            <form onSubmit={handleNewsletterSubmit} className="relative group">
-              <input
-                type="email"
-                placeholder="Email Address"
-                required
-                className="w-full bg-transparent border-b border-white/10 py-4 text-white placeholder:text-zinc-800 focus:outline-none focus:border-[#94257a] transition-all duration-500 font-light text-sm"
-              />
-              <button
-                type="submit"
-                className="absolute right-0 bottom-4 text-zinc-600 hover:text-[#94257a] transition-colors"
-                aria-label="Subscribe"
-              >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="stroke-current">
-                  <path d="M5 12H19M19 12L13 6M19 12L13 18" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </button>
-            </form>
+          </div>
+          <div className="lg:col-span-8">
+            <h2 className="text-white text-2xl md:text-3xl font-light leading-tight lg:pl-12 border-l border-white/10">
+              We empower organizations to make <span className="text-zinc-400 font-medium">data-driven decisions</span> that fuel growth and success across industries.
+            </h2>
           </div>
         </div>
 
-        {/* Cinematic Watermark Section */}
-        {/* <div className="relative py-24 border-t border-white/5 overflow-hidden group">
-           <motion.h2 
-            initial={{ x: "0%" }}
-            animate={{ x: "-10%" }}
-            transition={{ repeat: Infinity, duration: 20, ease: "linear", repeatType: "mirror" }}
-            className="text-[15vw] font-black text-white/[0.02] whitespace-nowrap leading-none tracking-tighter select-none"
-           >
-             STRATEGY DATA SCALE GROWTH INSIGHT
-           </motion.h2>
-        </div> */}
-
-        {/* Global Presence & Legal */}
-        <div className="flex flex-col md:flex-row justify-between items-center gap-8 pt-12 border-t border-white/5">
-          {/* <div className="flex items-center gap-10">
-            {[ "Lagos", "Abuja", "London" ].map((city) => (
-              <div key={city} className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#94257a]/40" />
-                <span className="text-[10px] tracking-[0.3em] text-zinc-500 uppercase font-bold">{city}</span>
-              </div>
-            ))}
-          </div> */}
+        {/* Middle Section: Links & Info */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-20 border-b border-white/5">
           
-          <div className="flex flex-col md:items-end gap-2">
-            <p className="text-zinc-200 text-[9px] tracking-[0.2em] uppercase font-bold">
-              © {new Date().getFullYear()} Caladium Consulting Limited
-            </p>
-            {/* <p className="text-[#94257a]/40 text-[8px] tracking-[0.4em] uppercase font-black">
-              Excellence Driven by Data
-            </p> */}
+          {/* 1. Newsletter */}
+          <div className="space-y-6">
+            <h3 className="text-[11px] font-bold tracking-widest uppercase text-zinc-500">Stay Updated</h3>
+            <form onSubmit={handleNewsletterSubmit} className="relative max-w-xs">
+              <input
+                type="email"
+                placeholder="Your e-mail"
+                required
+                className="w-full bg-transparent border-b border-white/20 py-3 text-white placeholder:text-zinc-600 focus:outline-none focus:border-[#94257a] transition-all text-sm"
+              />
+              <button
+                type="submit"
+                className="absolute right-0 bottom-2 bg-white/5 hover:bg-[#94257a] text-white px-4 py-1.5 rounded-full text-xs flex items-center gap-2 transition-all group"
+              >
+                Send <ArrowUpRight size={14} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+              </button>
+            </form>
           </div>
+
+          {/* 2. Contact */}
+          <div className="space-y-6">
+            <h3 className="text-[11px] font-bold tracking-widest uppercase text-zinc-500">Contact Us</h3>
+            <div className="space-y-3 text-sm text-zinc-300">
+              <a href="mailto:enquiries@caladiumconsulting.com" className="block hover:text-white transition-colors">enquiries@caladiumconsulting.com</a>
+              <a href="tel:+2348024332000" className="block hover:text-white transition-colors">+234 802 4332 000</a>
+            </div>
+          </div>
+
+          {/* 3. Address */}
+          <div className="space-y-6">
+            <h3 className="text-[11px] font-bold tracking-widest uppercase text-zinc-500">Our Address</h3>
+            <p className="text-sm text-zinc-300 leading-relaxed">
+              D24 Dolphin Plaza, Corporation Drive,<br />
+              Dolphin Estate, Ikoyi, Lagos, Nigeria
+            </p>
+          </div>
+
+          {/* 4. Socials */}
+          <div className="space-y-6">
+            <h3 className="text-[11px] font-bold tracking-widest uppercase text-zinc-500">Our Social</h3>
+            <div className="flex gap-4">
+              {socials.map((social, i) => (
+                <a
+                  key={i}
+                  href={social.href}
+                  className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-zinc-400 hover:bg-[#94257a] hover:text-white hover:border-[#94257a] transition-all duration-300"
+                  aria-label={social.label}
+                >
+                  {social.icon}
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Section: Legal */}
+        <div className="flex flex-col md:flex-row justify-between items-center pt-10 gap-6">
+          <div className="flex gap-8">
+            <Link to="https://caladiumconsulting.com/privacy-policy.html" className="text-[10px] uppercase tracking-widest text-zinc-500 hover:text-white transition-colors">Privacy Policy</Link>
+            <Link to="/terms" className="text-[10px] uppercase tracking-widest text-zinc-500 hover:text-white transition-colors">Terms of Service</Link>
+          </div>
+          <p className="text-[10px] uppercase tracking-widest text-zinc-600 font-medium">
+            © {new Date().getFullYear()} Caladium LTD
+          </p>
         </div>
       </div>
     </footer>

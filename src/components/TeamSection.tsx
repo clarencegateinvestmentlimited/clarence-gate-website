@@ -49,7 +49,7 @@ const TeamSection: React.FC = () => {
             whileInView={{ opacity: 1, x: 0 }}
             className="flex items-center gap-4 mb-4"
           >
-            <span className="text-[#94257a] text-[10px] font-bold tracking-[0.5em] uppercase">Network</span>
+            <span className="text-[#76B82D] text-[10px] font-bold tracking-[0.5em] uppercase">Network</span>
             <div className="w-12 h-[1px] bg-zinc-800" />
           </motion.div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
@@ -81,7 +81,7 @@ const TeamSection: React.FC = () => {
                         }}
                         className="text-center px-2"
                     >
-                        <p className="text-[#94257a] font-bold text-xs md:text-sm uppercase tracking-[0.2em] -rotate-45 leading-none whitespace-nowrap">
+                        <p className="text-[#76B82D] font-bold text-xs md:text-sm uppercase tracking-[0.2em] -rotate-45 leading-none whitespace-nowrap">
                             {member.role}
                         </p>
                     </motion.div>
