@@ -17,12 +17,12 @@ interface CaseStudy {
 
 // --- Sub-Components ---
 const ServiceCard: React.FC<{ title: string; points: ServicePoint[] }> = ({ title, points }) => (
-    <div className="border border-white/40 p-6 md:p-8 h-full bg-transparent flex flex-col group hover:border-[#76B82D] transition-colors duration-500">
+    <div className="border border-white/40 p-6 md:p-8 h-full bg-transparent flex flex-col group transition-colors duration-500">
         <h3 className="text-lg md:text-xl font-bold mb-6 text-white leading-tight uppercase tracking-tight">{title}</h3>
         <ul className="space-y-4 flex-grow">
             {points.map((point, index) => (
                 <li key={index} className="flex gap-2 text-[12px] md:text-[13px] text-gray-300 leading-relaxed">
-                    <span className="text-[#76B82D] mt-1.5 h-1 w-1 rounded-full bg-[#76B82D] shrink-0" />
+                    <span className="text-[#76B82D] mt-1.5 h-1 w-1 rounded-full bg-zinc-400 shrink-0" />
                     <span>
                         <strong className="text-white font-semibold uppercase text-[10px] tracking-wider block mb-0.5">{point.title}</strong>
                         {point.description}
@@ -93,11 +93,11 @@ const HumanCapital: React.FC = () => {
                             />
                         </div>
                         <div className="flex flex-col order-1 lg:order-2">
-                            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tighter leading-[0.9] text-transparent mb-1"
+                            <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-4xl font-black tracking-tighter leading-[0.9] text-transparent mb-1"
                                 style={{ WebkitTextStroke: '1px rgba(255,255,255,0.3)' }}>
-                                Strategic <br className="hidden md:block"/> Planning &
+                                Strategic Planning &
                             </h1>
-                            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tighter text-[#76B82D] leading-none mb-8">
+                            <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-4xl font-black tracking-tighter text-[#76B82D] leading-none mb-8">
                                 Execution
                             </h2>
                             <p className="text-base md:text-lg text-gray-400 leading-relaxed max-w-xl font-light">

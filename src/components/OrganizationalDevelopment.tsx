@@ -99,8 +99,8 @@ const Organization: React.FC = () => {
             </div>
             <div className="pt-4">
               <h1 className="text-2xl lg:text-4xl font-bold leading-tight mb-8">
-                Organizational <br />
-                <span className="text-[#76B82D]">Development</span>
+                Organizational  <span className="text-[#76B82D] lg:inline-block ml-1">Development</span>
+               
               </h1>
               <p className="text-sm text-gray-300 leading-relaxed max-w-md">
                 At Caladium Consulting, we facilitate the evolution from founder-led to robust, 

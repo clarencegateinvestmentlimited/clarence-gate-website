@@ -99,10 +99,10 @@ const FinancialExecution: React.FC = () => {
               />
             </div>
             <div className="pt-4">
-              <h1 className="text-3xl lg:text-4xl font-black tracking-tight mb-4">
-                Financial Advisory<span className='text-[#76B82D]'> & </span>
+              <h1 className="text-2xl lg:text-4xl font-black tracking-tight mb-4">
+                Financial Advisory &
               </h1>
-              <h2 className="text-3xl lg:text-4xl tracking-tight text-[#76B82D] leading-none mb-8">
+              <h2 className="text-2xl lg:text-4xl md:block ml-1 tracking-tight text-[#76B82D] leading-none mb-8">
                 Transactions
               </h2>
               <p className="text-sm text-gray-300 leading-relaxed max-w-md font-light">
