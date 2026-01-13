@@ -28,6 +28,11 @@ import BlogDetailPage1 from "./pages/BlogDetailPage1";
 import BlogDetailPage2 from "./pages/BlogDetailPage2";
 import CreditIndustry from "./pages/CreditIndustry";
 import ConstructionIndustry from "./pages/ConstructionIndustry";
+import AnalysisHero from "./pages/Analysis";
+import BusinessPage from "./pages/Business";
+import IndustryPage from "./pages/Industry";
+import EconmyPage from "./pages/Economy";
+import UncategorizedPage from "./pages/Uncategorized";
 
 const queryClient = new QueryClient();
 
@@ -58,6 +63,11 @@ const App = () => (
           <Route path="/blogs-det" element={<BlogDetailPage2/>} />
           <Route path="/credit-industry" element={<CreditIndustry/>} />
           <Route path="/construction-industry" element={<ConstructionIndustry/>} />
+          <Route path="/analysis" element={<AnalysisHero/>} />
+          <Route path="/business" element={<BusinessPage/>} />
+          <Route path="/industry" element={<IndustryPage/>} />
+          <Route path="/economy" element={<EconmyPage/>} />
+          <Route path="/uncategorized" element={<UncategorizedPage/>} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

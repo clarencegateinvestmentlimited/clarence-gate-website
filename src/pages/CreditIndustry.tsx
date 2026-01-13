@@ -140,18 +140,35 @@ const CreditIndustry = () => {
                             </svg>
                         </div>
 
-                        {/* Categories Map */}
-                        <div>
-                            <h4 className="text-sm font-bold text-gray-900 mb-6 border-l-4 border-[#76B82D] pl-4">Categories</h4>
-                            <ul className="space-y-3 text-sm text-gray-600 dm-sans">
-                                {['Analysis', 'Business', 'Economy', 'Industry', 'Uncategorized'].map((cat) => (
-                                    <li key={cat} className="hover:text-[#76B82D] cursor-pointer transition-colors flex justify-between items-center group">
-                                        <span>{cat}</span>
-                                        <span className="text-[10px] bg-gray-50 px-2 py-1 rounded group-hover:bg-[#76B82D]/10 text-gray-400 group-hover:text-[#76B82D]">12</span>
-                                    </li>
-                                ))}
-                            </ul>
+                         {/* Categories Map */}
+                                               <div>
+                          <h4 className="text-sm font-bold text-gray-900 mb-6 border-l-4 border-[#76B82D] pl-4">
+                            Categories
+                          </h4>
+                          <ul className="space-y-3 text-sm text-gray-600 dm-sans">
+                            {[
+                              { name: 'Analysis', path: '/analysis' },
+                              { name: 'Business', path: '/business' },
+                              { name: 'Economy', path: '/economy' },
+                              { name: 'Industry', path: '/industry' },
+                              { name: 'Uncategorized', path: '/uncategorized' },
+                            ].map((cat) => (
+                              <li key={cat.name} className="border-b border-gray-50 pb-2 last:border-0">
+                                <Link 
+                                  to={cat.path} 
+                                  className="hover:text-[#76B82D] cursor-pointer transition-colors flex justify-between items-center group"
+                                >
+                                  <span>{cat.name}</span>
+                                  {/* Optional: Add an arrow or count that appears on hover */}
+                                  <span className="opacity-0 group-hover:opacity-100 transition-opacity text-[#76B82D] text-xs">
+                                    ↗
+                                  </span>
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
                         </div>
+                        
 
                         {/* Latest Posts Map */}
                         <div>
