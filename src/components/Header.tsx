@@ -104,8 +104,7 @@ const Header = () => {
                 { path: "/about", label: "About Us" },
                 { path: "/services", label: "Service" },
                 { path: "/contact", label: "Contact Us" },
-                { path: "https://caladiumconsulting.com/blog/", label: "Blog" },
-                // { path: "/founder", label: "Our Founder" },
+                { path: "/blogs", label: "Blogs" },
               ].map((item) => (
                 <Link
                   key={item.path}

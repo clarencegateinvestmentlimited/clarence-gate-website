@@ -21,6 +21,13 @@ import DealoEnergy from "./pages/DealoEnergy";
 import ServicesSection from "./components/ServicesSection";
 import ServiceHero from "./components/ServiceHero";
 import ServiceSection from "./pages/ServiceSection";
+// import BlogPage from "./components/BlogssPage";
+import BlogsPage from "./pages/BlogsPage";
+import BlogDetailPage from "./pages/BlogDetailPage1";
+import BlogDetailPage1 from "./pages/BlogDetailPage1";
+import BlogDetailPage2 from "./pages/BlogDetailPage2";
+import CreditIndustry from "./pages/CreditIndustry";
+import ConstructionIndustry from "./pages/ConstructionIndustry";
 
 const queryClient = new QueryClient();
 
@@ -46,6 +53,11 @@ const App = () => (
           <Route path="/dealo-global" element={<DealoGlobalServices/>} />
           <Route path="/dealo-energy" element={<DealoEnergy/>} />
           <Route path="/services" element={<ServiceSection/>} />
+          <Route path="/blogs" element={<BlogsPage/>} />
+          <Route path="/blogs-detail" element={<BlogDetailPage1/>} />
+          <Route path="/blogs-det" element={<BlogDetailPage2/>} />
+          <Route path="/credit-industry" element={<CreditIndustry/>} />
+          <Route path="/construction-industry" element={<ConstructionIndustry/>} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -27,7 +27,7 @@ const ServiceCard: React.FC<{ title: string; points: ServicePoint[] }> = ({ titl
         </li>
       ))}
     </ul>
-    
+
     <div className="mt-8 border-b border-white pb-1 w-fit transition-colors group-hover:border-[#76B82D]">
       <a href="#" className="flex items-center gap-2 text-white text-[10px] uppercase tracking-[0.2em] font-bold group-hover:text-[#76B82D]">
         View More <ArrowUpRight size={14} />
@@ -39,9 +39,9 @@ const ServiceCard: React.FC<{ title: string; points: ServicePoint[] }> = ({ titl
 const CaseStudyCard: React.FC<CaseStudy> = ({ title, client, imageUrl }) => (
   <div className="flex flex-col group cursor-pointer">
     <div className="aspect-video overflow-hidden mb-6">
-      <img 
-        src={imageUrl} 
-        alt={title} 
+      <img
+        src={imageUrl}
+        alt={title}
         className="w-full h-full object-cover grayscale brightness-90 group-hover:grayscale-0 transition-transform duration-700 group-hover:scale-105"
       />
     </div>
@@ -65,22 +65,20 @@ const FinancialAdvisory: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-[#1A1F22] text-white px-8 py-12 md:px-20 lg:px-40 font-sans selection:bg-[#76B82D]/30">
-      
+
       {/* Navigation Tabs */}
       <nav className="flex justify-center gap-10 mb-20">
-        <button 
+        <button
           onClick={() => setActiveTab('advisory')}
-          className={`pb-2 text-sm font-semibold tracking-widest uppercase transition-all border-b-2 ${
-            activeTab === 'advisory' ? 'border-[#76B82D] text-white' : 'border-transparent text-gray-500 hover:text-white'
-          }`}
+          className={`pb-2 text-sm font-semibold tracking-widest uppercase transition-all border-b-2 ${activeTab === 'advisory' ? 'border-[#76B82D] text-white' : 'border-transparent text-gray-500 hover:text-white'
+            }`}
         >
           Financial Advisory
         </button>
-        <button 
+        <button
           onClick={() => setActiveTab('case-studies')}
-          className={`pb-2 text-sm font-semibold tracking-widest uppercase transition-all border-b-2 ${
-            activeTab === 'case-studies' ? 'border-[#76B82D] text-white' : 'border-transparent text-gray-500 hover:text-white'
-          }`}
+          className={`pb-2 text-sm font-semibold tracking-widest uppercase transition-all border-b-2 ${activeTab === 'case-studies' ? 'border-[#76B82D] text-white' : 'border-transparent text-gray-500 hover:text-white'
+            }`}
         >
           Case Studies
         </button>
@@ -91,15 +89,15 @@ const FinancialAdvisory: React.FC = () => {
         <div className="animate-in fade-in duration-500">
           <section className="grid md:grid-cols-2 gap-16 items-start mb-20">
             <div className="w-full grayscale brightness-75 overflow-hidden">
-              <img 
-                src="https://images.unsplash.com/photo-1554224155-1696413565d3?q=80&w=2070" 
-                alt="Financial Analysis" 
+              <img
+                src="https://images.unsplash.com/photo-1554224155-1696413565d3?q=80&w=2070"
+                alt="Financial Analysis"
                 className="w-full object-cover aspect-[4/3] hover:scale-105 transition-transform duration-1000"
               />
             </div>
             <div className="flex flex-col h-full justify-center">
               <h1 className="text-4xl lg:text-6xl font-black uppercase tracking-tighter leading-[0.8] text-transparent"
-                  style={{ WebkitTextStroke: '1px rgba(255,255,255,0.4)' }}>
+                style={{ WebkitTextStroke: '1px rgba(255,255,255,0.4)' }}>
                 Corporate
               </h1>
               <h2 className="text-4xl lg:text-6xl font-black uppercase tracking-tighter text-[#76B82D] leading-none mb-8">
@@ -112,7 +110,7 @@ const FinancialAdvisory: React.FC = () => {
           </section>
 
           <section className="grid md:grid-cols-2 gap-8">
-            <ServiceCard 
+            <ServiceCard
               title="Capital & Investment Advisory"
               points={[
                 { title: "Capital Raising", description: "Facilitating access to debt and equity markets to fund strategic growth initiatives." },
@@ -120,7 +118,7 @@ const FinancialAdvisory: React.FC = () => {
                 { title: "Project Finance", description: "Structuring tailored financial solutions for large-scale infrastructure and enterprise projects." }
               ]}
             />
-            <ServiceCard 
+            <ServiceCard
               title="Transaction Advisory"
               points={[
                 { title: "Due Diligence", description: "Comprehensive financial and operational reviews to mitigate risk in mergers and acquisitions." },
@@ -136,18 +134,18 @@ const FinancialAdvisory: React.FC = () => {
       {activeTab === 'case-studies' && (
         <div className="animate-in fade-in duration-500">
           <div className="grid md:grid-cols-2 gap-12">
-           <CaseStudyCard
-                            imageUrl="https://caladiumconsulting.com/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-21-at-11.19.59-AM-1.jpeg"
-                            client="Expanding So Fresh's Product Offerings and Amplifying Access to Healthy Food in Nigeria"
-                            title="Innovative healthy options fuel growth: So Fresh expands menu, boosts revenue, and reaches new customers."
-                            link="https://caladiumconsulting.com/case-studies-so-fresh/"
-                        />
             <CaseStudyCard
-                            imageUrl="https://caladiumconsulting.com/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-21-at-11.23.48-AM-1-1024x683.jpeg"
-                            client="Driving Growth through Strategic Execution: A Case Study of Sohcahtoa Holdings"
-                            title="Strategic execution propels Sohcahtoa: Innovative solutions, streamlined operations, and market leadership fuel remarkable growth."
-                            link="https://caladiumconsulting.com/case-studies-sohcahtoa-holdings/"
-                        />
+              imageUrl="https://caladiumconsulting.com/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-21-at-11.19.59-AM-1.jpeg"
+              client="Expanding So Fresh's Product Offerings and Amplifying Access to Healthy Food in Nigeria"
+              title="Innovative healthy options fuel growth: So Fresh expands menu, boosts revenue, and reaches new customers."
+              link="https://caladiumconsulting.com/case-studies-so-fresh/"
+            />
+            <CaseStudyCard
+              imageUrl="https://caladiumconsulting.com/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-21-at-11.23.48-AM-1-1024x683.jpeg"
+              client="Driving Growth through Strategic Execution: A Case Study of Sohcahtoa Holdings"
+              title="Strategic execution propels Sohcahtoa: Innovative solutions, streamlined operations, and market leadership fuel remarkable growth."
+              link="https://caladiumconsulting.com/case-studies-sohcahtoa-holdings/"
+            />
           </div>
         </div>
       )}
