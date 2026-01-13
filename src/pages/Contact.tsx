@@ -26,7 +26,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="bg-[#050505] text-white font-raleway overflow-x-hidden selection:bg-[#94257a]/30">
+    <div className="bg-[#050505] text-white font-sans overflow-x-hidden selection:bg-[#94257a]/30">
       <Header />
 
       {/* Contact Section */}

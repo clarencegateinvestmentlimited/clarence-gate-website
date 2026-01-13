@@ -1,5 +1,5 @@
 /* Focuses.css - Complete styles for the Focuses section */
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap");
 
 /* ============================================
    FOCUSES SECTION - CARDS
@@ -19,7 +19,7 @@
 }
 
 .section-title {
-  font-family: "Raleway", sans-serif;
+  font-family: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
   font-weight: 600;
   font-size: 50px;
   line-height: 58px;
@@ -107,7 +107,7 @@
 }
 
 .card-title {
-  font-family: "Raleway", sans-serif;
+  font-family: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
   font-weight: 600;
   font-size: 22px;
   line-height: 1.2;
@@ -116,7 +116,7 @@
 }
 
 .card-description {
-  font-family: "Raleway", sans-serif;
+  font-family: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.4;
@@ -259,7 +259,7 @@
 }
 
 .detail-title {
-  font-family: "Raleway", sans-serif;
+  font-family: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
   font-weight: 600;
   font-size: 20px;
   color: white;
@@ -268,7 +268,7 @@
 }
 
 .detail-year {
-  font-family: "Raleway", sans-serif;
+  font-family: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.6);
   display: flex;

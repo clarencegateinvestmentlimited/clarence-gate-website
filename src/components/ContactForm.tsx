@@ -65,7 +65,7 @@ const ContactForm = () => {
                 {/* <span className="text-[10px] font-bold tracking-[0.3em] uppercase text-zinc-500">Global Operations Active</span> */}
               {/* </div> */}
               
-              <h2 className="text-4xl font-raleway font-bold tracking-tighter leading-tight mb-4">
+              <h2 className="text-4xl font-sans font-bold tracking-tighter leading-tight mb-4">
                 Let's Start a <br />
                 <span className="text-[#94257a] italic font-light tracking-normal">Dialogue.</span>
               </h2>

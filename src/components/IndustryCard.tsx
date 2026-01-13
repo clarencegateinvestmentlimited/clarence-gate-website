@@ -33,7 +33,7 @@ const IndustryCard = ({ icon, title, description, details }: IndustryCardProps) 
           <img src="/Images/arrow-right.png" alt="" className="w-6 h-6" />
         </div>
         <div>
-          <h2 className="card-title font-raleway font-semibold text-[28px] mb-4">{title}</h2>
+          <h2 className="card-title font-sans font-semibold text-[28px] mb-4">{title}</h2>
           <p className="card-description text-[16px] leading-[1.5] mb-4 text-muted-foreground">
             {description}
           </p>
@@ -59,7 +59,7 @@ const IndustryCard = ({ icon, title, description, details }: IndustryCardProps) 
               </div>
               <div className="detail-info flex-1 flex justify-between items-center">
                 <div className="detail-text">
-                  <h3 className="detail-title font-raleway font-medium text-[16px] mb-1">
+                  <h3 className="detail-title font-sans font-medium text-[16px] mb-1">
                     {detail.title}
                   </h3>
                   <p className="detail-year text-muted-foreground text-[14px]">{detail.year}</p>

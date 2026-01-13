@@ -65,20 +65,20 @@ const ProcessStep = ({ number, title, description, index }: ProcessStepProps) =>
                 <div className="flex items-center gap-3">
                    {/* Minimalist Phase Indicator */}
                    <div className="h-[1px] w-8 bg-[#94257a]" />
-                   <span className="text-zinc-500 font-raleway font-semibold text-[11px] tracking-[0.2em] uppercase">
+                   <span className="text-zinc-500 font-sans font-semibold text-[11px] tracking-[0.2em] uppercase">
                     Phase
                   </span>
                 </div>
                 
                 {/* Large Stylized Number */}
                 <motion.span 
-                  className="text-white/10 font-raleway font-black text-7xl leading-none italic group-hover:text-[#94257a]/20 transition-colors duration-700"
+                  className="text-white/10 font-sans font-black text-7xl leading-none italic group-hover:text-[#94257a]/20 transition-colors duration-700"
                 >
                   {number}
                 </motion.span>
               </div>
 
-              <h3 className="font-raleway font-bold text-2xl md:text-3xl text-white mb-6 group-hover:translate-x-2 transition-transform duration-500">
+              <h3 className="font-sans font-bold text-2xl md:text-3xl text-white mb-6 group-hover:translate-x-2 transition-transform duration-500">
                 {title}
               </h3>
 
@@ -150,12 +150,12 @@ const Process = () => {
       <div className="max-w-7xl mx-auto">
         <header className="md:mb-28 mb-9 flex items-end gap-6">
           <div className="flex flex-col">
-            <h2 className="font-raleway font-bold text-3xl md:text-5xl text-white tracking-tighter mb-2">
+            <h2 className="font-sans font-bold text-3xl md:text-5xl text-white tracking-tighter mb-2">
               Our <span className="text-zinc-800 italic font-extralight">Workflow</span>
             </h2>
             <div className="h-[2px] w-full bg-gradient-to-r from-[#94257a] to-transparent" />
           </div>
-          <span className="text-zinc-600 font-raleway text-sm mb-4 hidden md:block tracking-widest uppercase">
+          <span className="text-zinc-600 font-sans text-sm mb-4 hidden md:block tracking-widest uppercase">
             3 Phases of Excellence
           </span>
         </header>

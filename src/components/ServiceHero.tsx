@@ -22,14 +22,14 @@ const ServiceHero = () => {
           transition={{ duration: 0.8 }}
           className="max-w-4xl"
         >
-          <span className="text-[#76B82D] uppercase tracking-[0.4em] text-xs font-bold mb-4 block">
+          <span className="text-[#76B82D] uppercase dm-sans tracking-[0.4em] text-xs font-bold mb-4 block">
            Our Services
           </span>
-          <h1 className="text-4xl md:text-7xl text-white font-light leading-[1.1] mb-8">
+          <h1 className="text-4xl md:text-7xl dm-sans text-white font-light leading-[1.1] mb-8">
             Strategic solutions for <br />
-            <span className="italic font-serif text-zinc-400">complex ecosystems.</span>
+            <span className="italic dm-sans font-serif text-zinc-400">complex ecosystems.</span>
           </h1>
-          <p className="text-zinc-300 text-lg md:text-xl font-light max-w-2xl leading-relaxed">
+          <p className="text-zinc-300 text-lg md:text-xl dm-sans   font-light max-w-2xl leading-relaxed">
             We provide the analytical rigor and deep market insights necessary to scale 
             African enterprises in an evolving global economy.
           </p>

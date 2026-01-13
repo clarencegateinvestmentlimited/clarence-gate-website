@@ -85,7 +85,7 @@ const About = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
-                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-raleway font-semibold text-white leading-[1.2] lg:leading-tight mb-6 md:mb-8"
+                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-sans font-semibold text-white leading-[1.2] lg:leading-tight mb-6 md:mb-8"
               >
                 Excellence in strategy. <br className="hidden sm:block" />
                 <span className="text-zinc-600 font-light italic">Driven by data.</span>

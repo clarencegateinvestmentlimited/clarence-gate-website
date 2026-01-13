@@ -30,7 +30,7 @@ const services = [
 
 const ServiceGrid = () => {
   return (
-    <section className="py-24 px-6 bg-white text-black font-raleway">
+    <section className="py-24 px-6 bg-white text-black font-sans">
       <div className="max-w-4xl mx-auto">
         {/* Header Section */}
         <div className="flex flex-col mb-16">

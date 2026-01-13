@@ -39,20 +39,20 @@ const CaseStudyCard: React.FC<CaseStudy> = ({ title, client, imageUrl, link }) =
             <img
                 src={imageUrl}
                 alt={title}
-                className="w-full h-full object-cover grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700 group-hover:scale-105"
+                className="w-full h-full dm-sans  object-cover grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-700 group-hover:scale-105"
             />
         </div>
         
-        <span className="text-[#76B82D] text-[11px] md:text-[12px] uppercase tracking-[0.2em] font-bold mb-3 block">
+        <span className="text-[#76B82D] dm-sans  text-[11px] md:text-[12px] uppercase tracking-[0.2em] font-bold mb-3 block">
             {client}
         </span>
         
-        <h3 className="text-lg md:text-xl font-bold text-white mb-6 leading-snug group-hover:text-[#76B82D] transition-colors flex-grow">
+        <h3 className="text-lg dm-sans  md:text-xl font-bold text-white mb-6 leading-snug group-hover:text-[#76B82D] transition-colors flex-grow">
             {title}
         </h3>
         
         <div className="mt-auto border-b border-white pb-1 w-fit group-hover:border-[#76B82D] transition-colors">
-            <Link to={link} className="flex items-center gap-2 text-white text-[10px] uppercase tracking-[0.2em] font-bold group-hover:text-[#76B82D]">
+            <Link to={link} className="flex dm-sans items-center gap-2 text-white text-[10px] uppercase tracking-[0.2em] font-bold group-hover:text-[#76B82D]">
                 View Case Study <ArrowUpRight size={14} />
             </Link>
         </div>
@@ -72,7 +72,7 @@ const HumanCapital: React.FC = () => {
                     <button
                         key={tab}
                         onClick={() => setActiveTab(tab as any)}
-                        className={`pb-2 text-[11px] md:text-sm font-bold tracking-[0.2em] uppercase transition-all border-b-2 ${
+                        className={`pb-2 text-[11px] md:text-sm font-bold  dm-sans tracking-[0.2em] uppercase transition-all border-b-2 ${
                             activeTab === tab ? 'border-[#76B82D] text-white' : 'border-transparent text-gray-500 hover:text-white'
                         }`}
                     >
@@ -93,14 +93,14 @@ const HumanCapital: React.FC = () => {
                             />
                         </div>
                         <div className="flex flex-col order-1 lg:order-2">
-                            <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-4xl font-black tracking-tighter leading-[0.9] text-transparent mb-1"
+                            <h1 className="text-3xl  sm:text-4xl md:text-4xl dm-sans lg:text-4xl font-black tracking-tighter leading-[0.9] text-transparent mb-1"
                                 style={{ WebkitTextStroke: '1px rgba(255,255,255,0.3)' }}>
                                 Strategic Planning &
                             </h1>
-                            <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-4xl font-black tracking-tighter text-[#76B82D] leading-none mb-8">
+                            <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-4xl font-black tracking-tighter dm-sans  text-[#76B82D] leading-none mb-8">
                                 Execution
                             </h2>
-                            <p className="text-base md:text-lg text-gray-400 leading-relaxed max-w-xl font-light">
+                            <p className="text-base md:text-lg text-gray-400 dm-sans  leading-relaxed max-w-xl font-light">
                                 At Caladium Consulting, we create strategies that ensure measurable success by blending <span className="text-white font-normal">global frameworks</span> with <span className="text-white font-normal">local insights</span>.
                             </p>
                         </div>
@@ -131,7 +131,7 @@ const HumanCapital: React.FC = () => {
                             title="Strategic Brand Communication"
                             points={[
                                 { title: "Message Development", description: "Create resonant messages that reflect brand values." },
-                                { title: "Network Utilization", description: "Use a vast network of channels effectively." },
+                                { title: "Network Utilizations", description: "Use a vast network of channels effectively." },
                                 { title: "Adapting to Market Dynamics", description: "Responsively adjust strategies based on market conditions." },
                                 { title: "Engaging Target Audiences", description: "Develop captivating content to build brand loyalty." }
                             ]}

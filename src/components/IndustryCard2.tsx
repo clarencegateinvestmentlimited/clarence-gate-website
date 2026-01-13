@@ -118,13 +118,13 @@ const PortfolioSection: React.FC = () => {
           <svg width="20" height="20" viewBox="0 0 20 20" className="text-white">
             <path d="M2 2 L18 2" stroke="currentColor" strokeWidth="2"/>
           </svg>
-          <h4 className="text-xl font-semibold" style={{ fontFamily: 'Raleway, sans-serif' }}>
+          <h4 className="text-xl font-semibold" style={{ fontFamily: 'DM Sans, sans-serif' }}>
             Focuses
           </h4>
         </div>
         <h2 
           className="text-4xl sm:text-5xl font-semibold mb-12"
-          style={{ fontFamily: 'Raleway, sans-serif', lineHeight: '1.16' }}
+          style={{ fontFamily: 'DM Sans, sans-serif', lineHeight: '1.16' }}
         >
           Industries We Invest In
         </h2>
@@ -157,13 +157,13 @@ const PortfolioSection: React.FC = () => {
                 <div>
                   <h2 
                     className="text-xl font-semibold mb-4 text-white"
-                    style={{ fontFamily: 'Raleway, sans-serif' }}
+                    style={{ fontFamily: 'DM Sans, sans-serif' }}
                   >
                     {industry.title}
                   </h2>
                   <p 
                     className="text-white/70 mb-6 text-base"
-                    style={{ fontFamily: 'Raleway, sans-serif', lineHeight: '1.4' }}
+                    style={{ fontFamily: 'DM Sans, sans-serif', lineHeight: '1.4' }}
                   >
                     {industry.description}
                   </p>
@@ -172,7 +172,7 @@ const PortfolioSection: React.FC = () => {
                     className="relative inline-block text-lg text-white/80 pb-1"
                     style={{
                       borderBottom: '2px solid gray',
-                      fontFamily: 'Raleway, sans-serif'
+                      fontFamily: 'DM Sans, sans-serif'
                     }}
                   >
                     Learn more
@@ -201,13 +201,13 @@ const PortfolioSection: React.FC = () => {
                         <div>
                           <h3 
                             className="font-semibold text-lg text-white mb-10"
-                            style={{ fontFamily: 'Raleway, sans-serif', lineHeight: '1.3' }}
+                            style={{ fontFamily: 'DM Sans, sans-serif', lineHeight: '1.3' }}
                           >
                             {card.title}
                           </h3>
                           <p 
                             className="text-base text-white/60"
-                            style={{ fontFamily: 'Raleway, sans-serif' }}
+                            style={{ fontFamily: 'DM Sans, sans-serif' }}
                           >
                             {card.year}
                           </p>
@@ -248,13 +248,13 @@ const PortfolioSection: React.FC = () => {
                 <div>
                   <h2 
                     className="text-xl font-semibold mb-4 text-white"
-                    style={{ fontFamily: 'Raleway, sans-serif' }}
+                    style={{ fontFamily: 'DM Sans, sans-serif' }}
                   >
                     {industry.title}
                   </h2>
                   <p 
                     className="text-white/70 mb-6 text-base"
-                    style={{ fontFamily: 'Raleway, sans-serif', lineHeight: '1.4' }}
+                    style={{ fontFamily: 'DM Sans, sans-serif', lineHeight: '1.4' }}
                   >
                     {industry.description}
                   </p>
@@ -263,7 +263,7 @@ const PortfolioSection: React.FC = () => {
                     className="relative inline-block text-lg text-white/80 pb-1"
                     style={{
                       borderBottom: '2px solid gray',
-                      fontFamily: 'Raleway, sans-serif'
+                      fontFamily: 'DM Sans, sans-serif'
                     }}
                   >
                     Learn more
@@ -292,13 +292,13 @@ const PortfolioSection: React.FC = () => {
                         <div>
                           <h3 
                             className="font-semibold text-lg text-white mb-10"
-                            style={{ fontFamily: 'Raleway, sans-serif', lineHeight: '1.3' }}
+                            style={{ fontFamily: 'DM Sans, sans-serif', lineHeight: '1.3' }}
                           >
                             {card.title}
                           </h3>
                           <p 
                             className="text-base text-white/60"
-                            style={{ fontFamily: 'Raleway, sans-serif' }}
+                            style={{ fontFamily: 'DM Sans, sans-serif' }}
                           >
                             {card.year}
                           </p>

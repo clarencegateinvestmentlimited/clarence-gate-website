@@ -86,7 +86,7 @@ const Hero = () => {
         {/* Cinematic Headline */}
         <motion.h1
           variants={textBlur}
-          className="text-center font-raleway pt-5 md:pt-0 max-[321px]:pt-20 font-bold text-[40px] md:text-[65px] leading-[1.05] tracking-[-0.04em] mb-8"
+          className="text-center dm-sans pt-6 md:pt-0 max-[321px]:pt-20 font-bold text-[40px] md:text-[65px] leading-[1.05] tracking-[-0.04em] mb-8"
         >
           Read the 2024 Caladium <br />
           <span className="relative inline-block text-[#94257a]">
@@ -103,7 +103,7 @@ const Hero = () => {
         {/* Sophisticated Paragraph */}
         <motion.p
           variants={fadeInUp}
-          className="text-center text-white text-lg md:text-[22px] max-w-2xl font-light leading-relaxed mb-14"
+          className="text-center dm-sans text-white text-lg md:text-[21px] max-w-2xl font-light leading-relaxed mb-14"
         >
           Access insights, trends, challenges and outlook about the Nigerian SME 
           <span className="block text-center max-[321px]:inline-block max-[321px]:pl-1 md:text-left text-white">

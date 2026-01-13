@@ -56,7 +56,7 @@ export default function AboutPage() {
   };
 
   return (
-    <div className="bg-[#020202] text-white overflow-x-hidden font-raleway selection:bg-[#94257a]/30">
+    <div className="bg-[#020202] text-white overflow-x-hidden font-sans selection:bg-[#94257a]/30">
       <Header />
 
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.5 }}>

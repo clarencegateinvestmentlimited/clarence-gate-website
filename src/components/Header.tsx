@@ -105,13 +105,13 @@ const Header = () => {
                 { path: "/services", label: "Service" },
                 { path: "/contact", label: "Contact Us" },
                 { path: "https://caladiumconsulting.com/blog/", label: "Blog" },
-                { path: "/founder", label: "Our Founder" },
+                // { path: "/founder", label: "Our Founder" },
               ].map((item) => (
                 <Link
                   key={item.path}
                   to={item.path}
                   onClick={closeMenu}
-                  className={`relative text-white no-underline text-[18px] md:text-[22px] font-raleway font-medium transition-all duration-300 flex items-center group
+                  className={`relative text-white no-underline text-[18px] md:text-[22px] font-sans font-medium transition-all duration-300 flex items-center group
                     ${location.pathname === item.path ? "text-white" : "text-white/30 hover:text-white"}`}
                 >
                   <span className="group-hover:translate-x-2 transition-transform duration-500 flex items-center gap-3">
