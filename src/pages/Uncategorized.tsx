@@ -10,21 +10,21 @@ const ANALYSIS_REPORTS = [
     categories: 'Uncategorized',
     title: "Restoration of Dashed Hope",
     excerpt: "Nigeria’s 2025 budget, officially termed the “Budget of restoration” has been aptly named given the economic challenges of the previous year and the implementation outcomes o",
-    path: '/construction-details'
+    path: '/dashed-hope'
   },
   {
     id: '2',
     categories: 'Uncategorized',
     title: "Nigeria’s Oil & Gas Industry in 2024: Growth, Challenges, and Future Prospects",
     excerpt: "Navigating a Transforming Energy Sector Nigeria’s oil and gas industry remains the backbone of the nation’s economy, playing a critical role in energy security, employment, and",
-    path: '/construction-details'
+    path: '/blogs-detail'
   },
   {
     id: '3',
     categories: 'Uncategorized',
     title: "Nigeria’s Entertainment Industry in 2024: Trends, Challenges, and Growth Opportunities",
     excerpt: "Navigating a Booming Industry Nigeria’s entertainment sector continues to dominate Africa’s creative economy, driven by Nollywood, Afrobeats, and the rapid expansion of digital",
-    path: '/construction-details'
+    path: '/blogs-det'
   },
   // Add more analysis objects here as needed
 ];
@@ -74,9 +74,9 @@ const UncategorizedPage = () => {
                     className="bg-[#1c2229] text-white px-8 py-3 rounded-full text-xs font-bold flex items-center gap-2 hover:bg-[#76B82D] transition-all duration-300 group/btn"
                   >
                     Read More 
-                    <span className="text-sm transition-transform group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1">
+                    {/* <span className="text-sm transition-transform group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1">
                       ↗
-                    </span>
+                    </span> */}
                   </Link>
 
                   {/* Share Button */}

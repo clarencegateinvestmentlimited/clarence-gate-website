@@ -42,7 +42,7 @@ const ConstructionIndustry = () => {
                                     alt="Oil and Gas Industry"
                                     className="w-full h-auto object-cover"
                                 /> */}
-                                
+
                             </div>
                             {/* <section>
                                 <p>Nigeria’s construction sector is at a turning point. Demand for infrastructure, housing, and commercial spaces is rising, but high costs, regulatory hurdles, and funding constraints pose serious challenges. Still, opportunities exist for businesses that can navigate these shifts.</p>
@@ -52,10 +52,10 @@ const ConstructionIndustry = () => {
                             <div className="prose prose-lg max-w-none text-gray-600 leading-relaxed space-y-12 dm-sans">
                                 <section>
                                     <h2 className="text-2xl font-bold text-gray-800 mb-4 uppercase tracking-tight">
-Government’s Push for Infrastructure & Housing</h2>
+                                        Government’s Push for Infrastructure & Housing</h2>
                                     <p>Under the Renewed Hope Agenda, the government is investing N11.5 billion in 20,000 affordable homes. Infrastructure spending in the 2025 budget has increased to 8.16% of total expenditure, signaling a strong push to bridge Nigeria’s 550,000-unit annual housing deficit.
 
-However, the private sector remains key. Developers and investors who embrace innovation and alternative financing will be at the forefront of Nigeria’s urban transformation..</p>
+                                        However, the private sector remains key. Developers and investors who embrace innovation and alternative financing will be at the forefront of Nigeria’s urban transformation..</p>
 
                                 </section>
 
@@ -63,9 +63,9 @@ However, the private sector remains key. Developers and investors who embrace in
                                     <h2 className="text-2xl font-bold text-gray-800 mb-4 uppercase tracking-tight">Rising Costs & Market Volatility</h2>
                                     <p>The industry’s biggest challenge is soaring costs.
 
-In 2024, Cement sold for ₦8,800 per bag, while steel bars cost ₦1.6 million per ton. Forex volatility, 33.69% inflation, and supply chain issues are driving up prices, forcing developers to either pass costs onto buyers or stall projects.
+                                        In 2024, Cement sold for ₦8,800 per bag, while steel bars cost ₦1.6 million per ton. Forex volatility, 33.69% inflation, and supply chain issues are driving up prices, forcing developers to either pass costs onto buyers or stall projects.
 
-For firms, efficiency is now a survival strategy. Those that adopt cost-cutting measures, modern building materials, and innovative financing will have the edge.</p>
+                                        For firms, efficiency is now a survival strategy. Those that adopt cost-cutting measures, modern building materials, and innovative financing will have the edge.</p>
                                 </section>
                                 <section>
                                     <h2 className="text-2xl font-bold text-gray-800 mb-4 uppercase tracking-tight">Key Industry Challenges</h2>
@@ -84,7 +84,7 @@ For firms, efficiency is now a survival strategy. Those that adopt cost-cutting 
 
                                         <p className="mt-4 text-gray-600">Yet, despite these hurdles, the industry remains a major driver of economic growth. With the rise of smart cities, green buildings, and renewable energy-driven construction, forward-thinking players have huge opportunities to shape Nigeria’s future.
 
-</p>
+                                        </p>
                                     </div>
                                 </section>
 
@@ -121,7 +121,7 @@ For firms, efficiency is now a survival strategy. Those that adopt cost-cutting 
                                 <div className="group">
                                     <img src="https://caladiumconsulting.com/wp-content/uploads/2025/03/credit-industry-factsheet-600x399.png" className="rounded-lg  mb-4" alt="Related" />
                                     <h3 className="text-xl text-zinc-900 dm-sans font-medium ">The 2024 Caladium Nigeria’s Credit and Banking Industry Factsheet</h3>
-                                    <Link to="/blogs-detail" className="text-sm text-[#76B82D] dm-sans font-bold mt-4 inline-block">Read More</Link>
+                                    <Link to="/credit-industry" className="text-sm text-[#76B82D] dm-sans font-bold mt-4 inline-block">Read More</Link>
                                 </div>
                             </div>
                         </section>
@@ -147,35 +147,35 @@ For firms, efficiency is now a survival strategy. Those that adopt cost-cutting 
                             </svg>
                         </div>
 
-                         {/* Categories Map */}
-                                               <div>
-                          <h4 className="text-sm font-bold text-gray-900 mb-6 border-l-4 border-[#76B82D] pl-4">
-                            Categories
-                          </h4>
-                          <ul className="space-y-3 text-sm text-gray-600 dm-sans">
-                            {[
-                              { name: 'Analysis', path: '/analysis' },
-                              { name: 'Business', path: '/business' },
-                              { name: 'Economy', path: '/economy' },
-                              { name: 'Industry', path: '/industry' },
-                              { name: 'Uncategorized', path: '/uncategorized' },
-                            ].map((cat) => (
-                              <li key={cat.name} className="border-b border-gray-50 pb-2 last:border-0">
-                                <Link 
-                                  to={cat.path} 
-                                  className="hover:text-[#76B82D] cursor-pointer transition-colors flex justify-between items-center group"
-                                >
-                                  <span>{cat.name}</span>
-                                  {/* Optional: Add an arrow or count that appears on hover */}
-                                  <span className="opacity-0 group-hover:opacity-100 transition-opacity text-[#76B82D] text-xs">
-                                    ↗
-                                  </span>
-                                </Link>
-                              </li>
-                            ))}
-                          </ul>
+                        {/* Categories Map */}
+                        <div>
+                            <h4 className="text-sm font-bold text-gray-900 mb-6 border-l-4 border-[#76B82D] pl-4">
+                                Categories
+                            </h4>
+                            <ul className="space-y-3 text-sm text-gray-600 dm-sans">
+                                {[
+                                    { name: 'Analysis', path: '/analysis' },
+                                    { name: 'Business', path: '/business' },
+                                    { name: 'Economy', path: '/economy' },
+                                    { name: 'Industry', path: '/industry' },
+                                    { name: 'Uncategorized', path: '/uncategorized' },
+                                ].map((cat) => (
+                                    <li key={cat.name} className="border-b border-gray-50 pb-2 last:border-0">
+                                        <Link
+                                            to={cat.path}
+                                            className="hover:text-[#76B82D] cursor-pointer transition-colors flex justify-between items-center group"
+                                        >
+                                            <span>{cat.name}</span>
+                                            {/* Optional: Add an arrow or count that appears on hover */}
+                                            <span className="opacity-0 group-hover:opacity-100 transition-opacity text-[#76B82D] text-xs">
+                                                ↗
+                                            </span>
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
-                        
+
 
                         {/* Latest Posts Map */}
                         <div>
@@ -185,8 +185,8 @@ For firms, efficiency is now a survival strategy. Those that adopt cost-cutting 
                                     {
                                         title: "Restoration of Dashed Hope",
                                         date: "April 22, 2025",
-                                        path: "/blog-restoration",
-                                        image: "https://caladiumconsulting.com/wp-content/uploads/2025/04/restoration-of-dashed-hope-thumbnail.png"
+                                        path: "/dashed-hope",
+                                        image: "https://caladiumconsulting.com/wp-content/uploads/2025/03/entertainment-industry-caladium-blog-image-600x373.png"
                                     },
                                     {
                                         title: "Nigeria's Oil & Gas Industry in 2024",

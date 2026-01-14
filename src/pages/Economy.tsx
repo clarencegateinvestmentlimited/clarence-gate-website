@@ -10,7 +10,7 @@ const ANALYSIS_REPORTS = [
     categories: 'Analysis, Economy, Industry',
     title: "Nigeria’s Construction Industry in 2024",
     excerpt: "Nigeria’s construction sector is at a turning point. Demand for infrastructure, housing, and commercial spaces is rising, but high costs, regulatory hurdles, and funding constrai",
-    path: '/construction-details'
+    path: '/construction-industry'
   },
   // Add more analysis objects here as needed
 ];
@@ -60,9 +60,9 @@ const EconmyPage = () => {
                     className="bg-[#1c2229] text-white px-8 py-3 rounded-full text-xs font-bold flex items-center gap-2 hover:bg-[#76B82D] transition-all duration-300 group/btn"
                   >
                     Read More 
-                    <span className="text-sm transition-transform group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1">
+                    {/* <span className="text-sm transition-transform group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1">
                       ↗
-                    </span>
+                    </span> */}
                   </Link>
 
                   {/* Share Button */}

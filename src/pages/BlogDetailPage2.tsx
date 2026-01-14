@@ -166,50 +166,49 @@ const BlogDetailPage2 = () => {
                        </div>
                        
 
-                        {/* Latest Posts Map */}
                         <div>
-                            <h4 className="text-sm font-bold text-gray-900 mb-6 border-l-4 border-[#76B82D] pl-4">Latest Posts</h4>
-                            <div className="space-y-6">
-                                {[
-                                    {
-                                        title: "Restoration of Dashed Hope",
-                                        date: "April 22, 2025",
-                                        path: "/blog-restoration",
-                                        image: "https://caladiumconsulting.com/wp-content/uploads/2025/04/restoration-of-dashed-hope-thumbnail.png"
-                                    },
-                                    {
-                                        title: "Nigeria's Oil & Gas Industry in 2024",
-                                        date: "March 14, 2025",
-                                        path: "/blogs-detail",
-                                        image: "https://caladiumconsulting.com/wp-content/uploads/2025/03/oilandgas-blog-image-600x363.png"
-                                    },
-                                    {
-                                        title: "Nigeria's Entertainment Industry in 2024",
-                                        date: "March 14, 2025",
-                                        path: "/blogs-det",
-                                        image: "https://caladiumconsulting.com/wp-content/uploads/2025/03/entertainment-industry-caladium-blog-image-600x373.png"
-                                    }
-                                ].map((post, index) => (
-                                    <Link key={index} to={post.path} className="flex gap-4 group items-start">
-                                        {/* Thumbnail */}
-                                        <div className="w-16 h-16 flex-shrink-0 overflow-hidden rounded-md bg-gray-100">
-                                            <img
-                                                src={post.image}
-                                                alt=""
-                                                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                                            />
-                                        </div>
-                                        {/* Text content */}
-                                        <div className="flex flex-col">
-                                            <span className="text-[10px] text-gray-400 mb-1">{post.date}</span>
-                                            <h5 className="text-[13px] font-medium leading-tight text-gray-800 group-hover:text-[#76B82D] transition-colors">
-                                                {post.title}
-                                            </h5>
-                                        </div>
-                                    </Link>
-                                ))}
-                            </div>
-                        </div>
+                                                    <h4 className="text-sm font-bold text-gray-900 mb-6 border-l-4 border-[#76B82D] pl-4">Latest Posts</h4>
+                                                    <div className="space-y-6">
+                                                        {[
+                                                            {
+                                                                title: "Restoration of Dashed Hope",
+                                                                date: "April 22, 2025",
+                                                                path: "/dashed-hope",
+                                                                image: "https://caladiumconsulting.com/wp-content/uploads/2025/03/entertainment-industry-caladium-blog-image-600x373.png"
+                                                            },
+                                                            {
+                                                                title: "Nigeria's Oil & Gas Industry in 2024",
+                                                                date: "March 14, 2025",
+                                                                path: "/blogs-detail",
+                                                                image: "https://caladiumconsulting.com/wp-content/uploads/2025/03/oilandgas-blog-image-600x363.png"
+                                                            },
+                                                            {
+                                                                title: "Nigeria's Entertainment Industry in 2024",
+                                                                date: "March 14, 2025",
+                                                                path: "/blogs-det",
+                                                                image: "https://caladiumconsulting.com/wp-content/uploads/2025/03/entertainment-industry-caladium-blog-image-600x373.png"
+                                                            }
+                                                        ].map((post, index) => (
+                                                            <Link key={index} to={post.path} className="flex gap-4 group items-start">
+                                                                {/* Thumbnail */}
+                                                                <div className="w-16 h-16 flex-shrink-0 overflow-hidden rounded-md bg-gray-100">
+                                                                    <img
+                                                                        src={post.image}
+                                                                        alt=""
+                                                                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                                                    />
+                                                                </div>
+                                                                {/* Text content */}
+                                                                <div className="flex flex-col">
+                                                                    <span className="text-[10px] text-gray-400 mb-1">{post.date}</span>
+                                                                    <h5 className="text-[13px] font-medium leading-tight text-gray-800 group-hover:text-[#76B82D] transition-colors">
+                                                                        {post.title}
+                                                                    </h5>
+                                                                </div>
+                                                            </Link>
+                                                        ))}
+                                                    </div>
+                                                </div>
                     </motion.aside>
 
                 </div>

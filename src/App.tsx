@@ -33,6 +33,7 @@ import BusinessPage from "./pages/Business";
 import IndustryPage from "./pages/Industry";
 import EconmyPage from "./pages/Economy";
 import UncategorizedPage from "./pages/Uncategorized";
+import DashedHope from "./pages/DashedHope";
 
 const queryClient = new QueryClient();
 
@@ -68,6 +69,8 @@ const App = () => (
           <Route path="/industry" element={<IndustryPage/>} />
           <Route path="/economy" element={<EconmyPage/>} />
           <Route path="/uncategorized" element={<UncategorizedPage/>} />
+          <Route path="/dashed-hope" element={<DashedHope/>} />
+
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

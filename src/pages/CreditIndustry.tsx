@@ -114,7 +114,7 @@ const CreditIndustry = () => {
                                 <div className="group">
                                     <img src="https://caladiumconsulting.com/wp-content/uploads/2025/02/caladium-blog-600x250.png" className="rounded-lg  mb-4" alt="Related" />
                                     <h3 className="text-xl text-zinc-900 dm-sans font-medium ">Nigeria’s Construction Industry in 2024</h3>
-                                    <Link to="/blogs-detail" className="text-sm text-[#76B82D] dm-sans font-bold mt-4 inline-block">Read More</Link>
+                                    <Link to="/construction-industry" className="text-sm text-[#76B82D] dm-sans font-bold mt-4 inline-block">Read More</Link>
                                 </div>
                             </div>
                         </section>
@@ -140,35 +140,35 @@ const CreditIndustry = () => {
                             </svg>
                         </div>
 
-                         {/* Categories Map */}
-                                               <div>
-                          <h4 className="text-sm font-bold text-gray-900 mb-6 border-l-4 border-[#76B82D] pl-4">
-                            Categories
-                          </h4>
-                          <ul className="space-y-3 text-sm text-gray-600 dm-sans">
-                            {[
-                              { name: 'Analysis', path: '/analysis' },
-                              { name: 'Business', path: '/business' },
-                              { name: 'Economy', path: '/economy' },
-                              { name: 'Industry', path: '/industry' },
-                              { name: 'Uncategorized', path: '/uncategorized' },
-                            ].map((cat) => (
-                              <li key={cat.name} className="border-b border-gray-50 pb-2 last:border-0">
-                                <Link 
-                                  to={cat.path} 
-                                  className="hover:text-[#76B82D] cursor-pointer transition-colors flex justify-between items-center group"
-                                >
-                                  <span>{cat.name}</span>
-                                  {/* Optional: Add an arrow or count that appears on hover */}
-                                  <span className="opacity-0 group-hover:opacity-100 transition-opacity text-[#76B82D] text-xs">
-                                    ↗
-                                  </span>
-                                </Link>
-                              </li>
-                            ))}
-                          </ul>
+                        {/* Categories Map */}
+                        <div>
+                            <h4 className="text-sm font-bold text-gray-900 mb-6 border-l-4 border-[#76B82D] pl-4">
+                                Categories
+                            </h4>
+                            <ul className="space-y-3 text-sm text-gray-600 dm-sans">
+                                {[
+                                    { name: 'Analysis', path: '/analysis' },
+                                    { name: 'Business', path: '/business' },
+                                    { name: 'Economy', path: '/economy' },
+                                    { name: 'Industry', path: '/industry' },
+                                    { name: 'Uncategorized', path: '/uncategorized' },
+                                ].map((cat) => (
+                                    <li key={cat.name} className="border-b border-gray-50 pb-2 last:border-0">
+                                        <Link
+                                            to={cat.path}
+                                            className="hover:text-[#76B82D] cursor-pointer transition-colors flex justify-between items-center group"
+                                        >
+                                            <span>{cat.name}</span>
+                                            {/* Optional: Add an arrow or count that appears on hover */}
+                                            <span className="opacity-0 group-hover:opacity-100 transition-opacity text-[#76B82D] text-xs">
+                                                ↗
+                                            </span>
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
-                        
+
 
                         {/* Latest Posts Map */}
                         <div>
@@ -178,8 +178,8 @@ const CreditIndustry = () => {
                                     {
                                         title: "Restoration of Dashed Hope",
                                         date: "April 22, 2025",
-                                        path: "/blog-restoration",
-                                        image: "https://caladiumconsulting.com/wp-content/uploads/2025/04/restoration-of-dashed-hope-thumbnail.png"
+                                        path: "/dashed-hope",
+                                        image: "https://caladiumconsulting.com/wp-content/uploads/2025/03/entertainment-industry-caladium-blog-image-600x373.png"
                                     },
                                     {
                                         title: "Nigeria's Oil & Gas Industry in 2024",
@@ -197,11 +197,11 @@ const CreditIndustry = () => {
                                     <Link key={index} to={post.path} className="flex gap-4 group items-start">
                                         {/* Thumbnail */}
                                         <div className="w-16 h-16 flex-shrink-0 overflow-hidden rounded-md bg-gray-100">
-                                            <Link to="/blogs-det"><img
+                                            <img
                                                 src={post.image}
                                                 alt=""
                                                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                                            /></Link>
+                                            />
                                         </div>
                                         {/* Text content */}
                                         <div className="flex flex-col">
