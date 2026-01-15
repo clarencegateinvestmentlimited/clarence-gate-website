@@ -139,13 +139,13 @@ const Organization: React.FC = () => {
               imageUrl="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop"
               title="The Dutum Culture and Enterprise Transformation Experience"
               description="Dutum Company Limited is a nearly 4-decade-old family construction company with legacy footprints across Nigeria."
-              link="/https://caladiumconsulting.com/case-studies-dutum/"
+              link="/dutum"
             />
             <CaseStudyCard 
               imageUrl="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=800&auto=format&fit=crop"
               title="The Review and Transformation of Organization-Wide Processes of Sanlam Life Insurance"
               description="Streamlining for success: Sanlam revamps processes, accelerates claims, and elevates customer satisfaction in Nigerian insurance."
-              link="https://caladiumconsulting.com/case-studies-sanlam-life/"
+              link="/sanlam-life"
             />
           </div>
         </div>

@@ -30,11 +30,11 @@ const Index = () => {
         <ServiceGrid/>
         <Process />
 
-        {/* <Map /> */}
         <ExpertiseAccordion/>
          <TestimonialSlider />
         {/* <ContactForm /> */}
       </main>
+        {/* <Map /> */}
       <CaaSPricing/>
       <Footer />
     </div>

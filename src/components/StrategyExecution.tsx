@@ -141,7 +141,7 @@ const StrategyExecution: React.FC = () => {
                             client="Dutum Company Limited"
                             title="The Dutum Culture and Enterprise Transformation Experience"
                             description="Dutum Company Limited is a nearly 4-decade-old family construction company with legacy footprints across Nigeria."
-                            link="https://caladiumconsulting.com/case-studies-dutum/"
+                            link="dutum/"
                         />
                         <CaseStudyCard
                             imageUrl="https://caladiumconsulting.com/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-21-at-11.19.59-AM-1.jpeg"

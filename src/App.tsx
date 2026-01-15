@@ -34,6 +34,12 @@ import IndustryPage from "./pages/Industry";
 import EconmyPage from "./pages/Economy";
 import UncategorizedPage from "./pages/Uncategorized";
 import DashedHope from "./pages/DashedHope";
+import SohcahtoaCaseStudy from "./pages/SohcahtoaCaseStudy";
+// import StretfordCaseStudy from "./pages/Stretfold";
+import StretfordCaseStudy from "./pages/Stretfold";
+import SoFresh from "./pages/SoFresh";
+import Dutum from "./pages/Dutum";
+import SalamLife from "./pages/SalamLife";
 
 const queryClient = new QueryClient();
 
@@ -70,6 +76,11 @@ const App = () => (
           <Route path="/economy" element={<EconmyPage/>} />
           <Route path="/uncategorized" element={<UncategorizedPage/>} />
           <Route path="/dashed-hope" element={<DashedHope/>} />
+          <Route path="/sohcahtoa-holdings" element={<SohcahtoaCaseStudy/>} />
+          <Route path="/stretford" element={<StretfordCaseStudy/>} />
+          <Route path="/so-fresh" element={<SoFresh/>} />
+          <Route path="/sanlam-life" element={<SalamLife/>} />
+          <Route path="/dutum" element={<Dutum/>} />
 
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

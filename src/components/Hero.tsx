@@ -117,7 +117,7 @@ const Hero = () => {
           className="flex flex-col sm:flex-row items-center gap-10"
         >
           <Link
-            to="/portfolio"
+            to="https://docs.google.com/forms/d/e/1FAIpQLSfZ9eWDKmlhPkwA5PV9yEWCuLFyPMtaVAdV2lHnp9zdo-l-0Q/viewform"
             className="group relative px-10 md:px-12 md:py-5 py-2 bg-white text-black font-bold rounded-full overflow-hidden transition-all duration-500 hover:scale-105 active:scale-95"
           >
             <span className="relative z-10 transition-colors duration-300 group-hover:text-white text-sm md:text-base">Apply for Current Caladium Job Openings</span>
@@ -125,7 +125,7 @@ const Hero = () => {
           </Link>
           
           <Link
-            to="/contact"
+            to="https://drive.google.com/file/d/1FdKZKuGLv9kl4S4UtAonf-jTvXx2Dbfx/view"
             className="group flex items-center gap-4 text-xs font-bold tracking-[0.2em] uppercase text-zinc-300 hover:text-white transition-all"
           >
             2024 Caladium Nigerian SME Report
@@ -149,11 +149,11 @@ const Hero = () => {
         transition={{ delay: 1.5 }}
         className="hidden lg:block absolute left-10 top-1/2 -translate-y-1/2 z-20"
       >
-        <div className="h-20 w-[1px] bg-gradient-to-b from-transparent via-white/20 to-transparent" />
-        <p className="text-[9px] tracking-[0.6em] text-white/30 uppercase mt-4 mb-4" style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}>
+        <div className="h-20 w-[1px] bg-gradient-to-b from-transparent via-white/50 to-transparent" />
+        <p className="text-[9px] tracking-[0.6em] text-white/50 uppercase mt-4 mb-4" style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}>
           Insight. Data. Scale.
         </p>
-        <div className="h-20 w-[1px] bg-gradient-to-t from-transparent via-white/20 to-transparent" />
+        <div className="h-20 w-[1px] bg-gradient-to-t from-transparent via-white/50 to-transparent" />
       </motion.div>
     </motion.section>
   );

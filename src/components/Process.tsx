@@ -151,11 +151,11 @@ const Process = () => {
         <header className="md:mb-28 mb-9 flex items-end gap-6">
           <div className="flex flex-col">
             <h2 className="font-sans font-bold text-3xl md:text-5xl text-white tracking-tighter mb-2">
-              Our <span className="text-zinc-800 italic font-extralight">Workflow</span>
+              Our <span className="text-zinc-400 italic font-extralight">Workflow</span>
             </h2>
             <div className="h-[2px] w-full bg-gradient-to-r from-[#94257a] to-transparent" />
           </div>
-          <span className="text-zinc-600 font-sans text-sm mb-4 hidden md:block tracking-widest uppercase">
+          <span className="text-zinc-400 font-sans text-sm mb-4 hidden md:block tracking-widest uppercase">
             3 Phases of Excellence
           </span>
         </header>

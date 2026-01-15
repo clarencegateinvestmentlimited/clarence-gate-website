@@ -88,7 +88,7 @@ const About = () => {
                 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-sans font-semibold text-white leading-[1.2] lg:leading-tight mb-6 md:mb-8"
               >
                 Excellence in strategy. <br className="hidden sm:block" />
-                <span className="text-zinc-600 font-light italic">Driven by data.</span>
+                <span className="text-zinc-200 font-light italic">Driven by data.</span>
               </motion.h2>
               
               <motion.p 
@@ -96,7 +96,7 @@ const About = () => {
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.3 }}
-                className="text-zinc-500 text-sm md:text-base lg:text-lg leading-relaxed max-w-xl mb-8 md:mb-12 font-light"
+                className="text-zinc-400 text-sm md:text-base lg:text-lg leading-relaxed max-w-xl mb-8 md:mb-12 font-light"
               >
                 Caladium Consulting bridges the gap between high-level global strategy and 
                 local enterprise growth. Since 2010, we have empowered over 300 
@@ -105,7 +105,7 @@ const About = () => {
 
               <Link
                 to="/about"
-                className="group flex items-center gap-3 md:gap-4 text-[9px] md:text-[10px] font-bold tracking-[0.3em] md:tracking-[0.4em] uppercase text-white/40 hover:text-white transition-colors"
+                className="group flex items-center gap-3 md:gap-4 text-[9px] md:text-[10px] font-bold tracking-[0.3em] md:tracking-[0.4em] uppercase text-white/70 hover:text-white transition-colors"
               >
                 <span className="relative">
                   View Full Profile

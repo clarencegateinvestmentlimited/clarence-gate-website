@@ -47,12 +47,12 @@ const CaseStudyCard: React.FC<CaseStudy> = ({ title, client, imageUrl, link }) =
             {client}
         </span>
         
-        <h3 className="text-lg dm-sans  md:text-xl font-bold text-white mb-6 leading-snug group-hover:text-[#76B82D] transition-colors flex-grow">
+        <h3 className="text-lg dm-sans  md:text-xl font-bold text-white mb-6 leading-snug group-hover:text-white transition-colors flex-grow">
             {title}
         </h3>
         
         <div className="mt-auto border-b border-white pb-1 w-fit group-hover:border-[#76B82D] transition-colors">
-            <Link to={link} className="flex dm-sans items-center gap-2 text-white text-[10px] uppercase tracking-[0.2em] font-bold group-hover:text-[#76B82D]">
+            <Link to={link} className="flex dm-sans items-center gap-2 text-white text-[10px] uppercase tracking-[0.2em] font-bold group-hover:text-white">
                 View Case Study <ArrowUpRight size={14} />
             </Link>
         </div>
@@ -93,14 +93,14 @@ const HumanCapital: React.FC = () => {
                             />
                         </div>
                         <div className="flex flex-col order-1 lg:order-2">
-                            <h1 className="text-3xl  sm:text-4xl md:text-4xl dm-sans lg:text-4xl font-black tracking-tighter leading-[0.9] text-transparent mb-1"
-                                style={{ WebkitTextStroke: '1px rgba(255,255,255,0.3)' }}>
+                            <h1 className="text-3xl  sm:text-4xl md:text-4xl dm-sans lg:text-4xl font-white/30 tracking-tighter leading-[0.9] mb-1"
+                                >
                                 Strategic Planning &
                             </h1>
-                            <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-4xl font-black tracking-tighter dm-sans  text-[#76B82D] leading-none mb-8">
+                            <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-4xl tracking-tighter dm-sans text-[#76B82D] leading-none mb-8">
                                 Execution
                             </h2>
-                            <p className="text-base md:text-lg text-gray-400 dm-sans  leading-relaxed max-w-xl font-light">
+                            <p className="text-base md:text-lg text-gray-200 dm-sans  leading-relaxed max-w-xl font-light">
                                 At Caladium Consulting, we create strategies that ensure measurable success by blending <span className="text-white font-normal">global frameworks</span> with <span className="text-white font-normal">local insights</span>.
                             </p>
                         </div>
@@ -148,19 +148,19 @@ const HumanCapital: React.FC = () => {
                             imageUrl="https://caladiumconsulting.com/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-21-at-11.23.48-AM-1-1024x683.jpeg"
                             client="Sohcahtoa Holdings"
                             title="Strategic execution propels Sohcahtoa: Innovative solutions, streamlined operations, and market leadership fuel remarkable growth."
-                            link="/case-studies-sohcahtoa-holdings"
+                            link="/sohcahtoa-holdings"
                         />
                         <CaseStudyCard
                             imageUrl="https://caladiumconsulting.com/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-21-at-11.28.42-AM-1024x683.jpeg"
                             client="Stretford Hill Limited"
                             title="Reimagining engineering excellence and expanding the quality of indigenous structural construction practices in Nigeria."
-                            link="/case-studies-stretford-hill-limited-shl"
+                            link="/stretford"
                         />
                         <CaseStudyCard
                             imageUrl="https://caladiumconsulting.com/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-21-at-11.19.59-AM-1.jpeg"
                             client="So Fresh"
                             title="Innovative healthy options fuel growth: So Fresh expands menu, boosts revenue, and reaches new customers across Nigeria."
-                            link="/case-studies-so-fresh"
+                            link="/so-fresh"
                         />
                     </div>
                 </div>

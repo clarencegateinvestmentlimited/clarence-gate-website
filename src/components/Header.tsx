@@ -94,7 +94,7 @@ const Header = () => {
           </button>
 
           <div className="mt-4">
-            <h2 className="text-zinc-600 text-[8px] font-bold uppercase tracking-[0.6em] mb-6">
+            <h2 className="text-zinc-200 text-[8px]  dm-sans font-bold uppercase tracking-[0.6em] mb-6">
               Menu
             </h2>
 
@@ -110,8 +110,8 @@ const Header = () => {
                   key={item.path}
                   to={item.path}
                   onClick={closeMenu}
-                  className={`relative text-white no-underline text-[18px] md:text-[22px] font-sans font-medium transition-all duration-300 flex items-center group
-                    ${location.pathname === item.path ? "text-white" : "text-white/30 hover:text-white"}`}
+                  className={`relative text-white no-underline text-[18px] md:text-[22px] dm-sans font-medium transition-all duration-300 flex items-center group
+                    ${location.pathname === item.path ? "text-white" : "text-white/80 hover:text-[#94257a]"}`}
                 >
                   <span className="group-hover:translate-x-2 transition-transform duration-500 flex items-center gap-3">
                     {location.pathname === item.path && (

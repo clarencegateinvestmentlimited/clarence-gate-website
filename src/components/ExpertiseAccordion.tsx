@@ -77,7 +77,7 @@ export default function MinimalistExpertise() {
                   className="w-full py-8 flex items-center justify-between text-left group"
                 >
                   <div className="flex items-center gap-8">
-                    <span className="text-[10px] font-mono text-zinc-600 group-hover:text-emerald-500 transition-colors">
+                    <span className="text-[10px] font-mono text-zinc-600 group-hover:text-[#76B82D] transition-colors">
                       {feature.number}
                     </span>
                     <h3 className={`text-lg md:text-xl font-light tracking-wide transition-all ${

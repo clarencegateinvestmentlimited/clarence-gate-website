@@ -55,7 +55,7 @@ const TeamSection: React.FC = () => {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             Our <span className="text-zinc-500">Team</span>
           </h2>
-          <p className="text-zinc-500 text-base sm:text-lg max-w-2xl font-light">
+          <p className="text-zinc-400 text-base sm:text-lg max-w-2xl font-light">
             Our firm is made up of dozens of dedicated multi-disciplinary professionals who are committed to exceptional client services.
           </p>
         </div>

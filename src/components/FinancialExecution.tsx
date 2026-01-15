@@ -141,14 +141,14 @@ const FinancialExecution: React.FC = () => {
                 client="So Fresh"
                 description="Expanding So Fresh's Product Offerings and Amplifying Access to Healthy Food in Nigeria."
                 title="Innovative healthy options fuel growth: So Fresh expands menu, boosts revenue, and reaches new customers."
-                link="https://caladiumconsulting.com/case-studies-so-fresh/"
+                link="/so-fresh"
               />
              <CaseStudyCard
                 imageUrl="https://caladiumconsulting.com/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-21-at-11.23.48-AM-1-1024x683.jpeg"
                 client="Sohcahtoa Holdings"
                 description="Driving Growth through Strategic Execution: A Case Study of Sohcahtoa Holdings."
                 title="Strategic execution propels Sohcahtoa: Innovative solutions, streamlined operations, and market leadership fuel remarkable growth."
-                link="https://caladiumconsulting.com/case-studies-sohcahtoa-holdings/"
+                link="sohcahtoa-holdings/"
               />
           </div>
         </div>

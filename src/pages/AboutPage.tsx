@@ -120,7 +120,7 @@ export default function AboutPage() {
 
         {/* Content Grid - Unchanged */}
         <div className="grid md:grid-cols-12 gap-12">
-          <div className="md:col-span-9 space-y-10 text-zinc-400 text-lg md:text-xl font-light leading-relaxed text-justify">
+          <div className="md:col-span-9 space-y-10 text-zinc-200 text-lg md:text-xl font-light leading-relaxed text-justify">
             <p>
               Founded in 2010, <span className="text-white font-medium">Caladium Consulting Limited</span> has established itself as a leader in strategy consulting across Africa. Our mission is clear: to leverage global expertise and deliver unparalleled value to local enterprises. We have supported over 300 SMEs and large enterprises, driving their growth and stability through transformative strategies.
             </p>
