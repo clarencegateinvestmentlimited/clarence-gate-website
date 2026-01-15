@@ -61,7 +61,7 @@ export default function MinimalistExpertise() {
              uppercase mb-4">
               FAQ
             </h2> */}
-            <p className="text-3xl md:text-4xl font-light tracking-tight text-[#76B82D] italic font-serif">
+            <p className="text-3xl md:text-4xl font-light tracking-tight text-[#76B82D] dm-sans italic font-serif">
               Why Choose Caladium?
             </p>
           </header>
@@ -76,11 +76,11 @@ export default function MinimalistExpertise() {
                   onClick={() => setExpanded(expanded === feature.id ? false : feature.id)}
                   className="w-full py-8 flex items-center justify-between text-left group"
                 >
-                  <div className="flex items-center gap-8">
+                  <div className="flex items-center dm-sans gap-8">
                     <span className="text-[10px] font-mono text-zinc-600 group-hover:text-[#76B82D] transition-colors">
                       {feature.number}
                     </span>
-                    <h3 className={`text-lg md:text-xl font-light tracking-wide transition-all ${
+                    <h3 className={`text-lg md:text-xl dm-sans font-light tracking-wide transition-all ${
                       expanded === feature.id ? 'text-white' : 'text-zinc-500 group-hover:text-zinc-300'
                     }`}>
                       {feature.title}
@@ -103,7 +103,7 @@ export default function MinimalistExpertise() {
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
                     >
-                      <p className="pb-8 pl-12 md:pl-16 text-zinc-400 leading-relaxed text-sm md:text-base max-w-md">
+                      <p className="pb-8 pl-12 md:pl-16 dm-sans text-zinc-400 leading-relaxed text-sm md:text-base max-w-md">
                         {feature.content}
                       </p>
                     </motion.div>

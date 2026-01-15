@@ -85,9 +85,9 @@ const PricingCard: React.FC<PricingPlan> = ({ price, period, title, description,
                    hover:bg-black hover:scale-[1.02] hover:shadow-lg
                    flex justify-center items-center gap-2">
                 {buttonText}
-                <span className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
+                {/* <span className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
                     ↗
-                </span>
+                </span> */}
             </button>
         </div>
     );

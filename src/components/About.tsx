@@ -107,7 +107,7 @@ const About = () => {
                 to="/about"
                 className="group flex items-center gap-3 md:gap-4 text-[9px] md:text-[10px] font-bold tracking-[0.3em] md:tracking-[0.4em] uppercase text-white/70 hover:text-white transition-colors"
               >
-                <span className="relative">
+                <span className="relative dm-sans">
                   View Full Profile
                   <span className="absolute -bottom-1 md:-bottom-2 left-0 w-0 h-[1px] bg-[#94257a] group-hover:w-full transition-all duration-500" />
                 </span>
@@ -118,7 +118,7 @@ const About = () => {
             </div>
 
             {/* Stats Grid */}
-            <div className="lg:col-span-5 grid grid-cols-2 gap-x-4 sm:gap-x-8 gap-y-8 md:gap-y-12 border-t border-white/5 pt-10 lg:border-t-0 lg:pt-0">
+            <div className="lg:col-span-5 dm-sans grid grid-cols-2 gap-x-4 sm:gap-x-8 gap-y-8 md:gap-y-12 border-t border-white/5 pt-10 lg:border-t-0 lg:pt-0">
               <StatItem target={10} suffix="k" label="Network" />
               <StatItem target={300} label="Impact" />
               <StatItem target={200} label="Partners" />

@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 
 const Dutum: React.FC = () => {
     const [isPlaying, setIsPlaying] = useState(false);
-    const videoId = "9r9hQTzipj8"; // Extracted from your URL
+    const videoId = "vxF5eRcLrHQ"; // Extracted from your URL
 
     const fadeInUp = {
         hidden: { opacity: 0, y: 30 },
