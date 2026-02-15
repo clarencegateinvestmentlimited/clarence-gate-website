@@ -85,19 +85,19 @@ During this period, he co-founded Design Protocol Limited, a real estate develop
       {/* Professional Journey */}
       <section className="py-20 px-[6%]">
         <motion.h2
-  className="text-[38px] md:text-[50px] font-semibold text-center mb-12"
->
-  Founder's{" "}
-  <motion.span
-    className="text-[#4ecdc4]"
-    initial={{ opacity: 0, x: -20 }}
-    whileInView={{ opacity: 1, x: 0 }}
-    transition={{ duration: 0.7 }}
-    viewport={{ once: false, amount: 0.3 }}
-  >
-    Biography
-  </motion.span>
-</motion.h2>
+          className="text-[38px] md:text-[50px] font-semibold text-center mb-12"
+        >
+          Founder's{" "}
+          <motion.span
+            className="text-[#4ecdc4]"
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            viewport={{ once: false, amount: 0.3 }}
+          >
+            Biography
+          </motion.span>
+        </motion.h2>
 
         <div className="max-w-[1000px] mx-auto space-y-16 text-[17px] md:text-lg leading-8 text-white/85">
           {sections.map((item, index) => (
