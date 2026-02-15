@@ -215,7 +215,7 @@ const DealoGlobalServices = () => {
             <div className="flex flex-col-reverse md:flex-row items-center md:items-center lg:items-center gap-6 md:gap-10 text-center md:text-right w-full md:w-auto">
               {/* Company Text */}
               <div className="space-y-2">
-                <p className="text-2xl font-semibold">Design Energy Limited</p>
+                <p className="text-2xl font-semibold">Dealo Energy Limited</p>
                 {/* <p className="text-2xl text-start font-semibold">Limited</p> */}
                 <p className="text-[17px] text-start text-muted-foreground">2025</p>
               </div>
