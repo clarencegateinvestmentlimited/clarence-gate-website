@@ -18,19 +18,19 @@ const ClarenceGate = () => {
       id: 1,
       title: "",
       image:
-        "/Images/Card101.jpg",
+        "/Images/cgil (1).jpg",
     },
     {
       id: 2,
       title: "",
       image:
-        "/Images/Card102.jpg",
+        "/Images/cgil (8).jpg",
     },
     {
       id: 3,
       title: "",
       image:
-        "/Images/Card103.jpg",
+        "/Images/cgil (11).jpg",
     },
     {
       id: 4,
@@ -38,18 +38,18 @@ const ClarenceGate = () => {
       image:
         "/Images/Card104.jpg",
     },
-    // {
-    //   id: 5,
-    //   title: "Architectural Model",
-    //   image:
-    //     "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
-    // },
-    // {
-    //   id: 6,
-    //   title: "Modern Building",
-    //   image:
-    //     "https://images.unsplash.com/photo-1486718448742-163732cd1544?w=800&q=80",
-    // },
+    {
+      id: 5,
+      title: "",
+      image:
+        "/Images/cgil (6).jpg",
+    },
+    {
+      id: 6,
+      title: "Modern Building",
+      image:
+        "/Images/cgil (10).jpg",
+    },
   ];
 
   return (

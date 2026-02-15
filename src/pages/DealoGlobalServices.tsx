@@ -87,8 +87,7 @@ const DealoGlobalServices = () => {
           >
             <h3 className="text-lg font-semibold mb-3">About</h3>
             <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-              Dealo Global Services Limited is a forward-looking investment and real estate development company. The firm is structured to identify high-value opportunities in the property market, with a focus on acquiring, purchasing, and developing landed assets that offer sustainable returns. Its operations reflect a commitment to strategic investment and responsible property management.
-
+              Dealo Global Services Limited is a specialized infrastructure asset management company focused on acquiring, developing, and managing critical infrastructure assets. The firm strategically invests in energy, transportation, and utility projects, ensuring optimal performance, long-term sustainability, and value creation through professional asset management and operational excellence.
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-2 gap-4 mb-4">
               <div>
