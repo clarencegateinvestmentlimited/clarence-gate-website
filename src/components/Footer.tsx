@@ -1,114 +1,103 @@
 import { Link } from "react-router-dom";
 import { toast } from "sonner";
-import { Linkedin, Twitter, Facebook, Instagram, ArrowUpRight } from "lucide-react";
 
 const Footer = () => {
   const handleNewsletterSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("Successfully subscribed to our intelligence brief.");
+    toast.success("Successfully subscribed to newsletter!");
   };
 
-  const socials = [
-    { icon: <Linkedin size={18} />, href: "https://ng.linkedin.com/company/caladium-consulting%C2%AE", label: "LinkedIn" },
-    { icon: <Twitter size={18} />, href: "https://x.com/ConsultCaladium/", label: "Twitter" },
-    { icon: <Facebook size={18} />, href: "https://web.facebook.com/CaladiumConsulting/?_rdc=1&_rdr#", label: "Facebook" },
-    { icon: <Instagram size={18} />, href: "https://www.instagram.com/caladiumconsulting/?igsh=MWMwM28ybzF6bjgzcg%3D%3D&utm_source=qr#", label: "Instagram" },
-  ];
-
   return (
-    <footer className="relative bg-[#010101] pt-24 pb-12 px-6 md:px-[6%] overflow-hidden border-t border-white/5">
-      {/* Background Glow */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#94257a]/5 blur-[140px] rounded-full pointer-events-none" />
-
-      <div className="max-w-7xl mx-auto">
-        {/* Top Section: Brand & High-Level Statement */}
-        <div className="grid lg:grid-cols-12 gap-12 mb-20 items-start">
-          <div className="lg:col-span-4">
-            <Link to="/" className="inline-block mb-6">
-              <img
-                src="Images/Caladium-Logo_5-2-1-1536x457.png"
-                alt="Caladium Consulting"
-                className="h-8 md:h-10 w-auto"
-              />
-            </Link>
-            <p className="text-zinc-400 text-sm leading-relaxed max-w-xs">
-              We lead by developing tailored strategies for government bodies, 
-              development institutions, NGOs, and businesses across Africa.
-            </p>
+    <footer className="px-4 md:px-[8rem] py-16 border-t border-border">
+      <div className="footer-content">
+        <div className="footer-brand lg:flex items-center gap-8 mb-12">
+          <div className="logo-text w-full mb-6">
+            <img
+              src="/Images/Clarence Gate Logo white.png"
+              alt="Clarence Gate Group Logo"
+              className="h-[100px] w-auto"
+            />
           </div>
-          <div className="lg:col-span-8">
-            <h2 className="text-white text-2xl md:text-3xl font-light leading-tight lg:pl-12 border-l border-white/10">
-              We empower organizations to make <span className="text-zinc-400 font-medium">data-driven decisions</span> that fuel growth and success across industries.
-            </h2>
-          </div>
+          <p className="text-muted-foreground text-[16px] leading-[1.6] max-w-[500px]">
+            Born from a vision to transform investments into sustainable
+            enterprises, we turn bold ideas into lasting impact.
+          </p>
         </div>
 
-        {/* Middle Section: Links & Info */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-20 border-b border-white/5">
-          
-          {/* 1. Newsletter */}
-          <div className="space-y-6">
-            <h3 className="text-[11px] font-bold tracking-widest uppercase text-zinc-500">Stay Updated</h3>
-            <form onSubmit={handleNewsletterSubmit} className="relative max-w-xs">
+        <div className="bottom-border h-[1px] bg-border mb-12"></div>
+
+        <div className="footer-links-container grid lg:grid-cols-2 gap-12">
+          <div className="footer-links">
+            <h3 className="font-raleway font-semibold text-[20px] mb-6">
+              Pages
+            </h3>
+            <div className="footer-links-grid grid grid-cols-2 gap-4">
+              <Link
+                to="/"
+                className="text-muted-foreground hover:text-accent transition-colors"
+              >
+                Home
+              </Link>
+              <Link
+                to="/founder"
+                className="text-muted-foreground hover:text-accent transition-colors"
+              >
+                Our Founder
+              </Link>
+              <Link
+                to="/about"
+                className="text-muted-foreground hover:text-accent transition-colors"
+              >
+                About Us
+              </Link>
+              <Link
+                to="/contact"
+                className="text-muted-foreground hover:text-accent transition-colors"
+              >
+                Contact Us
+              </Link>
+              <Link
+                to="/portfolio"
+                className="text-muted-foreground hover:text-accent transition-colors"
+              >
+                Our Investment Portfolio
+              </Link>
+            </div>
+          </div>
+
+          <div className="newsletter">
+            <h3 className="font-raleway font-semibold text-[20px] mb-6">
+              Join our Newsletter
+            </h3>
+            <form
+              className="newsletter-form flex items-center gap-4 border-b border-border pb-3"
+              onSubmit={handleNewsletterSubmit}
+            >
               <input
                 type="email"
-                placeholder="Your e-mail"
+                placeholder="Enter your email"
                 required
-                className="w-full bg-transparent border-b border-white/20 py-3 text-white placeholder:text-zinc-600 focus:outline-none focus:border-[#94257a] transition-all text-sm"
+                className="flex-1 bg-transparent text-foreground placeholder:text-muted-foreground focus:outline-none"
               />
               <button
                 type="submit"
-                className="absolute right-0 bottom-2 bg-white/5 hover:bg-[#94257a] text-white px-4 py-1.5 rounded-full text-xs flex items-center gap-2 transition-all group"
+                className="newsletter-btn text-white font-raleway font-medium flex items-center gap-2 hover:opacity-90 transition-opacity whitespace-nowrap"
               >
-                Send <ArrowUpRight size={14} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                <span>Subscribe</span>
+                <img
+                  src="/Images/arrow-right.png"
+                  alt="arrow"
+                  className="w-8 h-8"
+                />
               </button>
             </form>
           </div>
-
-          {/* 2. Contact */}
-          <div className="space-y-6">
-            <h3 className="text-[11px] font-bold tracking-widest uppercase text-zinc-500">Contact Us</h3>
-            <div className="space-y-3 text-sm text-zinc-300">
-              <a href="mailto:enquiries@caladiumconsulting.com" className="block hover:text-white transition-colors">enquiries@caladiumconsulting.com</a>
-              <a href="tel:+2348024332000" className="block hover:text-white transition-colors">+234 802 4332 000</a>
-            </div>
-          </div>
-
-          {/* 3. Address */}
-          <div className="space-y-6">
-            <h3 className="text-[11px] font-bold tracking-widest uppercase text-zinc-500">Our Address</h3>
-            <p className="text-sm text-zinc-300 leading-relaxed">
-              D24 Dolphin Plaza, Corporation Drive,<br />
-              Dolphin Estate, Ikoyi, Lagos, Nigeria
-            </p>
-          </div>
-
-          {/* 4. Socials */}
-          <div className="space-y-6">
-            <h3 className="text-[11px] font-bold tracking-widest uppercase text-zinc-500">Our Social</h3>
-            <div className="flex gap-4">
-              {socials.map((social, i) => (
-                <a
-                  key={i}
-                  href={social.href}
-                  className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-zinc-400 hover:bg-[#94257a] hover:text-white hover:border-[#94257a] transition-all duration-300"
-                  aria-label={social.label}
-                >
-                  {social.icon}
-                </a>
-              ))}
-            </div>
-          </div>
         </div>
 
-        {/* Bottom Section: Legal */}
-        <div className="flex flex-col md:flex-row justify-between items-center pt-10 gap-6">
-          <div className="flex gap-8">
-            <Link to="https://caladiumconsulting.com/privacy-policy.html" className="text-[10px] uppercase tracking-widest text-zinc-500 hover:text-white transition-colors">Privacy Policy</Link>
-            <Link to="/terms" className="text-[10px] uppercase tracking-widest text-zinc-500 hover:text-white transition-colors">Terms of Service</Link>
-          </div>
-          <p className="text-[10px] uppercase tracking-widest text-zinc-600 font-medium">
-            © {new Date().getFullYear()} Caladium LTD
+        <div className="footer-bottom text-center mt-12 pt-14 border-t border-border">
+          <p className="text-muted-foreground text-[14px]">
+            © {new Date().getFullYear()} Clarence Gate Group. All rights
+            reserved.
           </p>
         </div>
       </div>

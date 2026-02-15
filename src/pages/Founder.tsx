@@ -38,7 +38,7 @@ During this period, he co-founded Design Protocol Limited, a real estate develop
     },
   ];
   return (
-    <div className="bg-black text-white lg:pt-[100px] pt-[100px] font-sans overflow-x-hidden">
+    <div className="bg-black text-white lg:pt-[100px] pt-[100px] font-['Raleway'] overflow-x-hidden">
       {/* Header */}
       {/* <header className="flex justify-between items-center py-8 px-[8%] bg-black">
         <div className="logo">

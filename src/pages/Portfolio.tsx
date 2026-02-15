@@ -113,7 +113,7 @@ const Portfolio: React.FC = () => {
   };
 
   return (
-    <div className="bg-black text-white font-sans overflow-x-hidden min-h-screen">
+    <div className="bg-black text-white font-raleway overflow-x-hidden min-h-screen">
       <Header />
 
       {/* Portfolio Intro Section */}
