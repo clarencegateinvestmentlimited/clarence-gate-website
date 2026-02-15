@@ -96,9 +96,9 @@ const Industries = () => {
     <section className="focuses text-center px-4 md:px-8 py-16" id="portfolio">
       <div className="section-label flex items-center justify-center gap-4 mb-8 text-[32px]">
         <img src="/Images/Vector 2.png" alt="" className="h-5" />
-        <h4 className="font-raleway font-semibold text-[20px]">Focuses</h4>
+        <h4 className="font-sans font-semibold text-[20px]">Focuses</h4>
       </div>
-      <h2 className="section-title font-raleway font-semibold text-[36px] md:text-[50px] leading-[1.16] tracking-normal text-center mb-12">
+      <h2 className="section-title font-sans font-semibold text-[36px] md:text-[50px] leading-[1.16] tracking-normal text-center mb-12">
         Industries We Invest In
       </h2>
       <div className="cards-container flex flex-col items-center gap-8 max-w-[1200px] mx-auto">

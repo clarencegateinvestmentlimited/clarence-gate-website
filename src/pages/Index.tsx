@@ -7,22 +7,35 @@ import Map from "@/components/Map";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import FocusesSection from "@/components/FocusesSection";
+import TeamSection from "@/components/TeamSection";
+import ServicesSection from "@/components/ServicesSection";
+import ExpertiseAccordion from "@/components/ExpertiseAccordion";
+import ServiceGrid from "@/components/ServiceGrid";
+import CaaSPricing from "@/components/CaaSPricing";
+import TestimonialSlider from "@/components/TestimonialSlider";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Header />
       <main>
-        <div className="lg:h-[750px] md:h-[500px]">
+        <div className="lg:h-[550px] md:h-[500px]">
           <Hero />
         </div>
         <About />
         {/* <Industries /> */}
-        <FocusesSection />
+        {/* <FocusesSection /> */}
+        <TeamSection/>
+        {/* <ServicesSection/> */}
+        <ServiceGrid/>
         <Process />
-        <Map />
-        <ContactForm />
+
+        <ExpertiseAccordion/>
+         <TestimonialSlider />
+        {/* <ContactForm /> */}
       </main>
+        {/* <Map /> */}
+      <CaaSPricing/>
       <Footer />
     </div>
   );
