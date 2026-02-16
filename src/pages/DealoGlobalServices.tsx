@@ -87,8 +87,7 @@ const DealoGlobalServices = () => {
           >
             <h3 className="text-lg font-semibold mb-3">About</h3>
             <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-              Dealo Global Services Limited is a forward-looking investment and real estate development company. The firm is structured to identify high-value opportunities in the property market, with a focus on acquiring, purchasing, and developing landed assets that offer sustainable returns. Its operations reflect a commitment to strategic investment and responsible property management.
-
+              Dealo Global Services Limited is a dedicated financing and management platform established to develop, enhance, and operate essential public assets. As a specialized management company committed to the development and stewardship of public infrastructure, we focus exclusively on long-term value and community impact, bridging the gap between public need and sustainable, high-quality infrastructure solutions. Our model is built around the long-term success of essential assets, ensuring they are financed responsibly and managed efficiently to serve current and future generations, building and maintaining the foundations that allow communities to thrive.
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-2 gap-4 mb-4">
               <div>
@@ -130,8 +129,6 @@ const DealoGlobalServices = () => {
             <p>
 
               Beyond property acquisition, the company is positioned to provide long-term value through efficient ownership structures, development capabilities, and sound investment practices. Dealo Global Services Limited aims to contribute to the growth of the real estate sector while offering clients and partners reliable, well-managed assets that align with their financial and development goals.
-
-
             </p>
             {/* <p>
               At lorem ipsum ac magna. Quis cursus sem nibh pulvinar mollis sed

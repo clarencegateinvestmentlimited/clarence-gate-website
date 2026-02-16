@@ -17,38 +17,57 @@ const ClarenceGate = () => {
     {
       id: 1,
       title: "",
-      image:
-        "/Images/cgil (1).jpg",
+      image: "/Images/cgil (1).jpg",
     },
     {
       id: 2,
       title: "",
-      image:
-        "/Images/cgil (8).jpg",
+      image: "/Images/cgil (2).jpg",
     },
-    {
-      id: 3,
-      title: "",
-      image:
-        "/Images/cgil (11).jpg",
-    },
-    {
-      id: 4,
-      title: "",
-      image:
-        "/Images/Card104.jpg",
-    },
+    // {
+    //   id: 3,
+    //   title: "",
+    //   image: "/Images/cgil (3).jpg",
+    // },
+    // {
+    //   id: 4,
+    //   title: "",
+    //   image: "/Images/cgil (4).jpg",
+    // },
     {
       id: 5,
       title: "",
-      image:
-        "/Images/cgil (6).jpg",
+      image: "/Images/cgil (5).jpg",
     },
     {
       id: 6,
-      title: "Modern Building",
-      image:
-        "/Images/cgil (10).jpg",
+      title: "",
+      image: "/Images/cgil (6).jpg",
+    },
+    {
+      id: 7,
+      title: "",
+      image: "/Images/cgil (7).jpg",
+    },
+    {
+      id: 8,
+      title: "",
+      image: "/Images/cgil (8).jpg",
+    },
+    {
+      id: 9,
+      title: "",
+      image: "/Images/cgil (9).jpg",
+    },
+    {
+      id: 10,
+      title: "",
+      image: "/Images/cgil (10).jpg",
+    },
+    {
+      id: 11,
+      title: "",
+      image: "/Images/cgil (11).jpg",
     },
   ];
 
@@ -143,59 +162,28 @@ const ClarenceGate = () => {
       {/* PROPERTY GALLERY */}
       <section className="container mx-auto px-4 pb-16 lg:pb-24 flex justify-center">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 max-w-6xl w-full">
-          {properties.map((property, index) => {
-            // Combine image 3 and 4
-            if (index === 2) {
-              return (
-                <div
-                  key="merged-image"
-                  className={`group relative overflow-hidden rounded-2xl sm:col-span-2 aspect-[4/3] sm:aspect-[16/5] transition-all duration-700 ${
-                    isVisible ? "animate-scale-in" : "opacity-0"
-                  }`}
-                  style={{ animationDelay: `${700 + index * 100}ms` }}
-                >
-                  <img
-                    src={properties[2].image}
-                    alt={`${properties[2].title} & ${properties[3].title}`}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="absolute bottom-0 left-0 right-0 p-6">
-                      <h3 className="text-xl font-semibold text-white">
-                        {properties[2].title} & {properties[3].title}
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              );
-            }
-
-            // Skip the 4th image (merged)
-            if (index === 3) return null;
-
-            return (
-              <div
-                key={property.id}
-                className={`group relative overflow-hidden rounded-2xl aspect-[4/3] sm:aspect-[16/7] transition-all duration-700 ${
-                  isVisible ? "animate-scale-in" : "opacity-0"
-                }`}
-                style={{ animationDelay: `${700 + index * 100}ms` }}
-              >
-                <img
-                  src={property.image}
-                  alt={property.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <h3 className="text-xl font-semibold text-white">
-                      {property.title}
-                    </h3>
-                  </div>
+          {properties.map((property, index) => (
+            <div
+              key={property.id}
+              className={`group relative overflow-hidden rounded-2xl aspect-[4/3] sm:aspect-[16/7] transition-all duration-700 ${
+                isVisible ? "animate-scale-in" : "opacity-0"
+              }`}
+              style={{ animationDelay: `${700 + index * 100}ms` }}
+            >
+              <img
+                src={property.image}
+                alt={property.title}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className="text-xl font-semibold text-white">
+                    {property.title}
+                  </h3>
                 </div>
               </div>
-            );
-          })}
+            </div>
+          ))}
         </div>
       </section>
 
