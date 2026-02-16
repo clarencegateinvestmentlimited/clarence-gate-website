@@ -87,7 +87,7 @@ const DealoGlobalServices = () => {
           >
             <h3 className="text-lg font-semibold mb-3">About</h3>
             <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-              Dealo Global Services Limited is a forward-looking investment and real estate development company. The firm is structured to identify high-value opportunities in the property market, with a focus on acquiring, purchasing, and developing landed assets that offer sustainable returns. Its operations reflect a commitment to strategic investment and responsible property management.
+              We are a dedicated financing and management platform established to develop, enhance, and operate essential public assets. By focusing exclusively on long-term value and community impact, we bridge the gap between public need and sustainable, high-quality infrastructure solutions. We exist to build and maintain the foundations that allow communities to thrive.
 
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-2 gap-4 mb-4">
@@ -128,10 +128,13 @@ const DealoGlobalServices = () => {
 
           <div className="lg:w-2/3 space-y-4 text-base lg:text-lg text-muted-foreground leading-relaxed">
             <p>
-
-                   Dealo Global Services Limited is a dedicated financing and management platform established to develop, enhance, and operate essential public assets. As a specialized management company committed to the development and stewardship of public infrastructure, we focus exclusively on long-term value and community impact, bridging the gap between public need and sustainable, high-quality infrastructure solutions. Our model is built around the long-term success of essential assets, ensuring they are financed responsibly and managed efficiently to serve current and future generations, building and maintaining the foundations that allow communities to thrive.
-
-
+              Dealo Global Services Limited is a specialized management company dedicated to the development and stewardship of public infrastructure. We operate as a strategic financing and operational platform, exclusively focused on creating, enhancing, and maintaining essential public assets that form the backbone of thriving communities.
+            </p>
+            <p>
+              Our business model centers on the long-term success and sustainability of critical infrastructure. We ensure that every asset under our management is financed responsibly, operated efficiently, and maintained to the highest standards. By taking a patient capital approach, we prioritize enduring value over short-term gains, guaranteeing that the infrastructure we develop serves not only today's communities but also future generations.
+            </p>
+            <p>
+              We bridge the crucial gap between public need and sustainable infrastructure solutions, combining financial expertise with operational excellence. Our commitment extends beyond initial development,we remain invested in the ongoing performance and evolution of each asset, adapting to changing community needs while maintaining fiscal responsibility and environmental stewardship.
             </p>
             {/* <p>
               At lorem ipsum ac magna. Quis cursus sem nibh pulvinar mollis sed
