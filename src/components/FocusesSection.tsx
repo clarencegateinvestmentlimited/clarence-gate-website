@@ -9,7 +9,7 @@ interface IDetailItem {
   imageAlt: string;
   imageClass?: string;
   link?: string;
-  imageFit?: "cover" | "contain"; // ✅ Add this
+  imageFit?: "cover" | "contain";
 }
 
 interface ICardData {
@@ -21,7 +21,7 @@ interface ICardData {
   detailItems: IDetailItem[];
   containerId: string;
   containerStyle: React.CSSProperties;
-  link?: string; // 👈 Added for the "Learn more" button
+  link?: string; // "Learn more" button link
 }
 
 // --- Component Data ---
@@ -35,7 +35,7 @@ const cardData: ICardData[] = [
     arrowUrl: "/Images/arrow-right.png",
     containerId: "detailCardContainer1",
     containerStyle: { left: "23rem" },
-    link: "/clarence-gate", // 👈 link for Learn more
+    link: "/clarence-gate",
     detailItems: [
       {
         title: "Clarence Gate Group",
@@ -52,7 +52,7 @@ const cardData: ICardData[] = [
         imageAlt: "Dealo Protocol",
         imageClass: "lig",
         link: "/design-protocol",
-         imageFit: "contain",
+        imageFit: "contain",
       },
     ],
   },
@@ -65,13 +65,12 @@ const cardData: ICardData[] = [
     arrowUrl: "/Images/arrow-right.png",
     containerId: "detailCardContainer2",
     containerStyle: { left: "0rem" },
-    link: "/turboserv", // 👈 link for Learn more
+    link: "/turboserv",
     detailItems: [
       {
         title: "Turboserv Insurance Brokers Limited",
         year: "2022",
-        imageUrl:
-          "/Images/TURBOSERV_LOGO_4x-100-removebg-preview.png",
+        imageUrl: "/Images/TURBOSERV_LOGO_4x-100-removebg-preview.png",
         imageAlt: "Turboserv Logo",
         imageClass: "tea",
         link: "/turboserv",
@@ -88,7 +87,7 @@ const cardData: ICardData[] = [
     arrowUrl: "/Images/arrow-right.png",
     containerId: "detailCardContainer3",
     containerStyle: { right: "22rem" },
-    link: "/55-restaurant", // 👈 link for Learn more
+    link: "/55-restaurant",
     detailItems: [
       {
         title: "355 Restaurant &  Lounge",
@@ -105,61 +104,52 @@ const cardData: ICardData[] = [
         imageClass: "ligt",
         link: "/villa-monument",
         imageFit: "contain",
-
       },
     ],
   },
   {
     index: 3,
-    title: "Technology",
+    title: "Trading",
     description:
-      "Innovating digital solutions that transform businesses and empower communities.",
+      "Connecting markets and driving commerce through reliable, efficient trade across Africa and beyond.",
     iconUrl: "/Images/diagram.png",
     arrowUrl: "/Images/arrow-right.png",
     containerId: "detailCardContainer4",
     containerStyle: { left: "25rem" },
-    link: "/20b-limited", // 👈 link for Learn more
+    link: "/20b-limited",
     detailItems: [
       {
         title: "20B Limited",
         year: "2022",
         imageUrl: "Images/2oB.png",
-        imageAlt: "Technology 1",
+        imageAlt: "Trading 1",
         link: "/20b-limited",
       },
     ],
   },
   {
     index: 4,
-    title: "Consulting",
+    title: "Energy",
     description:
-      "Strategic advisory services that drive growth and operational excellence.",
+      "Powering growth with sustainable and dependable energy solutions for businesses and communities.",
     iconUrl: "/Images/building-4 copy.png",
     arrowUrl: "/Images/arrow-right.png",
     containerId: "detailCardContainer5",
     containerStyle: { right: "0rem" },
-    link: "/dealo-global", // 👈 link for Learn more
+    link: "/dealo-energy",
     detailItems: [
-      {
-        title: "Dealo Global Services Limited",
-        year: "2020",
-        imageUrl: "/Images/Card9.jpg",
-        imageAlt: "Consulting 1",
-        link: "/dealo-global",
-        imageFit: "contain",
-      },
       {
         title: "Dealo Energy Limited",
         year: "2025",
         imageUrl: "/Images/Dealo Energy_LogoUpdated.png",
-        imageAlt: "Consulting 2",
+        imageAlt: "Energy 1",
         imageClass: "lit",
         link: "/dealo-energy",
-         imageFit: "contain",
+        imageFit: "contain",
       },
     ],
   },
- {
+  {
     index: 5,
     title: "Public Private Partnership (PPP)",
     description:
@@ -167,16 +157,24 @@ const cardData: ICardData[] = [
     iconUrl: "/Images/diagram.png",
     arrowUrl: "/Images/arrow-right.png",
     containerId: "detailCardContainer6",
-    containerStyle: { left: "-20rem" },
-    link: "", // 👈 link for Learn more
+    containerStyle: { left: "-23rem" },
+    link: "",
     detailItems: [
       {
-        title: "MMIA Highway Limited",
+        title: "MMIA Highway Limited",
         year: "",
         imageUrl: "Images/MMIALogo.png",
         imageAlt: "Public Private Partnership 1",
         link: "",
-          imageFit: "contain",
+        imageFit: "contain",
+      },
+      {
+        title: "Dealo Global Services Limited",
+        year: "2020",
+        imageUrl: "/Images/Card9.jpg",
+        imageAlt: "Public Private Partnership 2",
+        link: "/dealo-global",
+        imageFit: "contain",
       },
     ],
   },
@@ -199,8 +197,9 @@ const Focuses: React.FC = () => {
       onMouseLeave={() => setActiveIndex(null)}
     >
       <div
-        className={`card ${activeIndex !== null && activeIndex !== card.index ? "inactive" : ""
-          }`}
+        className={`card ${
+          activeIndex !== null && activeIndex !== card.index ? "inactive" : ""
+        }`}
       >
         <div className="card-content">
           <img src={card.iconUrl} alt="" />
@@ -209,7 +208,7 @@ const Focuses: React.FC = () => {
         <h2 className="card-title">{card.title}</h2>
         <p className="card-description">{card.description}</p>
 
-        {/* 👇 Each card’s “Learn more” link */}
+        {/* Each card's "Learn more" link */}
         <a href={card.link || "#"} className="card-link">
           Learn more
         </a>
@@ -224,7 +223,7 @@ const Focuses: React.FC = () => {
           <React.Fragment key={item.title + idx}>
             {idx > 0 && <div className="detail-divider"></div>}
 
-            {/* 👇 Each sub-detail card link */}
+            {/* Each sub-detail card link */}
             <a
               href={item.link || "#"}
               className="detail-card-item"
@@ -232,15 +231,12 @@ const Focuses: React.FC = () => {
               rel="noopener noreferrer"
             >
               <div className="detail-image-wrapper">
-                <div
-                  className={`image-placeholder ${item.imageClass || ""}`}
-                >
+                <div className={`image-placeholder ${item.imageClass || ""}`}>
                   <img
                     src={item.imageUrl}
                     alt={item.imageAlt}
                     style={{ objectFit: item.imageFit || "cover" }}
                   />
-
                 </div>
               </div>
               <div className="detail-info">

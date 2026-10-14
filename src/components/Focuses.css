@@ -52,13 +52,14 @@
   gap: 1.5rem;
   width: 100%;
   flex-wrap: wrap; /* allows wrapping on smaller screens */
-}.black-bg {
+}
+
+.black-bg {
   background-color: #000 !important;
 }
 
-
 .card-wrapper {
- flex: 1 1 30%; /* grow, shrink, base width */
+  flex: 1 1 30%; /* grow, shrink, base width */
   max-width: 350px; /* keep a reasonable max */
   min-width: 250px; /* keeps cards readable */
   display: flex;
@@ -162,12 +163,15 @@
 #detailCardContainer3 {
   right: 46.5rem;
 }
+/* Energy now has one company, so the dropdown is narrower */
 #detailCardContainer5 {
   right: 34.5rem;
+  width: 33rem;
 }
+/* PPP now has two companies, so it gets the full two-card width */
 #detailCardContainer6 {
   left: 2rem;
-  width: 40rem;
+  width: 68.5rem;
 }
 
 .detail-cards-container {
